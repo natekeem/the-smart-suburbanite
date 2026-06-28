@@ -2,7 +2,7 @@
 title: What Is a Smart Home? A Plain-English Guide for Homeowners
 slug: what-is-a-smart-home
 pubDatetime: 2026-07-01T09:00:00+09:00
-draft: true
+draft: false
 tags:
   - smart home
   - beginner guide
