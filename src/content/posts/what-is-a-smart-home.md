@@ -7,7 +7,7 @@ tags:
   - smart home
   - beginner guide
   - homeowner guide
-ogImage: /assets/images/posts/what-is-a-smart-home/cover.svg
+ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/what-is-a-smart-home/cover.svg
 description: A plain-English introduction to smart home devices, benefits, tradeoffs, and first steps for everyday homeowners.
 ---
 
