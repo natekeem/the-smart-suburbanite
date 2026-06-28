@@ -1,7 +1,7 @@
 ---
 title: Questions to Ask Before Buying Your First Smart Home Device
 slug: questions-before-buying-first-smart-home-device
-pubDatetime: 2026-06-29T09:00:00-04:00
+pubDatetime: 2026-06-29T01:36:40+09:00
 modDatetime: 2026-06-29T01:36:40+09:00
 draft: false
 tags:
