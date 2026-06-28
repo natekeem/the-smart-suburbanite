@@ -7,8 +7,11 @@ tags:
   - smart home
   - beginner guide
   - homeowner guide
+ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/questions-before-buying-first-smart-home-device/cover.svg?v=cover-ready
 description: A practical checklist of questions to ask before buying your first smart home device, including compatibility, subscriptions, privacy, Wi-Fi, installation, and household usability.
 ---
+
+![A homeowner-friendly checklist scene with simple smart home icons for compatibility, subscription, privacy, Wi-Fi, and installation questions](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/questions-before-buying-first-smart-home-device/cover.svg?v=cover-ready)
 
 Buying your first smart home device can feel surprisingly complicated. A light bulb is no longer just a light bulb. A doorbell may come with an app, a subscription, motion alerts, video storage, Wi-Fi requirements, privacy settings, and installation questions.
 
