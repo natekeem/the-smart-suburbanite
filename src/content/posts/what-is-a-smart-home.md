@@ -11,6 +11,8 @@ ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/wh
 description: A plain-English introduction to smart home devices, benefits, tradeoffs, and first steps for everyday homeowners.
 ---
 
+![A comfortable suburban living room with simple smart home devices arranged in a calm, beginner-friendly way](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/what-is-a-smart-home/cover.svg)
+
 Smart home technology can sound more complicated than it needs to be. If you have looked at smart thermostats, video doorbells, smart lights, or voice assistants and wondered where to begin, you are not alone.
 
 A smart home does not have to mean a futuristic house that runs itself. It does not have to mean every switch, lock, and appliance is connected to an app. For most homeowners, a smart home simply means using a few connected devices to make everyday tasks easier to control, monitor, or schedule.
