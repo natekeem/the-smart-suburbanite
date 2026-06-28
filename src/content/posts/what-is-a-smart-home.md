@@ -2,16 +2,17 @@
 title: What Is a Smart Home? A Plain-English Guide for Homeowners
 slug: what-is-a-smart-home
 pubDatetime: 2026-06-28T21:00:00+09:00
+modDatetime: 2026-06-28T21:26:00+09:00
 draft: false
 tags:
   - smart home
   - beginner guide
   - homeowner guide
-ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/what-is-a-smart-home/cover.svg
+ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/what-is-a-smart-home/cover.svg?v=post-publish-qa
 description: A plain-English introduction to smart home devices, benefits, tradeoffs, and first steps for everyday homeowners.
 ---
 
-![A comfortable suburban living room with simple smart home devices arranged in a calm, beginner-friendly way](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/what-is-a-smart-home/cover.svg)
+![A comfortable suburban living room with simple smart home devices arranged in a calm, beginner-friendly way](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/what-is-a-smart-home/cover.svg?v=post-publish-qa)
 
 Smart home technology can sound more complicated than it needs to be. If you have looked at smart thermostats, video doorbells, smart lights, or voice assistants and wondered where to begin, you are not alone.
 
