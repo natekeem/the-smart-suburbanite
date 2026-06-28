@@ -9,7 +9,7 @@ export default defineAstroPaperConfig({
     author: "The Smart Suburbanite",
     profile: "https://github.com/natekeem",
     ogImage: "default-og.jpg",
-    lang: "en-US",
+    lang: "en",
     timezone: "America/New_York",
     dir: "ltr",
   },
