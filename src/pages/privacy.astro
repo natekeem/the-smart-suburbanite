@@ -1,0 +1,30 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Main from "@/components/Main.astro";
+import Footer from "@/components/Footer.astro";
+import config from "@/config";
+---
+
+<Layout
+  title={`Privacy | ${config.site.title}`}
+  description="Privacy notes for The Smart Suburbanite."
+>
+  <Header />
+  <Breadcrumb />
+  <Main pageTitle="Privacy" class="app-prose">
+    <p>
+      The Smart Suburbanite is currently a static site hosted on GitHub Pages.
+    </p>
+    <p>
+      At this stage, the site does not have user accounts, comments, analytics,
+      ads, affiliate links, contact forms, or newsletter forms.
+    </p>
+    <p>
+      GitHub Pages and the visitor's browser or network provider may process
+      standard technical request information required to serve the site.
+    </p>
+  </Main>
+  <Footer />
+</Layout>

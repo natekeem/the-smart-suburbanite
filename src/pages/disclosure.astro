@@ -1,0 +1,31 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Main from "@/components/Main.astro";
+import Footer from "@/components/Footer.astro";
+import config from "@/config";
+---
+
+<Layout
+  title={`Disclosure | ${config.site.title}`}
+  description="Disclosure policy for The Smart Suburbanite."
+>
+  <Header />
+  <Breadcrumb />
+  <Main pageTitle="Disclosure" class="app-prose">
+    <p>
+      Content on The Smart Suburbanite may be created with AI assistance and
+      human review.
+    </p>
+    <p>
+      The site currently has no affiliate links, sponsored content, display ads,
+      or paid product placements.
+    </p>
+    <p>
+      If future content includes ads, affiliate links, sponsorships, or other
+      commercial relationships, those relationships should be disclosed clearly.
+    </p>
+  </Main>
+  <Footer />
+</Layout>
