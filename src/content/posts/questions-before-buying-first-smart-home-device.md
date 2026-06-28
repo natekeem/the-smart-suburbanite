@@ -2,7 +2,8 @@
 title: Questions to Ask Before Buying Your First Smart Home Device
 slug: questions-before-buying-first-smart-home-device
 pubDatetime: 2026-06-29T09:00:00-04:00
-draft: true
+modDatetime: 2026-06-29T01:36:40+09:00
+draft: false
 tags:
   - smart home
   - beginner guide
@@ -19,7 +20,7 @@ You do not need to become a smart home expert before making a first purchase. Yo
 
 Before buying a device, ask a few practical questions. The goal is not to find the most advanced product. For many homeowners, the best first smart home device is simple, useful, and easy to live with.
 
-If you are still getting oriented, the earlier article "What Is a Smart Home? A Plain-English Guide for Homeowners" is a useful starting point. This article goes one step further.
+If you are still getting oriented, the earlier article [What Is a Smart Home? A Plain-English Guide for Homeowners](/the-smart-suburbanite/posts/what-is-a-smart-home/) is a useful starting point. This article goes one step further.
 
 ## 1. What problem am I trying to solve?
 
