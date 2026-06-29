@@ -7,7 +7,7 @@ export default defineAstroPaperConfig({
     description:
       "Plain-English smart home, energy-saving, security, and comfort upgrade guides for 40+ suburban homeowners.",
     author: "The Smart Suburbanite",
-    profile: "https://github.com/natekeem",
+    profile: undefined,
     ogImage: "default-og.jpg",
     lang: "en",
     timezone: "America/New_York",
@@ -28,9 +28,7 @@ export default defineAstroPaperConfig({
     },
     search: "pagefind",
   },
-  socials: [
-    { name: "github", url: "https://github.com/natekeem" },
-  ],
+  socials: [],
   shareLinks: [
     { name: "whatsapp", url: "https://wa.me/?text=" },
     { name: "facebook", url: "https://www.facebook.com/sharer.php?u=" },
