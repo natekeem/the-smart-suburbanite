@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Smart home terms map for Matter, Thread, Zigbee, and Z-Wave</title>
+  <desc id="desc">A generic house outline connected to four plain-text smart home compatibility terms.</desc>
+  <rect width="1600" height="900" fill="#f4f7f4"/>
+  <rect x="96" y="96" width="1408" height="708" rx="34" fill="#ffffff" stroke="#d9e2dc" stroke-width="2"/>
+
+  <g opacity="0.42">
+    <circle cx="230" cy="178" r="68" fill="#dbe9e2"/>
+    <circle cx="1380" cy="704" r="92" fill="#eadfcb"/>
+    <circle cx="1238" cy="174" r="48" fill="#dce5ee"/>
+  </g>
+
+  <g transform="translate(512 258)">
+    <path d="M288 12 62 192h58v238h336V192h58L288 12Z" fill="#f8faf8" stroke="#244238" stroke-width="10" stroke-linejoin="round"/>
+    <rect x="218" y="278" width="140" height="152" rx="18" fill="#e6eee9" stroke="#244238" stroke-width="8"/>
+    <rect x="158" y="214" width="78" height="70" rx="12" fill="#dce8ef" stroke="#244238" stroke-width="7"/>
+    <rect x="340" y="214" width="78" height="70" rx="12" fill="#dce8ef" stroke="#244238" stroke-width="7"/>
+    <path d="M120 430h336" stroke="#244238" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <g fill="none" stroke="#8ca096" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 18">
+    <path d="M646 368 C500 282 356 268 246 332"/>
+    <path d="M950 368 C1104 286 1248 284 1352 350"/>
+    <path d="M650 598 C500 688 362 696 252 632"/>
+    <path d="M950 598 C1108 692 1246 690 1356 622"/>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700" text-anchor="middle">
+    <g>
+      <circle cx="244" cy="332" r="86" fill="#e9f3ee" stroke="#2f5d4f" stroke-width="6"/>
+      <circle cx="244" cy="332" r="31" fill="#2f5d4f"/>
+      <text x="244" y="470" fill="#244238">Matter</text>
+    </g>
+    <g>
+      <circle cx="1356" cy="350" r="86" fill="#eef3f8" stroke="#385d78" stroke-width="6"/>
+      <path d="M1324 350h64M1356 318v64" stroke="#385d78" stroke-width="12" stroke-linecap="round"/>
+      <text x="1356" y="488" fill="#244238">Thread</text>
+    </g>
+    <g>
+      <circle cx="252" cy="632" r="86" fill="#f5f1e6" stroke="#8b6f36" stroke-width="6"/>
+      <path d="M219 646c34-76 82-76 66 0-11 50-78 54-66 0Z" fill="#8b6f36"/>
+      <text x="252" y="770" fill="#244238">Zigbee</text>
+    </g>
+    <g>
+      <circle cx="1356" cy="622" r="86" fill="#f3ece8" stroke="#8a5846" stroke-width="6"/>
+      <path d="M1312 622c26-42 62-42 88 0M1328 652c18-28 38-28 56 0" stroke="#8a5846" stroke-width="12" stroke-linecap="round" fill="none"/>
+      <text x="1356" y="760" fill="#244238">Z-Wave</text>
+    </g>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle">
+    <text x="800" y="162" font-size="66" font-weight="800" fill="#203832">Smart Home Terms</text>
+    <text x="800" y="226" font-size="30" fill="#52645d">A plain-English compatibility map for homeowners</text>
+  </g>
+</svg>

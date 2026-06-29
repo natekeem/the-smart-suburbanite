@@ -7,8 +7,11 @@ tags:
   - smart home
   - beginner guide
   - homeowner guide
+ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/smart-home-terms-explained/cover.svg?v=cover-ready
 description: A plain-English guide to Matter, Thread, Zigbee, and Z-Wave for homeowners who want to understand smart home compatibility before buying devices.
 ---
+
+![A plain-English smart home terms map showing Matter, Thread, Zigbee, and Z-Wave as generic compatibility concepts for homeowners](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/smart-home-terms-explained/cover.svg?v=cover-ready)
 
 If you are shopping for smart home devices, the hardest part is often not the device itself. It is the language around it.
 
