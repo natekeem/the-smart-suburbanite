@@ -1,5 +1,5 @@
 ---
-title: Smart Home Terms Explained: Matter, Thread, Zigbee, and Z-Wave
+title: "Smart Home Terms Explained: Matter, Thread, Zigbee, and Z-Wave"
 slug: smart-home-terms-explained
 pubDatetime: 2026-06-30T09:00:00-04:00
 draft: true
