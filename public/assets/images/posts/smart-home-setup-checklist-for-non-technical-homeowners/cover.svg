@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">Smart home setup planning checklist illustration</title>
+  <desc id="desc">A practical smart home setup checklist board for non-technical homeowners with simple planning icons</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6efe6" />
+      <stop offset="1" stop-color="#e1eee8" />
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffaf0" />
+      <stop offset="1" stop-color="#efe2d0" />
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dfece6" />
+      <stop offset="1" stop-color="#f3ddc6" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#50635c" flood-opacity=".18" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="640" fill="url(#bg)" />
+  <ellipse cx="604" cy="552" rx="440" ry="54" fill="#cddfd5" opacity=".66" />
+
+  <g fill="none" stroke="#5c6f68" stroke-linecap="round" stroke-linejoin="round" opacity=".92">
+    <path d="M166 302 316 192l150 110" stroke-width="12" />
+    <path d="M205 298v158h222V298" stroke-width="12" />
+    <path d="M287 456v-92h58v92" stroke-width="9" />
+    <path d="M239 328h58M349 328h45" stroke-width="8" opacity=".42" />
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="456" y="86" width="360" height="452" rx="34" fill="url(#paper)" stroke="#5c6f68" stroke-width="8" />
+    <rect x="580" y="62" width="112" height="54" rx="20" fill="#7e9b90" stroke="#5c6f68" stroke-width="8" />
+    <rect x="609" y="44" width="54" height="31" rx="15.5" fill="#f6efe6" stroke="#5c6f68" stroke-width="7" />
+  </g>
+
+  <g fill="none" stroke="#5c6f68" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M525 177l17 17 36-42" stroke-width="10" />
+    <path d="M525 276l17 17 36-42" stroke-width="10" />
+    <path d="M525 375l17 17 36-42" stroke-width="10" />
+    <path d="M608 172h142" stroke-width="11" opacity=".74" />
+    <path d="M608 200h104" stroke-width="9" opacity=".38" />
+    <path d="M608 271h142" stroke-width="11" opacity=".74" />
+    <path d="M608 299h88" stroke-width="9" opacity=".38" />
+    <path d="M608 370h142" stroke-width="11" opacity=".74" />
+    <path d="M608 398h116" stroke-width="9" opacity=".38" />
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="28" fill="#5c6f68">
+    <text x="606" y="162">Plan</text>
+    <text x="606" y="261">Check</text>
+    <text x="606" y="360">Start Small</text>
+  </g>
+
+  <g transform="translate(855 120)" fill="url(#panel)" stroke="#5c6f68" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="0" y="0" width="168" height="132" rx="28" stroke-width="8" />
+    <path d="M54 72c31-27 60-27 91 0" fill="none" stroke="#7d9f94" stroke-width="8" />
+    <path d="M72 92c19-15 36-15 53 0" fill="none" stroke="#7d9f94" stroke-width="8" />
+    <circle cx="98" cy="109" r="8" fill="#7d9f94" stroke="none" />
+  </g>
+
+  <g transform="translate(875 305)" fill="none" stroke="#5c6f68" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="0" y="82" width="78" height="104" rx="23" fill="#fffaf0" stroke-width="8" />
+    <path d="M27 82V38M51 82V38" stroke-width="9" />
+    <path d="M15 38h48" stroke-width="9" />
+    <path d="M78 139c46 0 53-58 102-58" stroke-width="8" opacity=".5" />
+    <circle cx="198" cy="81" r="12" fill="#d59668" stroke="none" />
+  </g>
+
+  <g transform="translate(938 276)" fill="none" stroke="#5c6f68" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M70 0c39 20 64 52 64 98 0 52-34 86-64 99C40 184 6 150 6 98 6 52 31 20 70 0z" fill="#e0ece6" stroke-width="8" />
+    <path d="M47 99h45" stroke-width="8" />
+    <path d="M55 99V78c0-16 10-27 25-27s25 11 25 27v21" stroke-width="8" />
+  </g>
+
+  <g transform="translate(201 430)" fill="none" stroke="#5c6f68" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="58" cy="58" r="48" fill="#fffaf0" stroke-width="8" />
+    <circle cx="58" cy="58" r="22" stroke="#7d9f94" stroke-width="8" />
+    <path d="M58 38v21l16 12" stroke-width="7" />
+    <path d="M28 14a68 68 0 0 1 60 0" stroke="#d59668" stroke-width="7" opacity=".72" />
+  </g>
+
+  <g fill="none" stroke="#7d9f94" stroke-linecap="round" opacity=".62">
+    <path d="M1018 188c34 16 53 45 53 80" stroke-width="7" />
+    <path d="M1018 222c18 10 28 27 28 47" stroke-width="7" />
+    <path d="M370 222c-24-15-50-15-74 0" stroke-width="7" />
+    <path d="M355 250c-13-8-27-8-40 0" stroke-width="7" />
+  </g>
+
+  <g opacity=".48">
+    <circle cx="118" cy="154" r="7" fill="#d59668" />
+    <circle cx="1110" cy="432" r="8" fill="#7d9f94" />
+    <circle cx="100" cy="500" r="6" fill="#7d9f94" />
+    <circle cx="1064" cy="112" r="5" fill="#d59668" />
+  </g>
+</svg>

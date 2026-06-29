@@ -7,8 +7,11 @@ tags:
   - smart home
   - beginner guide
   - homeowner guide
+ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/smart-home-setup-checklist-for-non-technical-homeowners/cover.svg?v=cover-ready
 description: A practical smart home setup checklist for non-technical homeowners who want to plan their first devices safely and avoid common setup mistakes.
 ---
+
+![A practical smart home setup checklist board for non-technical homeowners with simple planning icons](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/smart-home-setup-checklist-for-non-technical-homeowners/cover.svg?v=cover-ready)
 
 Smart home setup can sound simple until you start looking at real products.
 
