@@ -1,8 +1,9 @@
 ---
 title: Smart Home Setup Checklist for Non-Technical Homeowners
 slug: smart-home-setup-checklist-for-non-technical-homeowners
-pubDatetime: 2026-06-30T09:00:00-04:00
-draft: true
+pubDatetime: 2026-06-30T07:04:36+09:00
+modDatetime: 2026-06-30T07:04:36+09:00
+draft: false
 tags:
   - smart home
   - beginner guide
