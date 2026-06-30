@@ -1,8 +1,9 @@
 ---
 title: "Do You Really Need a Smart Thermostat?"
 slug: do-you-really-need-a-smart-thermostat
-pubDatetime: 2026-07-01T09:00:00-04:00
-draft: true
+pubDatetime: 2026-07-01T02:28:33+09:00
+modDatetime: 2026-07-01T02:28:33+09:00
+draft: false
 tags:
   - smart home
   - smart thermostat
