@@ -1,8 +1,9 @@
 ---
 title: "Smart Thermostat Compatibility: What to Check Before You Buy"
 slug: smart-thermostat-compatibility-what-to-check-before-you-buy
-pubDatetime: 2026-07-01T09:00:00-04:00
-draft: true
+pubDatetime: 2026-07-01T07:50:40+09:00
+modDatetime: 2026-07-01T07:50:40+09:00
+draft: false
 tags:
   - smart home
   - smart thermostat
