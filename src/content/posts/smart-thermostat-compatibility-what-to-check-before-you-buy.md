@@ -7,8 +7,11 @@ tags:
   - smart home
   - smart thermostat
   - homeowner guide
+ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/cover.svg?v=cover-ready
 description: A plain-English smart thermostat compatibility checklist for homeowners who want to know what to check before buying, without guessing about wiring or HVAC systems.
 ---
+
+![A smart thermostat compatibility pre-check board for homeowners with HVAC, power, app, and ask-a-pro checklist items](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/cover.svg?v=cover-ready)
 
 A smart thermostat can be a useful upgrade, but it is not a universal fit for every home.
 
@@ -71,7 +74,7 @@ Do not open equipment panels or handle wiring just to answer this article's work
 
 ## C-wire and Power: Pause Before You Guess
 
-Many smart thermostats need a steady power source. ENERGY STAR notes that many smart thermostats receive power through a C-wire, also called a common wire, though not having one does not automatically mean a smart thermostat is impossible.
+Many smart thermostats have specific power requirements. ENERGY STAR notes that many smart thermostats receive power through a C-wire, also called a common wire, though not having one does not automatically mean a smart thermostat is impossible.
 
 That nuance matters. A missing or uncertain C-wire may affect which models are candidates, whether an adapter or other approved accessory is involved, or whether professional help is the better path.
 
@@ -128,7 +131,7 @@ Examples include:
 - ecobee thermostat compatibility checker
 - compatibility tools from the specific thermostat manufacturer you are considering
 
-Use these as checking tools, not product endorsements. A compatibility checker can help you ask better questions, but it does not turn every home into a simple installation.
+Use these as checking tools, not product endorsements. A compatibility checker can help you ask better questions, but it does not replace professional advice when wiring or system type is unclear.
 
 When using a checker, pay attention to cautious language such as:
 
