@@ -139,3 +139,13 @@ Smart home shopping gets easier when you stop asking, "What is the best device?"
 Your first smart home purchase does not need to be impressive. It should be understandable, compatible, useful, and comfortable for your household. A simple device that solves one real problem is usually a better beginning than an advanced setup that creates confusion.
 
 Start small. Learn what your home actually needs. Then decide whether the next smart home upgrade is worth it.
+
+## What to Read Next
+
+If you are ready to plan the setup itself, read:
+
+- [Smart Home Setup Checklist for Non-Technical Homeowners](/the-smart-suburbanite/posts/smart-home-setup-checklist-for-non-technical-homeowners/)
+
+If compatibility terms are slowing you down, read:
+
+- [Smart Home Terms Explained: Matter, Thread, Zigbee, and Z-Wave](/the-smart-suburbanite/posts/smart-home-terms-explained/)

@@ -298,8 +298,13 @@ That sentence is your filter. If a device does not clearly help with that senten
 
 If you are still early in the process, read:
 
-- What Is a Smart Home? A Plain-English Guide for Homeowners
-- Questions to Ask Before Buying Your First Smart Home Device
-- Smart Home Terms Explained: Matter, Thread, Zigbee, and Z-Wave
+- [What Is a Smart Home? A Plain-English Guide for Homeowners](/the-smart-suburbanite/posts/what-is-a-smart-home/)
+- [Questions to Ask Before Buying Your First Smart Home Device](/the-smart-suburbanite/posts/questions-before-buying-first-smart-home-device/)
+- [Smart Home Terms Explained: Matter, Thread, Zigbee, and Z-Wave](/the-smart-suburbanite/posts/smart-home-terms-explained/)
 
 Those three guides can help you understand the basic idea, ask better buying questions, and avoid compatibility confusion before you build out a bigger setup.
+
+If your next planned device is a thermostat, read:
+
+- [Do You Really Need a Smart Thermostat?](/the-smart-suburbanite/posts/do-you-really-need-a-smart-thermostat/)
+- [Smart Thermostat Compatibility: What to Check Before You Buy](/the-smart-suburbanite/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/)

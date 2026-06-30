@@ -227,10 +227,12 @@ If the answers are "nothing, it works fine," you may not need one yet.
 
 ## What to Read Next
 
-If you want to keep researching, the next useful articles are:
+If you want to keep researching before buying, read:
 
-- Smart Thermostat Compatibility: What to Check Before You Buy
-- Smart Thermostats and Energy Savings: What to Expect Carefully
-- Beginner's Guide to Home Energy Monitors
+- [Smart Thermostat Compatibility: What to Check Before You Buy](/the-smart-suburbanite/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/)
 
-Those topics can help you separate a useful comfort upgrade from a purchase that only sounds smart.
+If you are still building the broader smart home plan around it, read:
+
+- [Smart Home Setup Checklist for Non-Technical Homeowners](/the-smart-suburbanite/posts/smart-home-setup-checklist-for-non-technical-homeowners/)
+
+Those guides can help you separate a useful comfort upgrade from a purchase that only sounds smart.

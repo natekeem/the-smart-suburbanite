@@ -192,7 +192,9 @@ Once you know that, choose one simple device that clearly supports your preferre
 
 If you are still early in the process, start with:
 
-- What Is a Smart Home? A Plain-English Guide for Homeowners
-- Questions to Ask Before Buying Your First Smart Home Device
+- [What Is a Smart Home? A Plain-English Guide for Homeowners](/the-smart-suburbanite/posts/what-is-a-smart-home/)
+- [Questions to Ask Before Buying Your First Smart Home Device](/the-smart-suburbanite/posts/questions-before-buying-first-smart-home-device/)
 
-The next helpful step after this glossary is a setup checklist for non-technical homeowners, especially if you are trying to decide whether to build around Wi-Fi devices, a hub, or a platform such as Apple Home, Google Home, Amazon Alexa, or SmartThings.
+If you are ready to turn those terms into a simple plan, read:
+
+- [Smart Home Setup Checklist for Non-Technical Homeowners](/the-smart-suburbanite/posts/smart-home-setup-checklist-for-non-technical-homeowners/)
