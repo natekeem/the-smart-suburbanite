@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Smart thermostat decision board for homeowners</title>
+  <desc id="desc">A practical smart thermostat decision board for homeowners with buy, wait, and skip options.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f2ea" />
+      <stop offset="1" stop-color="#e4eef0" />
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdf6" />
+      <stop offset="1" stop-color="#f0eadf" />
+    </linearGradient>
+    <filter id="softShadow" x="-120" y="-120" width="1840" height="1140" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#2f403b" flood-opacity=".18" />
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)" />
+  <rect x="96" y="96" width="1408" height="708" rx="34" fill="#ffffff" opacity=".72" />
+
+  <g opacity=".34">
+    <circle cx="226" cy="190" r="72" fill="#cfe0d7" />
+    <circle cx="1378" cy="704" r="98" fill="#eadfcb" />
+    <circle cx="1248" cy="190" r="54" fill="#d7e1ea" />
+  </g>
+
+  <g transform="translate(150 262)" fill="none" stroke="#28443b" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M96 176 260 52l164 124" stroke-width="12" />
+    <path d="M142 174v210h236V174" stroke-width="12" />
+    <path d="M235 384V270h58v114" stroke-width="9" />
+    <path d="M180 214h58M312 214h36" stroke-width="8" opacity=".36" />
+    <path d="M172 432h220" stroke-width="11" />
+  </g>
+
+  <g transform="translate(462 134)" filter="url(#softShadow)">
+    <rect width="676" height="632" rx="34" fill="url(#paper)" stroke="#28443b" stroke-width="8" />
+    <rect x="228" y="-24" width="220" height="62" rx="20" fill="#6f9185" stroke="#28443b" stroke-width="8" />
+    <rect x="282" y="-48" width="112" height="42" rx="20" fill="#f5f2ea" stroke="#28443b" stroke-width="7" />
+  </g>
+
+  <g transform="translate(530 216)" font-family="Inter, Arial, sans-serif">
+    <text x="270" y="0" text-anchor="middle" font-size="52" font-weight="800" fill="#28443b">Check First</text>
+    <text x="270" y="48" text-anchor="middle" font-size="25" fill="#5a6d65">comfort, compatibility, and daily use</text>
+
+    <g transform="translate(0 100)">
+      <rect width="162" height="256" rx="26" fill="#e4f0e9" stroke="#42695d" stroke-width="7" />
+      <text x="81" y="58" text-anchor="middle" font-size="34" font-weight="800" fill="#28443b">Buy</text>
+      <path d="M48 112l24 24 48-58" fill="none" stroke="#42695d" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M44 176h74M44 210h52" stroke="#7c978e" stroke-width="8" stroke-linecap="round" />
+    </g>
+
+    <g transform="translate(190 100)">
+      <rect width="162" height="256" rx="26" fill="#f5efd9" stroke="#856f3a" stroke-width="7" />
+      <text x="81" y="58" text-anchor="middle" font-size="34" font-weight="800" fill="#28443b">Wait</text>
+      <circle cx="81" cy="110" r="43" fill="none" stroke="#856f3a" stroke-width="10" />
+      <path d="M81 82v31l24 18" fill="none" stroke="#856f3a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M44 176h74M44 210h52" stroke="#a59055" stroke-width="8" stroke-linecap="round" />
+    </g>
+
+    <g transform="translate(380 100)">
+      <rect width="162" height="256" rx="26" fill="#efe8e4" stroke="#8a5f4f" stroke-width="7" />
+      <text x="81" y="58" text-anchor="middle" font-size="34" font-weight="800" fill="#28443b">Skip</text>
+      <path d="M52 82l58 58M110 82l-58 58" stroke="#8a5f4f" stroke-width="11" stroke-linecap="round" />
+      <path d="M44 176h74M44 210h52" stroke="#a47d70" stroke-width="8" stroke-linecap="round" />
+    </g>
+
+    <g transform="translate(52 426)" fill="none" stroke="#28443b" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 0h436" stroke-width="9" opacity=".18" />
+      <path d="M16 66h96M156 66h96M296 66h96" stroke-width="10" opacity=".38" />
+      <path d="M20 104l13 13 24-29M160 104l13 13 24-29M300 104l13 13 24-29" stroke="#6f9185" stroke-width="8" />
+    </g>
+  </g>
+
+  <g transform="translate(1210 304)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="224" height="298" rx="42" fill="#f9fbf9" stroke="#28443b" stroke-width="9" />
+    <circle cx="112" cy="126" r="72" fill="#e7f0ec" stroke="#42695d" stroke-width="10" />
+    <circle cx="112" cy="126" r="34" fill="#fffdf6" stroke="#42695d" stroke-width="8" />
+    <path d="M74 226h76M88 256h48" stroke="#879d95" stroke-width="10" stroke-linecap="round" />
+  </g>
+
+  <g fill="none" stroke="#89a098" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 18" opacity=".58">
+    <path d="M414 438 C468 412 492 404 532 408" />
+    <path d="M1138 438 C1188 412 1210 404 1242 410" />
+  </g>
+</svg>

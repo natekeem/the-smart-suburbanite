@@ -7,8 +7,11 @@ tags:
   - smart home
   - smart thermostat
   - homeowner guide
+ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/do-you-really-need-a-smart-thermostat/cover.svg?v=cover-ready
 description: A practical decision guide for homeowners deciding whether a smart thermostat is worth considering, when to wait, and what to check before buying.
 ---
+
+![A practical smart thermostat decision board for homeowners with buy, wait, and skip options](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/do-you-really-need-a-smart-thermostat/cover.svg?v=cover-ready)
 
 A smart thermostat sounds like one of the easiest smart home upgrades: replace the old thermostat, connect an app, and let the house manage temperature more intelligently.
 
