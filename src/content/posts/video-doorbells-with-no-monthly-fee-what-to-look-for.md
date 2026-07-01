@@ -2,7 +2,8 @@
 title: "Video Doorbells With No Monthly Fee: What to Look For"
 slug: video-doorbells-with-no-monthly-fee-what-to-look-for
 pubDatetime: 2026-07-01T09:00:00-04:00
-draft: true
+modDatetime: 2026-07-01T09:00:00-04:00
+draft: false
 tags:
   - smart home
   - video doorbells
