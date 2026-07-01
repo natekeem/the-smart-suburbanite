@@ -7,8 +7,11 @@ tags:
   - smart home
   - video doorbells
   - homeowner guide
+ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/cover.svg?v=cover-ready
 description: A plain-English buyer checklist for homeowners comparing video doorbells with no monthly fee, including storage, app, privacy, and feature trade-offs.
 ---
+
+![A video doorbell buyer checklist for homeowners showing fees, storage, Wi-Fi, privacy, and app feature checks](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/cover.svg?v=cover-ready)
 
 ## Quick Answer
 
