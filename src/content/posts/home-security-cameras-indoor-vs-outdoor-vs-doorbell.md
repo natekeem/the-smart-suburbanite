@@ -7,8 +7,11 @@ tags:
   - smart home
   - home security cameras
   - homeowner guide
+ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/home-security-cameras-indoor-vs-outdoor-vs-doorbell/cover.svg?v=cover-ready
 description: A plain-English homeowner guide comparing indoor cameras, outdoor cameras, and video doorbells, including privacy, storage, Wi-Fi, power, and app trade-offs.
 ---
+
+![A homeowner comparison board showing indoor, outdoor, and doorbell camera options with privacy, Wi-Fi, storage, power, and app checklist cards](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/home-security-cameras-indoor-vs-outdoor-vs-doorbell/cover.svg?v=cover-ready)
 
 Buying a home security camera sounds simple until you start comparing the options.
 
