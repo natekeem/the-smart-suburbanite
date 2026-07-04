@@ -2,7 +2,8 @@
 title: "Smart Plugs vs Smart Power Strips: What Homeowners Should Know"
 slug: smart-plugs-vs-smart-power-strips-what-homeowners-should-know
 pubDatetime: 2026-07-04T17:32:45+09:00
-draft: true
+modDatetime: 2026-07-04T22:05:55+09:00
+draft: false
 tags:
   - smart home
   - smart plugs
