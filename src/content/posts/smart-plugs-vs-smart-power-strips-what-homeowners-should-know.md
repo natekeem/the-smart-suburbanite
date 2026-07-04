@@ -7,8 +7,11 @@ tags:
   - smart home
   - smart plugs
   - homeowner guide
+ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/cover.svg?v=cover-ready
 description: A plain-English homeowner guide comparing smart plugs and smart power strips, including app, Wi-Fi, scheduling, energy monitoring, load rating, and safety-documentation questions.
 ---
+
+![A homeowner comparison board showing a smart plug and a smart power strip with load rating, app, Wi-Fi, schedule, energy, and safety checklist cards](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/cover.svg?v=cover-ready)
 
 Smart plugs and smart power strips sound like small upgrades.
 
