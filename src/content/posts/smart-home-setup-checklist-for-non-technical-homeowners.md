@@ -2,7 +2,7 @@
 title: Smart Home Setup Checklist for Non-Technical Homeowners
 slug: smart-home-setup-checklist-for-non-technical-homeowners
 pubDatetime: 2026-06-30T07:04:36+09:00
-modDatetime: 2026-07-04T16:51:10+09:00
+modDatetime: 2026-07-04T22:22:57+09:00
 draft: false
 tags:
   - smart home
@@ -142,6 +142,8 @@ Ask:
 This is especially important for garages, basements, porches, detached buildings, and corners of the house where Wi-Fi may be weaker.
 
 If a device requires wiring, outdoor mounting, HVAC control, or changes to existing electrical equipment, pause before treating it as a casual weekend setup. The right next step may be reading the manual carefully, checking compatibility, or using a qualified professional.
+
+For plug-in devices, think about app setup, Wi-Fi reliability, scheduling, energy monitoring, and product documentation before buying. This [smart plug and smart power strip buyer checklist](/the-smart-suburbanite/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/) covers those questions in more detail.
 
 ## Step 4: Use a Room-by-Room Checklist
 

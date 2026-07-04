@@ -2,7 +2,7 @@
 title: Questions to Ask Before Buying Your First Smart Home Device
 slug: questions-before-buying-first-smart-home-device
 pubDatetime: 2026-06-29T01:36:40+09:00
-modDatetime: 2026-07-04T16:51:10+09:00
+modDatetime: 2026-07-04T22:22:57+09:00
 draft: false
 tags:
   - smart home
@@ -41,6 +41,8 @@ Before buying, check whether the device works with your phone and operating syst
 Next, check the Wi-Fi requirements. Many smart home devices connect to 2.4 GHz Wi-Fi, while some routers emphasize 5 GHz or combine both bands under one network name. That does not mean the device will fail, but it does mean you should read the setup requirements before purchase.
 
 If you already own smart speakers, smart plugs, cameras, thermostats, or doorbells, check whether the new device can work with them. Smart home products do not all communicate in the same way. Some may need a hub, platform, or specific app.
+
+If your first device might be a plug-in control, compare the tradeoffs before buying. This [smart plug vs smart power strip comparison](/the-smart-suburbanite/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/) explains the difference without ranking products.
 
 The practical question is simple: will this device fit the home you already have?
 
