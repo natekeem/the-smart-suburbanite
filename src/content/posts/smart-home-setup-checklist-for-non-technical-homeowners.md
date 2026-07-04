@@ -2,7 +2,7 @@
 title: Smart Home Setup Checklist for Non-Technical Homeowners
 slug: smart-home-setup-checklist-for-non-technical-homeowners
 pubDatetime: 2026-06-30T07:04:36+09:00
-modDatetime: 2026-07-02T02:54:35+09:00
+modDatetime: 2026-07-04T16:51:10+09:00
 draft: false
 tags:
   - smart home
@@ -198,6 +198,8 @@ Subscription questions:
 The point is not that subscriptions are always bad. Sometimes they pay for features a homeowner values. The point is to know the tradeoff before you build your setup around a feature that may not be included forever.
 
 For doorbell cameras specifically, do not stop at the phrase "no monthly fee." Check storage, app, Wi-Fi, and privacy trade-offs before buying. This [video doorbell buyer checklist](/the-smart-suburbanite/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/) covers those questions in more detail.
+
+For camera-related upgrades more broadly, think about placement, Wi-Fi, storage, privacy, and app settings before buying. This [camera category comparison](/the-smart-suburbanite/posts/home-security-cameras-indoor-vs-outdoor-vs-doorbell/) can help you decide whether indoor, outdoor, or doorbell makes sense.
 
 ## Common Mistake
 

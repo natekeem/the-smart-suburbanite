@@ -2,7 +2,7 @@
 title: "Video Doorbells With No Monthly Fee: What to Look For"
 slug: video-doorbells-with-no-monthly-fee-what-to-look-for
 pubDatetime: 2026-07-02T02:01:32+09:00
-modDatetime: 2026-07-02T02:01:32+09:00
+modDatetime: 2026-07-04T16:51:10+09:00
 draft: false
 tags:
   - smart home
@@ -238,6 +238,8 @@ Skip if the useful features require a subscription you do not want.
 Also skip if the product's promise depends on fear-based security language, unclear storage terms, or claims that sound too broad. You do not need a doorbell that creates more uncertainty than it solves.
 
 ## What to Read Next
+
+If you are still deciding whether a doorbell camera is the right category at all, start with this broader [indoor, outdoor, and doorbell camera comparison](/the-smart-suburbanite/posts/home-security-cameras-indoor-vs-outdoor-vs-doorbell/).
 
 If you are still early in your smart home planning, start with:
 

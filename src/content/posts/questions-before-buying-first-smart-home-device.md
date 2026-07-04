@@ -2,7 +2,7 @@
 title: Questions to Ask Before Buying Your First Smart Home Device
 slug: questions-before-buying-first-smart-home-device
 pubDatetime: 2026-06-29T01:36:40+09:00
-modDatetime: 2026-07-02T02:54:35+09:00
+modDatetime: 2026-07-04T16:51:10+09:00
 draft: false
 tags:
   - smart home
@@ -55,6 +55,8 @@ Ask which features work without a subscription, which features require a monthly
 This matters especially for cameras, doorbells, security-related devices, and devices that store video or activity history in the cloud.
 
 If a video doorbell is on your shortlist, it is also worth checking what works without a paid plan. I keep a separate checklist for [what to look for in a video doorbell with no monthly fee](/the-smart-suburbanite/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/).
+
+If a camera is on your shortlist but you are not sure which type fits, compare how indoor cameras, outdoor cameras, and video doorbells differ before choosing. This [home security camera comparison guide](/the-smart-suburbanite/posts/home-security-cameras-indoor-vs-outdoor-vs-doorbell/) explains the category differences without ranking products.
 
 You do not need exact math to make a better choice. Just avoid treating the shelf price as the whole story.
 
