@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">First smart device decision board cover</title>
+  <desc id="desc">A calm homeowner first smart device decision board with abstract category cards for camera, thermostat, lock, bulb, plug, and hub plus checklist notes for fit, setup, privacy, app, cost, and maintenance.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8faf7"/>
+      <stop offset="0.5" stop-color="#eef5f1"/>
+      <stop offset="1" stop-color="#dfeaec"/>
+    </linearGradient>
+    <linearGradient id="board" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f1f6f3"/>
+    </linearGradient>
+    <linearGradient id="cardWarm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffdf7"/>
+      <stop offset="1" stop-color="#f2ead7"/>
+    </linearGradient>
+    <linearGradient id="cardCool" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f9fcff"/>
+      <stop offset="1" stop-color="#e6eef6"/>
+    </linearGradient>
+    <linearGradient id="cardGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbfffc"/>
+      <stop offset="1" stop-color="#e5f2ec"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#183c3e" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M0 500 C148 458 292 466 446 502 C612 541 765 528 932 492 C1048 467 1138 468 1200 481 L1200 630 L0 630 Z" fill="#c7dcd7" opacity="0.68"/>
+  <path d="M0 542 C188 508 350 520 520 546 C700 572 850 546 1025 517 C1085 507 1144 508 1200 520 L1200 630 L0 630 Z" fill="#b9d0ce" opacity="0.52"/>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="82" y="88" fill="#284846" font-size="42" font-weight="700">First Smart Device Decision Board</text>
+    <text x="84" y="128" fill="#5d7472" font-size="22">Compare fit, setup, privacy, app, cost, and maintenance before buying.</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="166" width="1060" height="364" rx="28" fill="url(#board)" stroke="#a9beb9" stroke-width="3"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <text x="108" y="218" fill="#2d514c" font-size="28">Device categories to plan first</text>
+    <text x="762" y="218" fill="#4a585f" font-size="28">Before-you-buy checks</text>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">
+    <g transform="translate(112 250)">
+      <rect width="176" height="96" rx="20" fill="url(#cardCool)" stroke="#a9bccb" stroke-width="3"/>
+      <circle cx="88" cy="38" r="22" fill="#ffffff" stroke="#38556d" stroke-width="6"/>
+      <circle cx="88" cy="38" r="7" fill="#38556d"/>
+      <path d="M61 70 H115" stroke="#38556d" stroke-width="6" stroke-linecap="round"/>
+      <text x="88" y="121" fill="#38556d" font-size="22">Camera</text>
+    </g>
+    <g transform="translate(326 250)">
+      <rect width="176" height="96" rx="20" fill="url(#cardGreen)" stroke="#adc4bc" stroke-width="3"/>
+      <circle cx="88" cy="48" r="30" fill="#ffffff" stroke="#2f6a56" stroke-width="6"/>
+      <path d="M88 31 V48 L104 58" fill="none" stroke="#2f6a56" stroke-width="6" stroke-linecap="round"/>
+      <text x="88" y="121" fill="#2f6a56" font-size="22">Thermostat</text>
+    </g>
+    <g transform="translate(540 250)">
+      <rect width="176" height="96" rx="20" fill="url(#cardWarm)" stroke="#c5b899" stroke-width="3"/>
+      <rect x="59" y="43" width="58" height="38" rx="9" fill="#ffffff" stroke="#6b5731" stroke-width="6"/>
+      <path d="M70 43 V31 C70 14 106 14 106 31 V43" fill="none" stroke="#6b5731" stroke-width="6"/>
+      <circle cx="88" cy="62" r="5" fill="#6b5731"/>
+      <text x="88" y="121" fill="#6b5731" font-size="22">Lock</text>
+    </g>
+    <g transform="translate(112 394)">
+      <rect width="176" height="96" rx="20" fill="url(#cardWarm)" stroke="#c5b899" stroke-width="3"/>
+      <path d="M70 50 C70 24 106 24 106 50 C106 66 96 70 96 82 H80 C80 70 70 66 70 50 Z" fill="#ffffff" stroke="#6b5731" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M78 88 H98" stroke="#6b5731" stroke-width="6" stroke-linecap="round"/>
+      <text x="88" y="121" fill="#6b5731" font-size="22">Bulb</text>
+    </g>
+    <g transform="translate(326 394)">
+      <rect width="176" height="96" rx="20" fill="url(#cardGreen)" stroke="#adc4bc" stroke-width="3"/>
+      <rect x="58" y="25" width="72" height="56" rx="14" fill="#ffffff" stroke="#2f6a56" stroke-width="6"/>
+      <path d="M81 42 V63 M106 42 V63" stroke="#2f6a56" stroke-width="6" stroke-linecap="round"/>
+      <path d="M72 81 V95 M116 81 V95" stroke="#2f6a56" stroke-width="6" stroke-linecap="round"/>
+      <text x="88" y="121" fill="#2f6a56" font-size="22">Plug</text>
+    </g>
+    <g transform="translate(540 394)">
+      <rect width="176" height="96" rx="20" fill="url(#cardCool)" stroke="#a9bccb" stroke-width="3"/>
+      <rect x="58" y="28" width="72" height="50" rx="16" fill="#ffffff" stroke="#38556d" stroke-width="6"/>
+      <path d="M73 52 H115" stroke="#38556d" stroke-width="6" stroke-linecap="round"/>
+      <path d="M68 92 C82 82 106 82 120 92" fill="none" stroke="#38556d" stroke-width="6" stroke-linecap="round"/>
+      <text x="88" y="121" fill="#38556d" font-size="22">Hub</text>
+    </g>
+  </g>
+
+  <g transform="translate(766 250)" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <g>
+      <rect x="0" y="0" width="154" height="56" rx="17" fill="#ffffff" stroke="#abc1bc" stroke-width="3"/>
+      <circle cx="28" cy="28" r="14" fill="#e5f2ec" stroke="#2f6a56" stroke-width="4"/>
+      <path d="M20 28 L27 35 L39 21" fill="none" stroke="#2f6a56" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="55" y="37" fill="#2f514b" font-size="23">Fit</text>
+    </g>
+    <g transform="translate(182 0)">
+      <rect x="0" y="0" width="180" height="56" rx="17" fill="#ffffff" stroke="#abc1bc" stroke-width="3"/>
+      <circle cx="28" cy="28" r="14" fill="#eef2fb" stroke="#4f5f98" stroke-width="4"/>
+      <path d="M20 28 L27 35 L39 21" fill="none" stroke="#4f5f98" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="55" y="37" fill="#34416d" font-size="23">Setup</text>
+    </g>
+    <g transform="translate(0 82)">
+      <rect x="0" y="0" width="190" height="56" rx="17" fill="#ffffff" stroke="#abc1bc" stroke-width="3"/>
+      <circle cx="28" cy="28" r="14" fill="#fff3dc" stroke="#8b6b2e" stroke-width="4"/>
+      <path d="M20 28 L27 35 L39 21" fill="none" stroke="#8b6b2e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="55" y="37" fill="#66512f" font-size="23">Privacy</text>
+    </g>
+    <g transform="translate(218 82)">
+      <rect x="0" y="0" width="144" height="56" rx="17" fill="#ffffff" stroke="#abc1bc" stroke-width="3"/>
+      <circle cx="28" cy="28" r="14" fill="#e5f2ec" stroke="#2f6a56" stroke-width="4"/>
+      <path d="M20 28 L27 35 L39 21" fill="none" stroke="#2f6a56" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="55" y="37" fill="#2f514b" font-size="23">App</text>
+    </g>
+    <g transform="translate(0 164)">
+      <rect x="0" y="0" width="156" height="56" rx="17" fill="#ffffff" stroke="#abc1bc" stroke-width="3"/>
+      <circle cx="28" cy="28" r="14" fill="#eef2fb" stroke="#4f5f98" stroke-width="4"/>
+      <path d="M20 28 L27 35 L39 21" fill="none" stroke="#4f5f98" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="55" y="37" fill="#34416d" font-size="23">Cost</text>
+    </g>
+    <g transform="translate(184 164)">
+      <rect x="0" y="0" width="232" height="56" rx="17" fill="#ffffff" stroke="#abc1bc" stroke-width="3"/>
+      <circle cx="28" cy="28" r="14" fill="#fff3dc" stroke="#8b6b2e" stroke-width="4"/>
+      <path d="M20 28 L27 35 L39 21" fill="none" stroke="#8b6b2e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="55" y="37" fill="#66512f" font-size="23">Maintenance</text>
+    </g>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="760" y="474" width="320" height="34" rx="17" fill="#eaf3ef" stroke="#afc5bd" stroke-width="2"/>
+    <text x="920" y="497" text-anchor="middle" fill="#3f615c" font-size="19" font-weight="700">Start with the clearest household problem</text>
+  </g>
+</svg>
