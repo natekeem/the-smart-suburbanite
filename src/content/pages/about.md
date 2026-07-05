@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "About The Smart Suburbanite."
+description: "About The Smart Suburbanite, a practical smart home guide site for everyday homeowners."
 ---
 
 The Smart Suburbanite helps everyday homeowners make practical decisions about smart home, energy-saving, security, and comfort upgrades without needing to become tech experts.
@@ -11,11 +11,10 @@ The goal is to publish plain-English guides, checklists, comparison frameworks, 
 
 Current status:
 
-- Scaffold only
-- No English posts published yet
+- 10 public English articles
 - No ads
 - No affiliate links
 - No analytics
 - No comments
 
-Every future article should go through human review before publication.
+Every article should go through human review before publication.
