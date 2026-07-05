@@ -1,8 +1,8 @@
 ---
 title: "Smart Home Devices Homeowners Often Regret Buying First"
 slug: smart-home-devices-homeowners-often-regret-buying-first
-pubDatetime: 2026-07-05T12:16:48+09:00
-draft: true
+pubDatetime: 2026-07-05T13:51:00+09:00
+draft: false
 tags:
   - smart home
   - homeowner guide
