@@ -2,7 +2,7 @@ import { defineAstroPaperConfig } from "./src/types/config";
 
 export default defineAstroPaperConfig({
   site: {
-    url: "https://natekeem.github.io",
+    url: "https://smartsuburbanite.com",
     title: "The Smart Suburbanite",
     description:
       "Plain-English smart home, energy-saving, security, and comfort upgrade guides for 40+ suburban homeowners.",

@@ -8,11 +8,11 @@ tags:
   - smart home
   - beginner guide
   - homeowner guide
-ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/questions-before-buying-first-smart-home-device/cover.svg?v=cover-ready
+ogImage: https://smartsuburbanite.com/assets/images/posts/questions-before-buying-first-smart-home-device/cover.svg?v=cover-ready
 description: A practical checklist of questions to ask before buying your first smart home device, including compatibility, subscriptions, privacy, Wi-Fi, installation, and household usability.
 ---
 
-![A homeowner-friendly checklist scene with simple smart home icons for compatibility, subscription, privacy, Wi-Fi, and installation questions](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/questions-before-buying-first-smart-home-device/cover.svg?v=cover-ready)
+![A homeowner-friendly checklist scene with simple smart home icons for compatibility, subscription, privacy, Wi-Fi, and installation questions](https://smartsuburbanite.com/assets/images/posts/questions-before-buying-first-smart-home-device/cover.svg?v=cover-ready)
 
 Buying your first smart home device can feel surprisingly complicated. A light bulb is no longer just a light bulb. A doorbell may come with an app, a subscription, motion alerts, video storage, Wi-Fi requirements, privacy settings, and installation questions.
 
@@ -20,7 +20,7 @@ You do not need to become a smart home expert before making a first purchase. Yo
 
 Before buying a device, ask a few practical questions. The goal is not to find the most advanced product. For many homeowners, the best first smart home device is simple, useful, and easy to live with.
 
-If you are still getting oriented, the earlier article [What Is a Smart Home? A Plain-English Guide for Homeowners](/the-smart-suburbanite/posts/what-is-a-smart-home/) is a useful starting point. This article goes one step further.
+If you are still getting oriented, the earlier article [What Is a Smart Home? A Plain-English Guide for Homeowners](/posts/what-is-a-smart-home/) is a useful starting point. This article goes one step further.
 
 ## 1. What problem am I trying to solve?
 
@@ -42,7 +42,7 @@ Next, check the Wi-Fi requirements. Many smart home devices connect to 2.4 GHz W
 
 If you already own smart speakers, smart plugs, cameras, thermostats, or doorbells, check whether the new device can work with them. Smart home products do not all communicate in the same way. Some may need a hub, platform, or specific app.
 
-If your first device might be a plug-in control, compare the tradeoffs before buying. This [smart plug vs smart power strip comparison](/the-smart-suburbanite/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/) explains the difference without ranking products.
+If your first device might be a plug-in control, compare the tradeoffs before buying. This [smart plug vs smart power strip comparison](/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/) explains the difference without ranking products.
 
 The practical question is simple: will this device fit the home you already have?
 
@@ -56,9 +56,9 @@ Ask which features work without a subscription, which features require a monthly
 
 This matters especially for cameras, doorbells, security-related devices, and devices that store video or activity history in the cloud.
 
-If a video doorbell is on your shortlist, it is also worth checking what works without a paid plan. I keep a separate checklist for [what to look for in a video doorbell with no monthly fee](/the-smart-suburbanite/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/).
+If a video doorbell is on your shortlist, it is also worth checking what works without a paid plan. I keep a separate checklist for [what to look for in a video doorbell with no monthly fee](/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/).
 
-If a camera is on your shortlist but you are not sure which type fits, compare how indoor cameras, outdoor cameras, and video doorbells differ before choosing. This [home security camera comparison guide](/the-smart-suburbanite/posts/home-security-cameras-indoor-vs-outdoor-vs-doorbell/) explains the category differences without ranking products.
+If a camera is on your shortlist but you are not sure which type fits, compare how indoor cameras, outdoor cameras, and video doorbells differ before choosing. This [home security camera comparison guide](/posts/home-security-cameras-indoor-vs-outdoor-vs-doorbell/) explains the category differences without ranking products.
 
 You do not need exact math to make a better choice. Just avoid treating the shelf price as the whole story.
 
@@ -150,8 +150,8 @@ Start small. Learn what your home actually needs. Then decide whether the next s
 
 If you are ready to plan the setup itself, read:
 
-- [Smart Home Setup Checklist for Non-Technical Homeowners](/the-smart-suburbanite/posts/smart-home-setup-checklist-for-non-technical-homeowners/)
+- [Smart Home Setup Checklist for Non-Technical Homeowners](/posts/smart-home-setup-checklist-for-non-technical-homeowners/)
 
 If compatibility terms are slowing you down, read:
 
-- [Smart Home Terms Explained: Matter, Thread, Zigbee, and Z-Wave](/the-smart-suburbanite/posts/smart-home-terms-explained/)
+- [Smart Home Terms Explained: Matter, Thread, Zigbee, and Z-Wave](/posts/smart-home-terms-explained/)

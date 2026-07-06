@@ -8,11 +8,11 @@ tags:
   - smart home
   - smart thermostat
   - homeowner guide
-ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/do-you-really-need-a-smart-thermostat/cover.svg?v=cover-ready
+ogImage: https://smartsuburbanite.com/assets/images/posts/do-you-really-need-a-smart-thermostat/cover.svg?v=cover-ready
 description: A practical decision guide for homeowners deciding whether a smart thermostat is worth considering, when to wait, and what to check before buying.
 ---
 
-![A practical smart thermostat decision board for homeowners with buy, wait, and skip options](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/do-you-really-need-a-smart-thermostat/cover.svg?v=cover-ready)
+![A practical smart thermostat decision board for homeowners with buy, wait, and skip options](https://smartsuburbanite.com/assets/images/posts/do-you-really-need-a-smart-thermostat/cover.svg?v=cover-ready)
 
 A smart thermostat sounds like one of the easiest smart home upgrades: replace the old thermostat, connect an app, and let the house manage temperature more intelligently.
 
@@ -229,10 +229,10 @@ If the answers are "nothing, it works fine," you may not need one yet.
 
 If you want to keep researching before buying, read:
 
-- [Smart Thermostat Compatibility: What to Check Before You Buy](/the-smart-suburbanite/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/)
+- [Smart Thermostat Compatibility: What to Check Before You Buy](/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/)
 
 If you are still building the broader smart home plan around it, read:
 
-- [Smart Home Setup Checklist for Non-Technical Homeowners](/the-smart-suburbanite/posts/smart-home-setup-checklist-for-non-technical-homeowners/)
+- [Smart Home Setup Checklist for Non-Technical Homeowners](/posts/smart-home-setup-checklist-for-non-technical-homeowners/)
 
 Those guides can help you separate a useful comfort upgrade from a purchase that only sounds smart.

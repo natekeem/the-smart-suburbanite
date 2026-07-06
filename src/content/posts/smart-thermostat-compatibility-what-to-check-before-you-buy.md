@@ -8,11 +8,11 @@ tags:
   - smart home
   - smart thermostat
   - homeowner guide
-ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/cover.svg?v=cover-ready
+ogImage: https://smartsuburbanite.com/assets/images/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/cover.svg?v=cover-ready
 description: A plain-English smart thermostat compatibility checklist for homeowners who want to know what to check before buying, without guessing about wiring or HVAC systems.
 ---
 
-![A smart thermostat compatibility pre-check board for homeowners with HVAC, power, app, and ask-a-pro checklist items](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/cover.svg?v=cover-ready)
+![A smart thermostat compatibility pre-check board for homeowners with HVAC, power, app, and ask-a-pro checklist items](https://smartsuburbanite.com/assets/images/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/cover.svg?v=cover-ready)
 
 A smart thermostat can be a useful upgrade, but it is not a universal fit for every home.
 
@@ -217,10 +217,10 @@ That one pause can prevent a lot of frustration.
 
 If you are still deciding whether a smart thermostat is worth it at all, read:
 
-- [Do You Really Need a Smart Thermostat?](/the-smart-suburbanite/posts/do-you-really-need-a-smart-thermostat/)
+- [Do You Really Need a Smart Thermostat?](/posts/do-you-really-need-a-smart-thermostat/)
 
 If you are still building your first smart home plan, read:
 
-- [Smart Home Setup Checklist for Non-Technical Homeowners](/the-smart-suburbanite/posts/smart-home-setup-checklist-for-non-technical-homeowners/)
+- [Smart Home Setup Checklist for Non-Technical Homeowners](/posts/smart-home-setup-checklist-for-non-technical-homeowners/)
 
 If your compatibility questions are not clear yet, the smartest next move may be simple: wait, gather your system information, and ask before you buy.

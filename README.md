@@ -34,7 +34,7 @@ Practical smart home, energy-saving, security, and comfort upgrades for 40+ Engl
 
 ## Current public URL target
 
-https://natekeem.github.io/the-smart-suburbanite/
+https://smartsuburbanite.com/
 
 ## Repository
 

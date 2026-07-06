@@ -8,11 +8,11 @@ tags:
   - smart home
   - beginner guide
   - homeowner guide
-ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/smart-home-terms-explained/cover.svg?v=cover-ready
+ogImage: https://smartsuburbanite.com/assets/images/posts/smart-home-terms-explained/cover.svg?v=cover-ready
 description: A plain-English guide to Matter, Thread, Zigbee, and Z-Wave for homeowners who want to understand smart home compatibility before buying devices.
 ---
 
-![A plain-English smart home terms map showing Matter, Thread, Zigbee, and Z-Wave as generic compatibility concepts for homeowners](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/smart-home-terms-explained/cover.svg?v=cover-ready)
+![A plain-English smart home terms map showing Matter, Thread, Zigbee, and Z-Wave as generic compatibility concepts for homeowners](https://smartsuburbanite.com/assets/images/posts/smart-home-terms-explained/cover.svg?v=cover-ready)
 
 If you are shopping for smart home devices, the hardest part is often not the device itself. It is the language around it.
 
@@ -192,9 +192,9 @@ Once you know that, choose one simple device that clearly supports your preferre
 
 If you are still early in the process, start with:
 
-- [What Is a Smart Home? A Plain-English Guide for Homeowners](/the-smart-suburbanite/posts/what-is-a-smart-home/)
-- [Questions to Ask Before Buying Your First Smart Home Device](/the-smart-suburbanite/posts/questions-before-buying-first-smart-home-device/)
+- [What Is a Smart Home? A Plain-English Guide for Homeowners](/posts/what-is-a-smart-home/)
+- [Questions to Ask Before Buying Your First Smart Home Device](/posts/questions-before-buying-first-smart-home-device/)
 
 If you are ready to turn those terms into a simple plan, read:
 
-- [Smart Home Setup Checklist for Non-Technical Homeowners](/the-smart-suburbanite/posts/smart-home-setup-checklist-for-non-technical-homeowners/)
+- [Smart Home Setup Checklist for Non-Technical Homeowners](/posts/smart-home-setup-checklist-for-non-technical-homeowners/)

@@ -8,11 +8,11 @@ tags:
   - smart home
   - video doorbells
   - homeowner guide
-ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/cover.svg?v=cover-ready
+ogImage: https://smartsuburbanite.com/assets/images/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/cover.svg?v=cover-ready
 description: A plain-English buyer checklist for homeowners comparing video doorbells with no monthly fee, including storage, app, privacy, and feature trade-offs.
 ---
 
-![A video doorbell buyer checklist for homeowners showing fees, storage, Wi-Fi, privacy, and app feature checks](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/cover.svg?v=cover-ready)
+![A video doorbell buyer checklist for homeowners showing fees, storage, Wi-Fi, privacy, and app feature checks](https://smartsuburbanite.com/assets/images/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/cover.svg?v=cover-ready)
 
 ## Quick Answer
 
@@ -239,12 +239,12 @@ Also skip if the product's promise depends on fear-based security language, uncl
 
 ## What to Read Next
 
-If you are still deciding whether a doorbell camera is the right category at all, start with this broader [indoor, outdoor, and doorbell camera comparison](/the-smart-suburbanite/posts/home-security-cameras-indoor-vs-outdoor-vs-doorbell/).
+If you are still deciding whether a doorbell camera is the right category at all, start with this broader [indoor, outdoor, and doorbell camera comparison](/posts/home-security-cameras-indoor-vs-outdoor-vs-doorbell/).
 
 If you are still early in your smart home planning, start with:
 
-- [What Is a Smart Home? A Plain-English Guide for Homeowners](/the-smart-suburbanite/posts/what-is-a-smart-home/)
-- [Questions to Ask Before Buying Your First Smart Home Device](/the-smart-suburbanite/posts/questions-before-buying-first-smart-home-device/)
-- [Smart Home Setup Checklist for Non-Technical Homeowners](/the-smart-suburbanite/posts/smart-home-setup-checklist-for-non-technical-homeowners/)
+- [What Is a Smart Home? A Plain-English Guide for Homeowners](/posts/what-is-a-smart-home/)
+- [Questions to Ask Before Buying Your First Smart Home Device](/posts/questions-before-buying-first-smart-home-device/)
+- [Smart Home Setup Checklist for Non-Technical Homeowners](/posts/smart-home-setup-checklist-for-non-technical-homeowners/)
 
 Those guides can help you decide whether a video doorbell should be your first device, or whether another simpler smart home upgrade would be a better starting point.

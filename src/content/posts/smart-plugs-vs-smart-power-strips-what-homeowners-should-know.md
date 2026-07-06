@@ -8,11 +8,11 @@ tags:
   - smart home
   - smart plugs
   - homeowner guide
-ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/cover.svg?v=cover-ready
+ogImage: https://smartsuburbanite.com/assets/images/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/cover.svg?v=cover-ready
 description: A plain-English homeowner guide comparing smart plugs and smart power strips, including app, Wi-Fi, scheduling, energy monitoring, load rating, and safety-documentation questions.
 ---
 
-![A homeowner comparison board showing a smart plug and a smart power strip with load rating, app, Wi-Fi, schedule, energy, and safety checklist cards](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/cover.svg?v=cover-ready)
+![A homeowner comparison board showing a smart plug and a smart power strip with load rating, app, Wi-Fi, schedule, energy, and safety checklist cards](https://smartsuburbanite.com/assets/images/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/cover.svg?v=cover-ready)
 
 Smart plugs and smart power strips sound like small upgrades.
 
@@ -51,7 +51,7 @@ It may be useful if:
 - you are curious about energy monitoring but do not want exaggerated savings claims;
 - you want to understand basic safety and product-documentation questions before purchase.
 
-If you are still learning smart home language, the [Smart Home Terms Explained: Matter, Thread, Zigbee, and Z-Wave](/the-smart-suburbanite/posts/smart-home-terms-explained/) guide can help with the ecosystem terms that show up on product pages.
+If you are still learning smart home language, the [Smart Home Terms Explained: Matter, Thread, Zigbee, and Z-Wave](/posts/smart-home-terms-explained/) guide can help with the ecosystem terms that show up on product pages.
 
 ## Who Should Skip or Wait
 
@@ -206,7 +206,7 @@ Before buying, ask:
 - Does it receive software or firmware updates?
 - How easy is it to reset, rename, or remove from the app?
 
-If you are setting up several devices, the broader [Smart Home Setup Checklist for Non-Technical Homeowners](/the-smart-suburbanite/posts/smart-home-setup-checklist-for-non-technical-homeowners/) can help you avoid building a setup that only one person understands.
+If you are setting up several devices, the broader [Smart Home Setup Checklist for Non-Technical Homeowners](/posts/smart-home-setup-checklist-for-non-technical-homeowners/) can help you avoid building a setup that only one person understands.
 
 Compatibility terms can be confusing. Matter, Thread, Zigbee, and Z-Wave do not mean the same thing, and support depends on the specific product. Do not buy based on a logo alone. Check what the device actually supports and what hub or app it needs.
 
@@ -310,10 +310,10 @@ Skip if the product page makes the device sound universally safe or guarantees s
 
 ## What to Read Next
 
-If this would be your first smart home purchase, start with [Questions to Ask Before Buying Your First Smart Home Device](/the-smart-suburbanite/posts/questions-before-buying-first-smart-home-device/).
+If this would be your first smart home purchase, start with [Questions to Ask Before Buying Your First Smart Home Device](/posts/questions-before-buying-first-smart-home-device/).
 
-If you are planning several devices, use the [Smart Home Setup Checklist for Non-Technical Homeowners](/the-smart-suburbanite/posts/smart-home-setup-checklist-for-non-technical-homeowners/).
+If you are planning several devices, use the [Smart Home Setup Checklist for Non-Technical Homeowners](/posts/smart-home-setup-checklist-for-non-technical-homeowners/).
 
-If compatibility terms are confusing, read [Smart Home Terms Explained: Matter, Thread, Zigbee, and Z-Wave](/the-smart-suburbanite/posts/smart-home-terms-explained/).
+If compatibility terms are confusing, read [Smart Home Terms Explained: Matter, Thread, Zigbee, and Z-Wave](/posts/smart-home-terms-explained/).
 
 The calmer path is usually better: choose one clear problem, check the documentation, keep the setup understandable, and do not use smart controls to hide an electrical issue.

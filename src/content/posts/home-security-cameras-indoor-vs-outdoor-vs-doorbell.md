@@ -8,11 +8,11 @@ tags:
   - smart home
   - home security cameras
   - homeowner guide
-ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/home-security-cameras-indoor-vs-outdoor-vs-doorbell/cover.svg?v=cover-ready
+ogImage: https://smartsuburbanite.com/assets/images/posts/home-security-cameras-indoor-vs-outdoor-vs-doorbell/cover.svg?v=cover-ready
 description: A plain-English homeowner guide comparing indoor cameras, outdoor cameras, and video doorbells, including privacy, storage, Wi-Fi, power, and app trade-offs.
 ---
 
-![A homeowner comparison board showing indoor, outdoor, and doorbell camera options with privacy, Wi-Fi, storage, power, and app checklist cards](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/home-security-cameras-indoor-vs-outdoor-vs-doorbell/cover.svg?v=cover-ready)
+![A homeowner comparison board showing indoor, outdoor, and doorbell camera options with privacy, Wi-Fi, storage, power, and app checklist cards](https://smartsuburbanite.com/assets/images/posts/home-security-cameras-indoor-vs-outdoor-vs-doorbell/cover.svg?v=cover-ready)
 
 Buying a home security camera sounds simple until you start comparing the options.
 
@@ -156,7 +156,7 @@ Before buying, check:
 - Whether the device needs existing doorbell wiring, battery charging, plug-in power, or another power setup.
 - Whether your Wi-Fi reaches the door area.
 
-For a deeper doorbell-specific checklist, read [Video Doorbells With No Monthly Fee: What to Look For](/the-smart-suburbanite/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/).
+For a deeper doorbell-specific checklist, read [Video Doorbells With No Monthly Fee: What to Look For](/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/).
 
 ## Privacy and Recording Boundaries
 
@@ -302,7 +302,7 @@ Before buying any home security camera, ask:
 - Can recordings be deleted?
 - Would a simpler non-camera fix solve the issue?
 
-If this is your first connected device purchase, the broader guide [Questions to Ask Before Buying Your First Smart Home Device](/the-smart-suburbanite/posts/questions-before-buying-first-smart-home-device/) can help you slow down before choosing.
+If this is your first connected device purchase, the broader guide [Questions to Ask Before Buying Your First Smart Home Device](/posts/questions-before-buying-first-smart-home-device/) can help you slow down before choosing.
 
 ## Simple Buy / Wait / Skip Framework
 
@@ -342,6 +342,6 @@ Skipping is not failure. Sometimes the smartest smart home choice is not buying 
 
 ## What to Read Next
 
-- If the front door is your main concern, read [Video Doorbells With No Monthly Fee: What to Look For](/the-smart-suburbanite/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/).
-- If you are planning several connected devices, use the [Smart Home Setup Checklist for Non-Technical Homeowners](/the-smart-suburbanite/posts/smart-home-setup-checklist-for-non-technical-homeowners/).
-- If you are still deciding whether to buy any device at all, start with [Questions to Ask Before Buying Your First Smart Home Device](/the-smart-suburbanite/posts/questions-before-buying-first-smart-home-device/).
+- If the front door is your main concern, read [Video Doorbells With No Monthly Fee: What to Look For](/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/).
+- If you are planning several connected devices, use the [Smart Home Setup Checklist for Non-Technical Homeowners](/posts/smart-home-setup-checklist-for-non-technical-homeowners/).
+- If you are still deciding whether to buy any device at all, start with [Questions to Ask Before Buying Your First Smart Home Device](/posts/questions-before-buying-first-smart-home-device/).

@@ -7,11 +7,11 @@ tags:
   - smart home
   - homeowner guide
   - first smart devices
-ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/smart-home-devices-homeowners-often-regret-buying-first/cover.svg?v=cover-ready
+ogImage: https://smartsuburbanite.com/assets/images/posts/smart-home-devices-homeowners-often-regret-buying-first/cover.svg?v=cover-ready
 description: A plain-English homeowner guide to smart home device categories that can create setup, cost, privacy, compatibility, or maintenance friction when bought too early.
 ---
 
-![A homeowner first smart device decision board showing camera, thermostat, lock, bulb, plug, and hub cards with fit, setup, privacy, app, cost, and maintenance checklist notes](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/smart-home-devices-homeowners-often-regret-buying-first/cover.svg?v=cover-ready)
+![A homeowner first smart device decision board showing camera, thermostat, lock, bulb, plug, and hub cards with fit, setup, privacy, app, cost, and maintenance checklist notes](https://smartsuburbanite.com/assets/images/posts/smart-home-devices-homeowners-often-regret-buying-first/cover.svg?v=cover-ready)
 
 Buying a first smart home device is easier when the job is clear. The trouble starts when the device asks for more setup, trust, maintenance, or household cooperation than the buyer expected.
 
@@ -43,7 +43,7 @@ It is especially useful if:
 - Other people in your home need the device to be easy to understand.
 - You want to avoid buying something that depends on wiring, HVAC details, privacy tradeoffs, or platform choices you have not checked.
 
-If you are still deciding what problem you want to solve, start with the broader guide to [questions before buying your first smart home device](/the-smart-suburbanite/posts/questions-before-buying-first-smart-home-device/).
+If you are still deciding what problem you want to solve, start with the broader guide to [questions before buying your first smart home device](/posts/questions-before-buying-first-smart-home-device/).
 
 ## Who Should Skip or Wait
 
@@ -92,7 +92,7 @@ Before buying, ask:
 
 A camera or doorbell can be useful, but it should not be treated as a guarantee of safety or a way to avoid common judgment. It also should not be bought only because the box suggests simple protection. For many homes, the real decision is about storage, alerts, privacy, maintenance, and expectations.
 
-If your main concern is avoiding surprise monthly costs, read the guide to [video doorbells with no monthly fee](/the-smart-suburbanite/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/) before choosing a model.
+If your main concern is avoiding surprise monthly costs, read the guide to [video doorbells with no monthly fee](/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/) before choosing a model.
 
 ## Smart Thermostats
 
@@ -109,7 +109,7 @@ Before buying, ask:
 - Are you expecting savings, convenience, remote control, or better scheduling?
 - What will you do if compatibility is unclear?
 
-Do not treat a smart thermostat as a guaranteed savings device. It may help in the right situation, but results depend on the home, system, settings, climate, habits, and product. If compatibility is uncertain, use the [smart thermostat compatibility checklist](/the-smart-suburbanite/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/) before buying.
+Do not treat a smart thermostat as a guaranteed savings device. It may help in the right situation, but results depend on the home, system, settings, climate, habits, and product. If compatibility is uncertain, use the [smart thermostat compatibility checklist](/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/) before buying.
 
 ## Smart Locks and Garage Controls
 
@@ -164,7 +164,7 @@ Before buying, ask:
 
 A smart plug is often easier to understand than a full smart home system, but it still needs a clear job. A smart power strip may be useful for a group of electronics, but outlet behavior and monitoring features vary by product.
 
-For a deeper comparison, read [Smart Plugs vs Smart Power Strips: What Homeowners Should Know](/the-smart-suburbanite/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/).
+For a deeper comparison, read [Smart Plugs vs Smart Power Strips: What Homeowners Should Know](/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/).
 
 ## Complex Hubs or Ecosystem-Specific Devices
 
@@ -218,7 +218,7 @@ Use this checklist before buying your first or next smart home device:
 - Is there a manual fallback?
 - Would a simpler device solve the same problem with less friction?
 
-For a broader setup process, use the [smart home setup checklist for non-technical homeowners](/the-smart-suburbanite/posts/smart-home-setup-checklist-for-non-technical-homeowners/).
+For a broader setup process, use the [smart home setup checklist for non-technical homeowners](/posts/smart-home-setup-checklist-for-non-technical-homeowners/).
 
 ## Simple Buy / Wait / Skip Framework
 
@@ -242,8 +242,8 @@ Also skip for now if the device would affect home access, privacy, HVAC behavior
 
 ## What to Read Next
 
-- [Questions to Ask Before Buying Your First Smart Home Device](/the-smart-suburbanite/posts/questions-before-buying-first-smart-home-device/)
-- [Smart Home Setup Checklist for Non-Technical Homeowners](/the-smart-suburbanite/posts/smart-home-setup-checklist-for-non-technical-homeowners/)
-- [Smart Thermostat Compatibility: What to Check Before You Buy](/the-smart-suburbanite/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/)
-- [Video Doorbells With No Monthly Fee: What to Look For](/the-smart-suburbanite/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/)
-- [Smart Plugs vs Smart Power Strips: What Homeowners Should Know](/the-smart-suburbanite/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/)
+- [Questions to Ask Before Buying Your First Smart Home Device](/posts/questions-before-buying-first-smart-home-device/)
+- [Smart Home Setup Checklist for Non-Technical Homeowners](/posts/smart-home-setup-checklist-for-non-technical-homeowners/)
+- [Smart Thermostat Compatibility: What to Check Before You Buy](/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/)
+- [Video Doorbells With No Monthly Fee: What to Look For](/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/)
+- [Smart Plugs vs Smart Power Strips: What Homeowners Should Know](/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/)

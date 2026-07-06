@@ -8,11 +8,11 @@ tags:
   - smart home
   - beginner guide
   - homeowner guide
-ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/what-is-a-smart-home/cover.svg?v=post-publish-qa
+ogImage: https://smartsuburbanite.com/assets/images/posts/what-is-a-smart-home/cover.svg?v=post-publish-qa
 description: A plain-English introduction to smart home devices, benefits, tradeoffs, and first steps for everyday homeowners.
 ---
 
-![A comfortable suburban living room with simple smart home devices arranged in a calm, beginner-friendly way](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/what-is-a-smart-home/cover.svg?v=post-publish-qa)
+![A comfortable suburban living room with simple smart home devices arranged in a calm, beginner-friendly way](https://smartsuburbanite.com/assets/images/posts/what-is-a-smart-home/cover.svg?v=post-publish-qa)
 
 Smart home technology can sound more complicated than it needs to be. If you have looked at smart thermostats, video doorbells, smart lights, or voice assistants and wondered where to begin, you are not alone.
 
@@ -128,8 +128,8 @@ Not every device needs to be smart. The right smart home is not the most complic
 
 If you are deciding what to buy first, read:
 
-- [Questions to Ask Before Buying Your First Smart Home Device](/the-smart-suburbanite/posts/questions-before-buying-first-smart-home-device/)
+- [Questions to Ask Before Buying Your First Smart Home Device](/posts/questions-before-buying-first-smart-home-device/)
 
 If the product terms on the box feel confusing, read:
 
-- [Smart Home Terms Explained: Matter, Thread, Zigbee, and Z-Wave](/the-smart-suburbanite/posts/smart-home-terms-explained/)
+- [Smart Home Terms Explained: Matter, Thread, Zigbee, and Z-Wave](/posts/smart-home-terms-explained/)

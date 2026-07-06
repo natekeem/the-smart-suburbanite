@@ -8,11 +8,11 @@ tags:
   - smart home
   - beginner guide
   - homeowner guide
-ogImage: https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/smart-home-setup-checklist-for-non-technical-homeowners/cover.svg?v=cover-ready
+ogImage: https://smartsuburbanite.com/assets/images/posts/smart-home-setup-checklist-for-non-technical-homeowners/cover.svg?v=cover-ready
 description: A practical smart home setup checklist for non-technical homeowners who want to plan their first devices safely and avoid common setup mistakes.
 ---
 
-![A practical smart home setup checklist board for non-technical homeowners with simple planning icons](https://natekeem.github.io/the-smart-suburbanite/assets/images/posts/smart-home-setup-checklist-for-non-technical-homeowners/cover.svg?v=cover-ready)
+![A practical smart home setup checklist board for non-technical homeowners with simple planning icons](https://smartsuburbanite.com/assets/images/posts/smart-home-setup-checklist-for-non-technical-homeowners/cover.svg?v=cover-ready)
 
 Smart home setup can sound simple until you start looking at real products.
 
@@ -143,7 +143,7 @@ This is especially important for garages, basements, porches, detached buildings
 
 If a device requires wiring, outdoor mounting, HVAC control, or changes to existing electrical equipment, pause before treating it as a casual weekend setup. The right next step may be reading the manual carefully, checking compatibility, or using a qualified professional.
 
-For plug-in devices, think about app setup, Wi-Fi reliability, scheduling, energy monitoring, and product documentation before buying. This [smart plug and smart power strip buyer checklist](/the-smart-suburbanite/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/) covers those questions in more detail.
+For plug-in devices, think about app setup, Wi-Fi reliability, scheduling, energy monitoring, and product documentation before buying. This [smart plug and smart power strip buyer checklist](/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/) covers those questions in more detail.
 
 ## Step 4: Use a Room-by-Room Checklist
 
@@ -199,9 +199,9 @@ Subscription questions:
 
 The point is not that subscriptions are always bad. Sometimes they pay for features a homeowner values. The point is to know the tradeoff before you build your setup around a feature that may not be included forever.
 
-For doorbell cameras specifically, do not stop at the phrase "no monthly fee." Check storage, app, Wi-Fi, and privacy trade-offs before buying. This [video doorbell buyer checklist](/the-smart-suburbanite/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/) covers those questions in more detail.
+For doorbell cameras specifically, do not stop at the phrase "no monthly fee." Check storage, app, Wi-Fi, and privacy trade-offs before buying. This [video doorbell buyer checklist](/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/) covers those questions in more detail.
 
-For camera-related upgrades more broadly, think about placement, Wi-Fi, storage, privacy, and app settings before buying. This [camera category comparison](/the-smart-suburbanite/posts/home-security-cameras-indoor-vs-outdoor-vs-doorbell/) can help you decide whether indoor, outdoor, or doorbell makes sense.
+For camera-related upgrades more broadly, think about placement, Wi-Fi, storage, privacy, and app settings before buying. This [camera category comparison](/posts/home-security-cameras-indoor-vs-outdoor-vs-doorbell/) can help you decide whether indoor, outdoor, or doorbell makes sense.
 
 ## Common Mistake
 
@@ -304,13 +304,13 @@ That sentence is your filter. If a device does not clearly help with that senten
 
 If you are still early in the process, read:
 
-- [What Is a Smart Home? A Plain-English Guide for Homeowners](/the-smart-suburbanite/posts/what-is-a-smart-home/)
-- [Questions to Ask Before Buying Your First Smart Home Device](/the-smart-suburbanite/posts/questions-before-buying-first-smart-home-device/)
-- [Smart Home Terms Explained: Matter, Thread, Zigbee, and Z-Wave](/the-smart-suburbanite/posts/smart-home-terms-explained/)
+- [What Is a Smart Home? A Plain-English Guide for Homeowners](/posts/what-is-a-smart-home/)
+- [Questions to Ask Before Buying Your First Smart Home Device](/posts/questions-before-buying-first-smart-home-device/)
+- [Smart Home Terms Explained: Matter, Thread, Zigbee, and Z-Wave](/posts/smart-home-terms-explained/)
 
 Those three guides can help you understand the basic idea, ask better buying questions, and avoid compatibility confusion before you build out a bigger setup.
 
 If your next planned device is a thermostat, read:
 
-- [Do You Really Need a Smart Thermostat?](/the-smart-suburbanite/posts/do-you-really-need-a-smart-thermostat/)
-- [Smart Thermostat Compatibility: What to Check Before You Buy](/the-smart-suburbanite/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/)
+- [Do You Really Need a Smart Thermostat?](/posts/do-you-really-need-a-smart-thermostat/)
+- [Smart Thermostat Compatibility: What to Check Before You Buy](/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/)
