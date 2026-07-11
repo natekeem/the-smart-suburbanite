@@ -28,6 +28,13 @@ const rssHref = getRelativeLocaleUrl(
   Astro.currentLocale ?? config.site.lang,
   "rss.xml"
 );
+const websiteStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: site.title,
+  alternateName: "Smart Suburbanite",
+  url: new URL("/", Astro.site).href,
+};
 ---
 
 <!doctype html>
@@ -84,6 +91,11 @@ const rssHref = getRelativeLocaleUrl(
     <meta name="theme-color" content="" />
 
     <!-- Extra head content injected by child layouts (e.g. JSON-LD, article meta) -->
+    <script
+      type="application/ld+json"
+      is:inline
+      set:html={JSON.stringify(websiteStructuredData)}
+    />
     <slot name="head" />
 
     {
