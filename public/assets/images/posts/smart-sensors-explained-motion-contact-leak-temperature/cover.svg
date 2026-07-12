@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Calm laundry and utility area with a subtle sensor-like object</title>
+  <desc id="desc">A softly lit laundry and utility corner with cabinetry, a washer, baskets, folded linens, and a small unbranded sensor-like object near the floor.</desc>
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#edf0e8"/>
+      <stop offset="1" stop-color="#dce3d9"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cbb99d"/>
+      <stop offset="1" stop-color="#a98f6d"/>
+    </linearGradient>
+    <linearGradient id="cabinet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#748a7a"/>
+      <stop offset="1" stop-color="#5f7568"/>
+    </linearGradient>
+    <radialGradient id="light" cx="0.18" cy="0.18" r="0.8">
+      <stop offset="0" stop-color="#fff9e8" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#fff9e8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#405048" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#wall)"/>
+  <rect width="1200" height="675" fill="url(#light)"/>
+  <path d="M0 505 L1200 465 L1200 675 L0 675 Z" fill="url(#floor)"/>
+  <path d="M0 527 L1200 487" stroke="#92795c" stroke-width="3" opacity="0.4"/>
+  <path d="M160 516 L160 675 M405 507 L405 675 M650 496 L650 675 M895 486 L895 675" stroke="#8c755a" stroke-width="2" opacity="0.22"/>
+
+  <g opacity="0.85">
+    <rect x="80" y="72" width="300" height="230" rx="6" fill="#f7f5ec" stroke="#c7c9bd" stroke-width="8"/>
+    <line x1="230" y1="76" x2="230" y2="298" stroke="#c7c9bd" stroke-width="6"/>
+    <line x1="84" y1="188" x2="376" y2="188" stroke="#c7c9bd" stroke-width="6"/>
+    <path d="M86 280 C145 210 200 165 275 110 C310 86 346 76 376 80 L376 298 L86 298 Z" fill="#e8dcb9" opacity="0.48"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="625" y="92" width="460" height="134" rx="10" fill="url(#cabinet)"/>
+    <line x1="778" y1="98" x2="778" y2="220" stroke="#4c6256" stroke-width="4"/>
+    <line x1="932" y1="98" x2="932" y2="220" stroke="#4c6256" stroke-width="4"/>
+    <circle cx="755" cy="158" r="5" fill="#d6c9aa"/>
+    <circle cx="801" cy="158" r="5" fill="#d6c9aa"/>
+    <circle cx="909" cy="158" r="5" fill="#d6c9aa"/>
+    <circle cx="955" cy="158" r="5" fill="#d6c9aa"/>
+  </g>
+
+  <rect x="575" y="230" width="555" height="38" rx="8" fill="#d4c3a6"/>
+  <rect x="600" y="268" width="510" height="272" rx="8" fill="#64796d"/>
+  <line x1="855" y1="272" x2="855" y2="536" stroke="#50655a" stroke-width="5"/>
+  <circle cx="835" cy="400" r="5" fill="#d7c7a8"/>
+  <circle cx="875" cy="400" r="5" fill="#d7c7a8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="150" y="245" width="360" height="325" rx="24" fill="#f2f1eb" stroke="#c8cbc4" stroke-width="8"/>
+    <circle cx="330" cy="410" r="110" fill="#434e4c"/>
+    <circle cx="330" cy="410" r="93" fill="#72817f"/>
+    <path d="M262 438 C298 374 361 357 414 400 C397 466 323 492 262 438 Z" fill="#aeb9b3" opacity="0.68"/>
+    <circle cx="430" cy="292" r="10" fill="#75857e"/>
+    <rect x="190" y="276" width="135" height="14" rx="7" fill="#c2c7c1"/>
+  </g>
+
+  <g>
+    <rect x="665" y="188" width="114" height="42" rx="8" fill="#e6dcc8"/>
+    <path d="M680 188 Q723 150 764 188" fill="#c39d6c"/>
+    <path d="M685 188 Q724 165 758 188" fill="#d7b886"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <path d="M905 238 L1038 238 L1062 354 L882 354 Z" fill="#b99161"/>
+    <path d="M919 238 Q972 194 1024 238" fill="none" stroke="#9d754a" stroke-width="12"/>
+    <path d="M900 260 L1045 260 M895 286 L1051 286 M890 312 L1056 312 M886 338 L1060 338" stroke="#d3b083" stroke-width="6" opacity="0.7"/>
+    <path d="M920 247 L930 351 M950 242 L954 353 M980 242 L978 353 M1010 244 L1002 352 M1035 250 L1025 351" stroke="#8b6844" stroke-width="4" opacity="0.55"/>
+  </g>
+
+  <g>
+    <rect x="484" y="315" width="76" height="136" rx="8" fill="#c6b08d"/>
+    <ellipse cx="522" cy="316" rx="38" ry="12" fill="#d9c8aa"/>
+    <path d="M496 310 C500 278 533 270 548 301 C532 286 514 287 496 310 Z" fill="#728b73"/>
+    <path d="M520 307 C508 271 526 247 549 252 C530 264 527 284 520 307 Z" fill="#819a7d"/>
+    <path d="M530 309 C544 279 571 277 582 291 C560 291 547 302 530 309 Z" fill="#6c856d"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <ellipse cx="562" cy="560" rx="31" ry="10" fill="#6c5f4f" opacity="0.3"/>
+    <rect x="530" y="526" width="64" height="38" rx="14" fill="#f4f3ed" stroke="#9da7a0" stroke-width="5"/>
+    <circle cx="562" cy="545" r="5" fill="#7c9184"/>
+  </g>
+
+  <path d="M45 605 C290 570 565 590 820 565 C970 550 1080 535 1170 515" fill="none" stroke="#fff8e7" stroke-width="18" opacity="0.18"/>
+</svg>
