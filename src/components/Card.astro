@@ -8,22 +8,24 @@ import { getGuideMeta } from "@/data/guideTaxonomy";
 type Props = {
   variant?: "h2" | "h3";
   display?: "standard" | "compact" | "lead";
+  as?: "li" | "div";
 } & CollectionEntry<"posts">;
 
 const {
   variant: Heading = "h2",
   display = "standard",
+  as: Wrapper = "li",
   id,
   data,
   filePath,
-} = Astro.props;
+} = Astro.props as Props;
 
 const { title, description, ogImage, ...props } = data;
-const meta = getGuideMeta(Astro.props);
+const meta = getGuideMeta(Astro.props as CollectionEntry<"posts">);
 const image = typeof ogImage === "string" ? ogImage : ogImage?.src;
 ---
 
-<li class:list={["guide-card", `guide-card--${display}`]}>
+<Wrapper class:list={["guide-card", `guide-card--${display}`]}>
   <a
     href={getPostUrl(id, filePath, Astro.currentLocale)}
     class="guide-card__link"
@@ -50,4 +52,4 @@ const image = typeof ogImage === "string" ? ogImage : ogImage?.src;
       >
     </div>
   </a>
-</li>
+</Wrapper>

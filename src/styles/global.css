@@ -948,7 +948,7 @@
 
 .article-content {
   width: 100%;
-  max-width: 47.5rem;
+  max-width: none;
   margin-top: 2rem;
 }
 

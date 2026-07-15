@@ -81,7 +81,7 @@ const latestPosts = posts.slice(0, 6);
               post && (
                 <li>
                   <span class="start-path__number">0{index + 1}</span>
-                  <Card variant="h3" display="compact" {...post} />
+                  <Card as="div" variant="h3" display="compact" {...post} />
                 </li>
               )
           )

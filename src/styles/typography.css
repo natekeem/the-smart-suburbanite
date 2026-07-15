@@ -5,7 +5,7 @@
   .app-prose {
     @apply prose;
 
-    max-width: 47.5rem;
+    max-width: none;
     color: var(--foreground);
     font-size: 1.075rem;
     line-height: 1.78;

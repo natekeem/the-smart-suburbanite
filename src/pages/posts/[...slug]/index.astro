@@ -113,7 +113,10 @@ const ogImage = ogImageUrl
 
   <main
     id="main-content"
-    class:list={["app-layout", { "mt-8": !config.features.showBackButton }]}
+    class:list={[
+      "app-layout-wide",
+      { "mt-8": !config.features.showBackButton },
+    ]}
     data-pagefind-body
   >
     <header class="article-header">
