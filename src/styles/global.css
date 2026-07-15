@@ -72,11 +72,11 @@
 }
 
 @utility max-w-app {
-  @apply max-w-[47.5rem];
+  @apply max-w-[76rem];
 }
 
 @utility app-layout {
-  @apply mx-auto w-full max-w-[47.5rem] px-5 sm:px-6;
+  @apply mx-auto w-full max-w-[76rem] px-5 sm:px-6 lg:px-8;
 }
 
 @utility app-layout-wide {

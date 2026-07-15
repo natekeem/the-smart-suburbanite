@@ -11,7 +11,7 @@ The goal is to publish plain-English guides, checklists, comparison frameworks, 
 
 Current status:
 
-- 10 public English articles
+- 14 public English articles
 - No ads
 - No affiliate links
 - No analytics
