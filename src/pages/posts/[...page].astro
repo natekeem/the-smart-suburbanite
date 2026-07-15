@@ -11,6 +11,7 @@ import Pagination from "@/components/Pagination.astro";
 import { getSortedPosts } from "@/utils/getSortedPosts";
 import { useTranslations } from "@/i18n";
 import config from "@/config";
+import { GUIDE_CATEGORIES } from "@/data/guideTaxonomy";
 
 export const getStaticPaths = (async ({ paginate }) => {
   const posts = await getCollection("posts", ({ data }) => !data.draft);
@@ -28,8 +29,18 @@ const t = useTranslations(locale);
 
   <Breadcrumb />
 
-  <Main pageTitle={t.pages.postsTitle} pageDesc={t.pages.postsDesc}>
-    <ul>
+  <Main
+    pageTitle="All Guides"
+    pageDesc="Browse every practical guide, from first-device questions to privacy, maintenance, and useful household routines."
+  >
+    <nav class="category-chips" aria-label="Filter by guide category">
+      {
+        GUIDE_CATEGORIES.map(category => (
+          <a href={`/categories/${category.slug}/`}>{category.label}</a>
+        ))
+      }
+    </nav>
+    <ul class="guide-grid guide-grid--all">
       {page.data.map(data => <Card {...data} />)}
     </ul>
   </Main>

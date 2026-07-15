@@ -1,0 +1,83 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Card from "@/components/Card.astro";
+import { getSortedPosts } from "@/utils/getSortedPosts";
+import { START_HERE_SLUGS, getGuideSlug } from "@/data/guideTaxonomy";
+import config from "@/config";
+
+const posts = getSortedPosts(await getCollection("posts"));
+const steps = START_HERE_SLUGS.map(slug =>
+  posts.find(post => getGuideSlug(post) === slug)
+).filter(Boolean);
+const stepPrompts = [
+  "Understand the basic idea",
+  "Define the problem before buying",
+  "Learn the compatibility language",
+  "Plan accounts, Wi-Fi, and household access",
+];
+---
+
+<Layout
+  title={`Start Here | ${config.site.title}`}
+  description="A four-step starting path for understanding smart homes, asking better buying questions, checking compatibility, and planning setup."
+>
+  <Header />
+  <Breadcrumb />
+  <main id="main-content" class="app-layout page-main start-here-page">
+    <header class="page-hero page-hero--start">
+      <p class="eyebrow">Start Here</p>
+      <h1>A practical path into the smart home</h1>
+      <p>
+        You do not need to understand every protocol or buy a bundle of devices.
+        These four guides move from basic context to a setup you can maintain.
+      </p>
+    </header>
+
+    <ol class="guided-steps">
+      {
+        steps.map(
+          (post, index) =>
+            post && (
+              <li class="guided-step">
+                <div class="guided-step__marker">
+                  <span>Step</span>
+                  <strong>{index + 1}</strong>
+                </div>
+                <div>
+                  <p class="eyebrow">{stepPrompts[index]}</p>
+                  <Card
+                    variant="h2"
+                    display={index === 0 ? "lead" : "standard"}
+                    {...post}
+                  />
+                </div>
+              </li>
+            )
+        )
+      }
+    </ol>
+
+    <section class="next-choice">
+      <div>
+        <p class="eyebrow">Choose your next question</p>
+        <h2>Move from basics to one household goal</h2>
+      </div>
+      <div class="next-choice__links">
+        <a href="/categories/security-privacy/"
+          >Review security and privacy trade-offs</a
+        >
+        <a href="/categories/maintenance-setup/"
+          >Plan maintenance and reliable setup</a
+        >
+        <a href="/categories/comfort-convenience/"
+          >Explore comfort and convenience</a
+        >
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

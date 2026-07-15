@@ -1,0 +1,111 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Card from "@/components/Card.astro";
+import { getSortedPosts } from "@/utils/getSortedPosts";
+import {
+  GUIDE_CATEGORIES,
+  getGuideSlug,
+  getPostsForCategory,
+  type GuideCategorySlug,
+} from "@/data/guideTaxonomy";
+import config from "@/config";
+
+export const getStaticPaths = (() =>
+  GUIDE_CATEGORIES.map(category => ({
+    params: { category: category.slug },
+    props: { category },
+  }))) satisfies GetStaticPaths;
+
+const { category } = Astro.props as {
+  category: (typeof GUIDE_CATEGORIES)[number];
+};
+const posts = getSortedPosts(await getCollection("posts"));
+const categoryPosts = getPostsForCategory(
+  posts,
+  category.slug as GuideCategorySlug
+);
+const lead =
+  categoryPosts.find(post => getGuideSlug(post) === category.leadSlug) ??
+  categoryPosts[0];
+const remaining = categoryPosts.filter(post => post.id !== lead?.id);
+const otherCategories = GUIDE_CATEGORIES.filter(
+  item => item.slug !== category.slug
+);
+---
+
+<Layout
+  title={`${category.label} | ${config.site.title}`}
+  description={category.description}
+>
+  <Header />
+  <Breadcrumb />
+  <main id="main-content" class="app-layout page-main category-page">
+    <header class="page-hero">
+      <p class="eyebrow">{category.eyebrow}</p>
+      <h1>{category.label}</h1>
+      <p>{category.description}</p>
+    </header>
+
+    {
+      lead && (
+        <section class="category-lead" aria-labelledby="category-lead-heading">
+          <div class="section-heading">
+            <p class="eyebrow">A useful place to begin</p>
+            <h2 id="category-lead-heading">Lead guide</h2>
+          </div>
+          <ul>
+            <Card variant="h3" display="lead" {...lead} />
+          </ul>
+        </section>
+      )
+    }
+
+    <section class="category-list" aria-labelledby="category-list-heading">
+      <div class="section-heading section-heading--split">
+        <div>
+          <p class="eyebrow">Explore the topic</p>
+          <h2 id="category-list-heading">
+            More {category.label.toLowerCase()}
+          </h2>
+        </div>
+        <span class="guide-count">{categoryPosts.length} guides</span>
+      </div>
+      {
+        remaining.length > 0 ? (
+          <ul class="guide-grid">
+            {remaining.map(post => (
+              <Card variant="h3" {...post} />
+            ))}
+          </ul>
+        ) : (
+          <p class="empty-state">
+            This focused section currently has one carefully selected guide.
+            Browse another goal below for more practical reading.
+          </p>
+        )
+      }
+    </section>
+
+    <nav class="cross-category" aria-label="Explore other guide categories">
+      <p class="eyebrow">Explore another goal</p>
+      <ul>
+        {
+          otherCategories.map(item => (
+            <li>
+              <a href={`/categories/${item.slug}/`}>
+                {item.label}
+                <span>→</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </main>
+  <Footer />
+</Layout>

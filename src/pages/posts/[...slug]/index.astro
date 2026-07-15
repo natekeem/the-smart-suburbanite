@@ -15,6 +15,8 @@ import BackButton from "./_components/BackButton.astro";
 import BackToTopButton from "./_components/BackToTopButton.astro";
 import AdjacentPostNav from "./_components/AdjacentPostNav.astro";
 import config from "@/config";
+import Card from "@/components/Card.astro";
+import { getGuideMeta, getRelatedPosts } from "@/data/guideTaxonomy";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts");
@@ -72,6 +74,9 @@ const {
 } = post.data;
 
 const { Content } = await render(post);
+const allPosts = getSortedPosts(await getCollection("posts"));
+const relatedPosts = getRelatedPosts(post, allPosts, 3);
+const guideMeta = getGuideMeta(post);
 
 let ogImageUrl: string | undefined;
 
@@ -111,51 +116,66 @@ const ogImage = ogImageUrl
     class:list={["app-layout", { "mt-8": !config.features.showBackButton }]}
     data-pagefind-body
   >
-    <h1
-      style={{ viewTransitionName: toTransitionName(title) }}
-      class="text-accent inline-block text-2xl font-bold sm:text-3xl"
-    >
-      {title}
-    </h1>
-
-    <div class="my-2 flex items-center gap-2">
-      <Datetime {pubDatetime} {modDatetime} {timezone} size="lg" />
-      <span
-        aria-hidden="true"
-        class:list={[
-          "text-muted-foreground max-sm:hidden",
-          { hidden: !config.features.editPost?.enabled || hideEditPost },
-        ]}
-      >
-        |
-      </span>
-      <EditPost {hideEditPost} {post} class="max-sm:hidden" />
-    </div>
+    <header class="article-header">
+      <div class="article-header__meta">
+        <a
+          data-pagefind-meta="category"
+          href={`/categories/${guideMeta.category}/`}
+          >{guideMeta.categoryData?.label}</a
+        >
+        <span aria-hidden="true">·</span>
+        <span>{guideMeta.purpose}</span>
+      </div>
+      <h1 style={{ viewTransitionName: toTransitionName(title) }}>{title}</h1>
+      <p class="article-header__description">{description}</p>
+      <div class="article-header__date" data-pagefind-meta="date">
+        <Datetime {pubDatetime} {modDatetime} {timezone} size="lg" />
+        <EditPost {hideEditPost} {post} class="max-sm:hidden" />
+      </div>
+    </header>
 
     <article
       id="article"
       class:list={[
-        "mt-8 w-full",
-        "app-prose max-w-app",
+        "article-content app-prose",
         "prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)",
       ]}
     >
       <Content />
     </article>
 
-    <hr class="my-8 border-dashed" />
+    <hr class="article-divider" />
 
     <EditPost class="sm:hidden" {hideEditPost} {post} />
 
     <BackToTopButton />
 
-    <ul class="mt-4 mb-8 flex flex-wrap gap-4 sm:my-8">
+    <ul class="article-tags">
       {tags.map(tag => <Tag tag={slugifyStr(tag)} tagName={tag} size="sm" />)}
     </ul>
 
     <ShareLinks />
 
-    <hr class="my-8 border-dashed" />
+    <section class="related-guides" aria-labelledby="related-guides-heading">
+      <div class="section-heading section-heading--split">
+        <div>
+          <p class="eyebrow">Continue with a useful next step</p>
+          <h2 id="related-guides-heading">Related guides</h2>
+        </div>
+        <a class="text-link" href={`/categories/${guideMeta.category}/`}
+          >More in {guideMeta.categoryData?.label} <span>→</span></a
+        >
+      </div>
+      <ul class="guide-grid guide-grid--related">
+        {
+          relatedPosts.map(item => (
+            <Card variant="h3" display="compact" {...item} />
+          ))
+        }
+      </ul>
+    </section>
+
+    <hr class="article-divider" />
 
     <AdjacentPostNav {prevPost} {nextPost} />
   </main>

@@ -16,18 +16,26 @@ const t = useTranslations(locale);
 
   <main
     id="main-content"
-    class="app-layout flex flex-1 items-center justify-center"
+    class="app-layout not-found flex flex-1 items-center justify-center"
   >
-    <div class="mb-14 flex flex-col items-center justify-center">
-      <h1 class="text-accent text-9xl font-bold">404</h1>
-      <span aria-hidden="true"> ¯\_(ツ)_/¯ </span>
-      <p class="mt-4 text-2xl sm:text-3xl">{t.notFound.message}</p>
+    <div class="not-found__inner">
+      <p class="eyebrow">A wrong turn</p>
+      <h1>That guide is not in this room.</h1>
+      <p>
+        The address may have changed or the link may be incomplete. Start again
+        with a practical path.
+      </p>
       <LinkButton
         href={getRelativeLocaleUrl(locale, "")}
-        class="my-6 text-lg underline decoration-dashed underline-offset-8"
+        class="button button--primary"
       >
-        {t.notFound.goHome}
+        Return home
       </LinkButton>
+      <div class="not-found__links">
+        <a href="/start-here/">Start Here</a>
+        <a href="/posts/">All Guides</a>
+        <a href="/search/">Search</a>
+      </div>
     </div>
   </main>
 

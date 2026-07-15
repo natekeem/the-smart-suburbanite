@@ -32,7 +32,10 @@ const monthFormatter = new Intl.DateTimeFormat(locale, { month: "long" });
 
   <Breadcrumb />
 
-  <Main pageTitle={t.pages.archivesTitle} pageDesc={t.pages.archivesDesc}>
+  <Main
+    pageTitle="Guide Archive"
+    pageDesc="Every published Smart Suburbanite guide, organized by date and kept easy to scan."
+  >
     {
       Object.entries(
         getPostsByGroupCondition(filteredPosts, post =>
@@ -63,7 +66,7 @@ const monthFormatter = new Intl.DateTimeFormat(locale, { month: "long" });
                       {monthGroup.length}
                     </sup>
                   </div>
-                  <ul>
+                  <ul class="archive-list">
                     {monthGroup
                       .sort(
                         (a, b) =>

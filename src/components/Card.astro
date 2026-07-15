@@ -3,29 +3,51 @@ import type { CollectionEntry } from "astro:content";
 import { getPostUrl } from "@/utils/getPostPaths";
 import { toTransitionName } from "@/utils/toTransitionName";
 import Datetime from "./Datetime.astro";
+import { getGuideMeta } from "@/data/guideTaxonomy";
 
 type Props = {
   variant?: "h2" | "h3";
+  display?: "standard" | "compact" | "lead";
 } & CollectionEntry<"posts">;
 
-const { variant: Heading = "h2", id, data, filePath } = Astro.props;
+const {
+  variant: Heading = "h2",
+  display = "standard",
+  id,
+  data,
+  filePath,
+} = Astro.props;
 
-const { title, description, ...props } = data;
+const { title, description, ogImage, ...props } = data;
+const meta = getGuideMeta(Astro.props);
+const image = typeof ogImage === "string" ? ogImage : ogImage?.src;
 ---
 
-<li class="my-6">
+<li class:list={["guide-card", `guide-card--${display}`]}>
   <a
     href={getPostUrl(id, filePath, Astro.currentLocale)}
-    class:list={[
-      "text-accent inline-block text-lg font-medium",
-      "decoration-dashed underline-offset-4 hover:underline",
-      "focus-visible:no-underline focus-visible:underline-offset-0",
-    ]}
+    class="guide-card__link"
+    aria-label={`Read ${title}`}
   >
-    <Heading transition:name={toTransitionName(title)}>
-      {title}
-    </Heading>
+    {
+      image && display !== "compact" && (
+        <div class="guide-card__media">
+          <img src={image} alt="" width="720" height="405" loading="lazy" />
+        </div>
+      )
+    }
+    <div class="guide-card__body">
+      <div class="guide-card__meta">
+        <span>{meta.categoryData?.label}</span>
+        <span aria-hidden="true">·</span>
+        <span>{meta.purpose}</span>
+      </div>
+      <Heading transition:name={toTransitionName(title)}>{title}</Heading>
+      <p>{description}</p>
+      <Datetime {...props} />
+      <span class="guide-card__action" aria-hidden="true"
+        >Read guide <span>→</span></span
+      >
+    </div>
   </a>
-  <Datetime {...props} />
-  <p>{description}</p>
 </li>

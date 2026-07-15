@@ -22,8 +22,11 @@ const t = useTranslations(locale);
 
   <Breadcrumb />
 
-  <Main pageTitle={t.pages.tagsTitle} pageDesc={t.pages.tagsDesc}>
-    <ul class="flex flex-wrap gap-6">
+  <Main
+    pageTitle="Browse by Topic"
+    pageDesc="Tags are a secondary way to find guides about specific devices and homeowner questions."
+  >
+    <ul class="tag-cloud">
       {tags.map(({ tag, tagName }) => <Tag {tag} {tagName} />)}
     </ul>
   </Main>

@@ -1,150 +1,170 @@
 ---
 import { getCollection } from "astro:content";
 import { getRelativeLocaleUrl } from "astro:i18n";
-import IconRss from "@/assets/icons/IconRss.svg";
-import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
-import Socials from "@/components/Socials.astro";
 import Card from "@/components/Card.astro";
-import LinkButton from "@/components/LinkButton.astro";
 import { getSortedPosts } from "@/utils/getSortedPosts";
-import { useTranslations } from "@/i18n";
+import {
+  GUIDE_CATEGORIES,
+  START_HERE_SLUGS,
+  getGuideSlug,
+  getPostsForCategory,
+} from "@/data/guideTaxonomy";
 import config from "@/config";
 
-const { socials, posts: postsConfig } = config;
-
 const locale = Astro.currentLocale ?? config.site.lang;
-const t = useTranslations(locale);
-
-const posts = await getCollection("posts");
-const sortedPosts = getSortedPosts(posts);
-const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
-const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
-const homePath = getRelativeLocaleUrl(locale, "");
+const posts = getSortedPosts(await getCollection("posts"));
+const startHerePosts = START_HERE_SLUGS.map(slug =>
+  posts.find(post => getGuideSlug(post) === slug)
+).filter(Boolean);
+const latestPosts = posts.slice(0, 6);
 ---
 
-<Layout>
+<Layout
+  title="The Smart Suburbanite | Practical smart-home guidance"
+  description="Calm, practical smart-home guidance for homeowners and renters who want useful routines, reliable setup, and clear trade-offs without product hype."
+>
   <Header />
-  <main
-    id="main-content"
-    data-layout="index"
-    data-home-path={homePath}
-    class="app-layout"
-  >
-    <section id="hero" class="border-border border-b pt-8 pb-6">
-      <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        The Smart Suburbanite
-      </h1>
-      <a
-        target="_blank"
-        href={`${import.meta.env.BASE_URL.replace(/\/?$/, "/")}rss.xml`}
-        class="inline-block"
-        aria-label="RSS Feed"
-        title="RSS Feed"
-      >
-        <IconRss
-          width={20}
-          height={20}
-          class="stroke-accent scale-125 stroke-3 rtl:-rotate-90"
-        />
-        <span class="sr-only">RSS Feed</span>
-      </a>
-
-      <p>
-        Plain-English smart home, energy-saving, security, and comfort upgrade
-        guides for 40+ suburban homeowners.
-      </p>
-      <p class="mt-2">
-        This site currently publishes beginner-friendly English articles. Ads,
-        affiliate links, analytics, and comments are not enabled.
-      </p>
-      <p class="mt-2">
-        <LinkButton
-          class="hover:text-accent underline decoration-dashed underline-offset-4"
-          href={getRelativeLocaleUrl(locale, "about")}
-        >
-          Learn more about the site
-        </LinkButton>
-      </p>
-      {
-        socials.length > 0 && (
-          <div class="mt-4 flex max-sm:flex-col sm:items-center">
-            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">
-              {t.home.socialLinks}:
-            </div>
-            <Socials />
+  <main id="main-content">
+    <section class="home-hero">
+      <div class="app-layout-wide home-hero__inner">
+        <div class="home-hero__copy">
+          <p class="eyebrow">A calmer way to make smart-home decisions</p>
+          <h1>Practical smart-home guidance without the hype.</h1>
+          <p class="home-hero__lede">
+            Understand what matters before you buy, what keeps a setup reliable,
+            and which conveniences are actually worth the upkeep.
+          </p>
+          <div class="button-row">
+            <a
+              class="button button--primary"
+              href={getRelativeLocaleUrl(locale, "start-here")}
+              >Start with the essentials</a
+            >
+            <a
+              class="button button--secondary"
+              href={getRelativeLocaleUrl(locale, "posts")}>Browse all guides</a
+            >
           </div>
-        )
-      }
+        </div>
+        <div class="home-hero__scene" aria-hidden="true">
+          <div class="home-hero__window">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="home-hero__lamp"></div>
+          <div class="home-hero__table"></div>
+          <div class="home-hero__plant"><i></i><i></i><i></i></div>
+        </div>
+      </div>
     </section>
 
-    {
-      featuredPosts.length > 0 && (
-        <section
-          id="featured"
-          class:list={[
-            "pt-12 pb-6",
-            { "border-border border-b": recentPosts.length > 0 },
-          ]}
-        >
-          <h2 class="text-2xl font-semibold tracking-wide">
-            {t.home.featured}
-          </h2>
-          <ul>
-            {featuredPosts.map(data => (
-              <Card variant="h3" {...data} />
-            ))}
-          </ul>
-        </section>
-      )
-    }
-
-    {
-      recentPosts.length > 0 && (
-        <section id="recent-posts" class="pt-12 pb-6">
-          <h2 class="text-2xl font-semibold tracking-wide">
-            {t.home.recentPosts}
-          </h2>
-          <ul>
-            {recentPosts.slice(0, postsConfig.perIndex).map(data => (
-              <Card variant="h3" {...data} />
-            ))}
-          </ul>
-        </section>
-      )
-    }
-
-    {
-      sortedPosts.length > 0 ? (
-        <div class="my-8 text-center">
-          <LinkButton href={getRelativeLocaleUrl(locale, "posts")}>
-            {t.home.allPosts}
-            <IconArrowRight class="inline-block rtl:-rotate-180" />
-          </LinkButton>
+    <section
+      class="section-block app-layout-wide"
+      aria-labelledby="start-heading"
+    >
+      <div class="section-heading section-heading--split">
+        <div>
+          <p class="eyebrow">Editor’s starting points</p>
+          <h2 id="start-heading">Start with four useful questions</h2>
+          <p>Build context first, then check fit, language, and setup.</p>
         </div>
-      ) : (
-        <section class="pt-12 pb-6">
-          <h2 class="text-2xl font-semibold tracking-wide">No posts yet</h2>
-          <p class="mt-2">
-            The first articles will be published only after content planning,
-            claim checks, Korean review packets, and human approval are ready.
+        <a class="text-link" href={getRelativeLocaleUrl(locale, "start-here")}
+          >Follow the Start Here path <span>→</span></a
+        >
+      </div>
+      <ol class="start-path">
+        {
+          startHerePosts.map(
+            (post, index) =>
+              post && (
+                <li>
+                  <span class="start-path__number">0{index + 1}</span>
+                  <Card variant="h3" display="compact" {...post} />
+                </li>
+              )
+          )
+        }
+      </ol>
+    </section>
+
+    <section
+      class="section-block section-block--tinted"
+      aria-labelledby="goals-heading"
+    >
+      <div class="app-layout-wide">
+        <div class="section-heading">
+          <p class="eyebrow">Explore by goal</p>
+          <h2 id="goals-heading">Find the guidance that fits the job</h2>
+          <p>
+            Browse by the decision you are trying to make, not by product hype.
           </p>
-        </section>
-      )
-    }
+        </div>
+        <div class="goal-grid">
+          {
+            GUIDE_CATEGORIES.map((category, index) => {
+              const categoryPosts = getPostsForCategory(posts, category.slug);
+              return (
+                <article class:list={["goal-card", `goal-card--${index + 1}`]}>
+                  <p class="goal-card__eyebrow">{category.eyebrow}</p>
+                  <h3>{category.label}</h3>
+                  <p>{category.description}</p>
+                  <ul>
+                    {categoryPosts.slice(0, 2).map(post => (
+                      <li>
+                        <a href={`/posts/${getGuideSlug(post)}/`}>
+                          {post.data.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                  <a class="text-link" href={`/categories/${category.slug}/`}>
+                    View {category.label.toLowerCase()} <span>→</span>
+                  </a>
+                </article>
+              );
+            })
+          }
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section-block app-layout-wide"
+      aria-labelledby="latest-heading"
+    >
+      <div class="section-heading section-heading--split">
+        <div>
+          <p class="eyebrow">Recently published</p>
+          <h2 id="latest-heading">Latest practical guides</h2>
+        </div>
+        <a class="text-link" href={getRelativeLocaleUrl(locale, "archives")}
+          >See the full archive <span>→</span></a
+        >
+      </div>
+      <ul class="guide-grid">
+        {latestPosts.map(post => <Card variant="h3" {...post} />)}
+      </ul>
+    </section>
+
+    <aside
+      class="editorial-note app-layout-wide"
+      aria-labelledby="editorial-note-heading"
+    >
+      <p class="eyebrow">How we approach smart-home guidance</p>
+      <h2 id="editorial-note-heading">
+        Useful fit matters more than a longer feature list.
+      </h2>
+      <p>
+        The Smart Suburbanite focuses on compatibility, privacy, maintenance,
+        household access, and realistic setup effort. Guides do not claim
+        personal product testing or rank products for everyone.
+      </p>
+      <a class="text-link" href={getRelativeLocaleUrl(locale, "about")}
+        >Read about the editorial approach <span>→</span></a
+      >
+    </aside>
   </main>
   <Footer />
 </Layout>
-
-<script>
-  document.addEventListener("astro:page-load", () => {
-    const indexLayout = (document.querySelector("#main-content") as HTMLElement)
-      ?.dataset;
-    const baseRoot = import.meta.env.BASE_URL.replace(/\/?$/, "/");
-    if (indexLayout?.layout) {
-      sessionStorage.setItem("backUrl", indexLayout.homePath ?? baseRoot);
-    }
-  });
-</script>

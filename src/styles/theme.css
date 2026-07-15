@@ -1,4 +1,3 @@
-/* Register design tokens for Tailwind v4 */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -7,28 +6,48 @@
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
-  --font-app: var(--font-google-sans-code);
+  --font-app: var(--font-body);
 }
 
-/* Light theme values */
 :root,
 [data-theme="light"] {
-  --background: #fdfdfd;
-  --foreground: #282728;
-  --accent: #006cac;
+  --background: #f6f2e9;
+  --surface: #fffdf8;
+  --surface-strong: #ffffff;
+  --foreground: #24302a;
+  --heading: #1f3027;
+  --accent: #426a53;
+  --accent-hover: #31533f;
+  --accent-soft: #dfe9df;
   --accent-foreground: #ffffff;
-  --muted: #e6e6e6;
-  --muted-foreground: #6b7280;
-  --border: #ece9e9;
+  --warm: #a95f42;
+  --warm-soft: #f2dfd2;
+  --amber: #b67b36;
+  --muted: #e8e4d9;
+  --muted-foreground: #68716b;
+  --border: #d7d1c3;
+  --shadow: 0 12px 32px rgb(45 54 47 / 0.08);
+  --font-body:
+    Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  --font-display: Georgia, "Times New Roman", serif;
 }
 
-/* Dark theme values */
 [data-theme="dark"] {
-  --background: #212737;
-  --foreground: #eaedf3;
-  --accent: #ff6b01;
-  --accent-foreground: #ffffff;
-  --muted: #343f60;
-  --muted-foreground: #afb9ca;
-  --border: #ab4b08;
+  --background: #1d2521;
+  --surface: #242e29;
+  --surface-strong: #2a352f;
+  --foreground: #edf1ec;
+  --heading: #f7f3e8;
+  --accent: #a4c7ab;
+  --accent-hover: #c0ddc5;
+  --accent-soft: #33483b;
+  --accent-foreground: #172019;
+  --warm: #df9a77;
+  --warm-soft: #4e352c;
+  --amber: #d7a05f;
+  --muted: #354039;
+  --muted-foreground: #b8c1bb;
+  --border: #465249;
+  --shadow: 0 14px 34px rgb(0 0 0 / 0.2);
 }

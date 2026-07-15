@@ -1,30 +1,77 @@
 ---
 import type { HTMLAttributes } from "astro/types";
-import Socials from "./Socials.astro";
-import { useTranslations } from "@/i18n";
+import { getRelativeLocaleUrl } from "astro:i18n";
+import { getAssetPath } from "@/utils/withBase";
+import config from "@/config";
 
 type Props = {
   noMarginTop?: boolean;
 } & HTMLAttributes<"footer">;
 
 const { noMarginTop = false, class: className, ...attrs } = Astro.props;
-
-const t = useTranslations(Astro.currentLocale);
+const locale = Astro.currentLocale ?? config.site.lang;
 const currentYear = new Date().getFullYear();
+
+const guideLinks = [
+  ["Start Here", "start-here"],
+  ["Beginner Guides", "categories/beginner-guides"],
+  ["Security & Privacy", "categories/security-privacy"],
+  ["Maintenance & Setup", "categories/maintenance-setup"],
+  ["Comfort & Convenience", "categories/comfort-convenience"],
+  ["All Guides", "posts"],
+];
+
+const trustLinks = [
+  ["About", "about"],
+  ["Contact", "contact"],
+  ["Privacy", "privacy"],
+  ["Disclosure", "disclosure"],
+];
 ---
 
 <footer
-  class:list={["app-layout", { "mt-auto": !noMarginTop }, className]}
+  class:list={["site-footer", { "mt-auto": !noMarginTop }, className]}
   {...attrs}
 >
-  <div
-    class="border-border flex flex-col items-center justify-between border-t py-6 sm:flex-row-reverse sm:py-4"
-  >
-    <Socials />
-    <div class="my-2 flex flex-col items-center whitespace-nowrap sm:flex-row">
-      <span>{t.footer.copyright} &#169; {currentYear}</span>
-      <span class="hidden sm:inline">&nbsp;|&nbsp;</span>
-      <span>{t.footer.allRightsReserved}</span>
+  <div class="app-layout-wide site-footer__grid">
+    <div class="site-footer__brand">
+      <a href={getRelativeLocaleUrl(locale, "")} class="footer-wordmark">
+        The Smart Suburbanite
+      </a>
+      <p>
+        Calm, practical guidance for choosing, setting up, and living with
+        smart-home technology.
+      </p>
+      <a class="footer-rss" href={getAssetPath("rss.xml")}>RSS feed</a>
     </div>
+    <nav aria-label="Guide categories">
+      <h2>Explore guides</h2>
+      <ul>
+        {
+          guideLinks.map(([label, href]) => (
+            <li>
+              <a href={getRelativeLocaleUrl(locale, href)}>{label}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+    <nav aria-label="Trust and site information">
+      <h2>Site information</h2>
+      <ul>
+        {
+          trustLinks.map(([label, href]) => (
+            <li>
+              <a href={getRelativeLocaleUrl(locale, href)}>{label}</a>
+            </li>
+          ))
+        }
+        <li><a href={getRelativeLocaleUrl(locale, "tags")}>Browse tags</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="app-layout-wide site-footer__legal">
+    <span>Copyright © {currentYear} The Smart Suburbanite.</span>
+    <span>Independent practical guidance. No fake testing or rankings.</span>
   </div>
 </footer>
