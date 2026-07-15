@@ -1,6 +1,8 @@
 https://smartsuburbanite.com/
 https://smartsuburbanite.com/posts/
 https://smartsuburbanite.com/posts/2/
+https://smartsuburbanite.com/posts/3/
+https://smartsuburbanite.com/posts/4/
 https://smartsuburbanite.com/archives/
 https://smartsuburbanite.com/about/
 https://smartsuburbanite.com/contact/
@@ -16,3 +18,7 @@ https://smartsuburbanite.com/posts/video-doorbells-with-no-monthly-fee-what-to-l
 https://smartsuburbanite.com/posts/home-security-cameras-indoor-vs-outdoor-vs-doorbell/
 https://smartsuburbanite.com/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/
 https://smartsuburbanite.com/posts/smart-home-devices-homeowners-often-regret-buying-first/
+https://smartsuburbanite.com/posts/smart-locks-convenience-security-common-tradeoffs/
+https://smartsuburbanite.com/posts/smart-lighting-hallways-stairs-nighttime-routines/
+https://smartsuburbanite.com/posts/simple-smart-home-upgrades-for-older-homes/
+https://smartsuburbanite.com/posts/smart-sensors-explained-motion-contact-leak-temperature/
