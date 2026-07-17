@@ -33,6 +33,11 @@ const websiteStructuredData = {
   name: site.title,
   alternateName: "Smart Suburbanite",
   url: new URL("/", Astro.site).href,
+  publisher: {
+    "@type": "Organization",
+    name: site.title,
+    url: new URL("/", Astro.site).href,
+  },
 };
 ---
 

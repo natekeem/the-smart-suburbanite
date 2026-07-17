@@ -1,0 +1,51 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import { getSortedPosts } from "@/utils/getSortedPosts";
+import { GUIDE_CATEGORIES, getPostsForCategory } from "@/data/guideTaxonomy";
+import config from "@/config";
+
+const posts = getSortedPosts(await getCollection("posts"));
+---
+
+<Layout
+  title={`Guide Categories | ${config.site.title}`}
+  description="Browse practical smart-home guides by goal: getting started, security and privacy, maintenance and setup, or comfort and convenience."
+>
+  <Header />
+  <Breadcrumb />
+  <main id="main-content" class="app-layout page-main category-index-page">
+    <header class="page-hero">
+      <p class="eyebrow">Choose the question you are trying to answer</p>
+      <h1>Guide Categories</h1>
+      <p>
+        Browse by household goal rather than by product hype. Each category
+        groups guides that help with a different kind of smart-home decision.
+      </p>
+    </header>
+
+    <ul class="category-index-grid">
+      {
+        GUIDE_CATEGORIES.map(category => {
+          const count = getPostsForCategory(posts, category.slug).length;
+          return (
+            <li>
+              <a href={`/categories/${category.slug}/`}>
+                <p class="eyebrow">{category.eyebrow}</p>
+                <h2>{category.label}</h2>
+                <p>{category.description}</p>
+                <span class="guide-count">
+                  {count} {count === 1 ? "guide" : "guides"}
+                </span>
+              </a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </main>
+  <Footer />
+</Layout>

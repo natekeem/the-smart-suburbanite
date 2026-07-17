@@ -100,6 +100,7 @@ const ogImage = ogImageUrl
 ---
 
 <PostLayout
+  headline={title}
   title={`${title} | ${config.site.title}`}
   description={description}
   ogImage={ogImage}
@@ -131,6 +132,15 @@ const ogImage = ogImageUrl
       </div>
       <h1 style={{ viewTransitionName: toTransitionName(title) }}>{title}</h1>
       <p class="article-header__description">{description}</p>
+      <div class="article-responsibility" aria-label="Editorial responsibility">
+        <p>
+          By <a href="/about/">The Smart Suburbanite</a>
+        </p>
+        <p>
+          <a href="/editorial-process/">Research-based guide · Human reviewed</a
+          >
+        </p>
+      </div>
       <div class="article-header__date" data-pagefind-meta="date">
         <Datetime {pubDatetime} {modDatetime} {timezone} size="lg" />
         <EditPost {hideEditPost} {post} class="max-sm:hidden" />
@@ -146,6 +156,14 @@ const ogImage = ogImageUrl
     >
       <Content />
     </article>
+
+    <aside class="article-method-note" aria-label="How this guide was prepared">
+      <p>
+        This guide is based on published documentation and editorial research.
+        It does not claim hands-on product testing unless explicitly stated.
+        <a href="/editorial-process/">How we research and review guides</a>.
+      </p>
+    </aside>
 
     <hr class="article-divider" />
 

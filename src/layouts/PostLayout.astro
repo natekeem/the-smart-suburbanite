@@ -3,6 +3,7 @@ import Layout from "./Layout.astro";
 import config from "@/config";
 
 type Props = {
+  headline?: string;
   title?: string;
   description?: string;
   ogImage?: string;
@@ -13,23 +14,41 @@ type Props = {
 
 const { site } = config;
 
-const { title, description, ogImage, canonicalURL, pubDatetime, modDatetime } =
-  Astro.props;
+const {
+  headline,
+  title,
+  description,
+  ogImage,
+  canonicalURL,
+  pubDatetime,
+  modDatetime,
+} = Astro.props;
+
+const articleUrl = canonicalURL ?? new URL(Astro.url.pathname, Astro.site).href;
 
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: title ?? site.title,
+  headline: headline ?? title ?? site.title,
+  description,
   image: ogImage,
+  url: articleUrl,
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": articleUrl,
+  },
   ...(pubDatetime && { datePublished: pubDatetime.toISOString() }),
   ...(modDatetime && { dateModified: modDatetime.toISOString() }),
-  author: [
-    {
-      "@type": "Person",
-      name: site.author,
-      ...(site.profile && { url: site.profile }),
-    },
-  ],
+  author: {
+    "@type": "Organization",
+    name: site.author,
+    url: new URL("/about/", Astro.site).href,
+  },
+  publisher: {
+    "@type": "Organization",
+    name: site.title,
+    url: new URL("/", Astro.site).href,
+  },
 };
 ---
 

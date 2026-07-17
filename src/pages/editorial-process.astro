@@ -1,0 +1,112 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Main from "@/components/Main.astro";
+import Footer from "@/components/Footer.astro";
+import config from "@/config";
+---
+
+<Layout
+  title={`Editorial Process | ${config.site.title}`}
+  description="How The Smart Suburbanite researches, reviews, updates, and corrects its practical smart-home guides."
+>
+  <Header />
+  <Breadcrumb />
+  <Main pageTitle="Editorial Process" class="app-prose trust-page">
+    <p class="page-intro">
+      The Smart Suburbanite is an independently operated publication. Its goal
+      is to help readers make calmer, better-informed smart-home decisions with
+      research-based guidance and clear limits.
+    </p>
+
+    <h2>What we publish</h2>
+    <p>
+      The site publishes practical guidance about compatibility and setup,
+      subscription and maintenance trade-offs, privacy and household access, and
+      product-neutral decision support. A guide should help answer a real
+      homeowner question, not simply repeat a product feature list.
+    </p>
+
+    <h2>How topics are selected</h2>
+    <p>
+      Topics begin with a concrete reader problem and must offer a useful
+      decision, comparison, checklist, or explanation. Vague trend summaries,
+      unsupported product rankings, and subjects that cannot be handled with
+      appropriate evidence are avoided.
+    </p>
+
+    <h2>Source hierarchy</h2>
+    <p>Research generally gives preference to sources in this order:</p>
+    <ol>
+      <li>Official manufacturer support and product documentation.</li>
+      <li>Government, regulatory, standards, and public-interest sources.</li>
+      <li>Established technical or consumer references.</li>
+      <li>Reputable secondary reporting used for context.</li>
+      <li>
+        Lower-authority sources only when necessary and clearly identified.
+      </li>
+    </ol>
+    <p>
+      Product plans, subscriptions, compatibility, support policies, and app
+      behavior can change. Date-sensitive details are checked near publication
+      and should be confirmed again before a critical purchase or installation
+      decision.
+    </p>
+
+    <h2>Research-based and tested content</h2>
+    <p>
+      Most guides are based on published documentation and editorial research.
+      The site does not claim hands-on testing unless that testing actually
+      occurred and is disclosed. Manufacturer descriptions are treated as
+      product documentation, not independent proof. Guides do not guarantee
+      compatibility, savings, safety, privacy, or performance.
+    </p>
+
+    <h2>AI assistance</h2>
+    <p>
+      AI tools may assist with outlining, drafting, comparison structure,
+      wording, editing, or quality checks. AI output is not published without
+      human review. The human operator reviews factual claims, wording limits,
+      uncertainty, revisions, and the final publication decision. Fabricated
+      product use, interviews, personal experiences, and credentials are
+      prohibited.
+    </p>
+
+    <h2>Human review</h2>
+    <p>The human operator reviews:</p>
+    <ul>
+      <li>the reader question and the article promise;</li>
+      <li>important claims and the quality of supporting sources;</li>
+      <li>uncertainty, limitations, and misleading certainty;</li>
+      <li>unsupported personal experience or product-testing language; and</li>
+      <li>the final revision and publication decision.</li>
+    </ul>
+
+    <h2>Corrections</h2>
+    <p>
+      Readers may report errors through the <a href="/contact/"
+        >public contact method</a
+      >. Substantive factual corrections are reviewed against current sources.
+      Modification dates are shown where the publishing system supports them. A
+      request does not guarantee a change when the evidence does not support
+      one.
+    </p>
+
+    <h2>Updates</h2>
+    <p>
+      Articles may be updated when material plan, subscription, compatibility,
+      support, or product-policy details change. Readers should confirm critical
+      purchase and installation details with current manufacturer documentation.
+    </p>
+
+    <h2>Commercial independence</h2>
+    <p>
+      At the time of this update, The Smart Suburbanite has no affiliate links,
+      sponsored placements, paid product rankings, paid product placements, or
+      display ads. Future commercial relationships will be disclosed clearly if
+      they are introduced.
+    </p>
+  </Main>
+  <Footer />
+</Layout>
