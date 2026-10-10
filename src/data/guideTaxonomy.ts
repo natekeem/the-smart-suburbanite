@@ -73,6 +73,10 @@ export const GUIDE_META: Record<string, GuideMeta> = {
     category: "beginner-guides",
     purpose: "Decision Guide",
   },
+  "choose-smart-home-platform-before-buying-devices": {
+    category: "beginner-guides",
+    purpose: "Decision Guide",
+  },
   "home-security-cameras-indoor-vs-outdoor-vs-doorbell": {
     category: "security-privacy",
     purpose: "Comparison Guide",
