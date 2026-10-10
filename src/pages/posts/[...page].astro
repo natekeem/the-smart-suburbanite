@@ -24,7 +24,10 @@ const locale = Astro.currentLocale ?? config.site.lang;
 const t = useTranslations(locale);
 ---
 
-<Layout title={`${t.pages.postsTitle} | ${config.site.title}`}>
+<Layout
+  title={`${t.pages.postsTitle} | ${config.site.title}`}
+  robots={page.currentPage > 1 ? "noindex,follow" : undefined}
+>
   <Header />
 
   <Breadcrumb />

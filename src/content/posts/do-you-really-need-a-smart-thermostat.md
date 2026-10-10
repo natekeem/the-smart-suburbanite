@@ -2,7 +2,7 @@
 title: "Do You Really Need a Smart Thermostat?"
 slug: do-you-really-need-a-smart-thermostat
 pubDatetime: 2026-07-01T02:28:33+09:00
-modDatetime: 2026-07-01T02:28:33+09:00
+modDatetime: 2026-10-10T12:00:00+09:00
 draft: false
 tags:
   - smart home
@@ -145,30 +145,17 @@ Ask:
 
 If the thermostat saves a little energy but causes daily frustration, it may not be a good upgrade.
 
-## Smart Thermostat Fit Scorecard
+## The Three Gates: Need, Fit, and Ownership
 
-Use this simple scorecard before buying.
+A point score can hide a dealbreaker. Use three gates instead. A thermostat should pass all three before it reaches your shortlist.
 
-Give yourself one point for each "yes."
+| Gate          | Pass when                                                                                        | Stop or investigate when                                                            |
+| ------------- | ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
+| **Need**      | Scheduling, forgotten adjustments, travel, or remote access is a recurring problem               | The current thermostat already fits the household routine                           |
+| **Fit**       | The exact model is compatible with the HVAC equipment, control requirements, and available power | System type, wiring, voltage, accessories, or manufacturer guidance is unclear      |
+| **Ownership** | The household accepts the app, account, Wi-Fi, updates, alerts, and manual fallback              | Only one person can manage it, or the basic controls become harder for someone else |
 
-| Fit signal | Yes / No |
-| --- | --- |
-| My home is empty for regular blocks of time. |  |
-| I currently forget to adjust the thermostat. |  |
-| I want remote control when away or traveling. |  |
-| My HVAC system appears compatible. |  |
-| Wi-Fi is reliable near the thermostat. |  |
-| My household is comfortable with app-based controls. |  |
-| Everyone still needs an easy manual override. |  |
-| I am willing to check utility rebates or programs. |  |
-
-How to read the score:
-
-- 6-8 yes answers: A smart thermostat is worth shortlisting.
-- 3-5 yes answers: Keep researching before buying.
-- 0-2 yes answers: You may not need one right now.
-
-This score is not a scientific calculation. It is a way to slow down the purchase and focus on fit.
+Do not average the gates. A strong need does not cancel an uncertain HVAC fit, and a compatible thermostat does not create value if nobody wants the connected features.
 
 ## Buy, Wait, or Skip
 
@@ -236,3 +223,13 @@ If you are still building the broader smart home plan around it, read:
 - [Smart Home Setup Checklist for Non-Technical Homeowners](/posts/smart-home-setup-checklist-for-non-technical-homeowners/)
 
 Those guides can help you separate a useful comfort upgrade from a purchase that only sounds smart.
+
+## Sources and Verification Notes
+
+The feature, compatibility, and energy-savings boundaries in this guide were checked on October 10, 2026 against:
+
+- [ENERGY STAR smart thermostat overview and buying guidance](https://www.energystar.gov/products/smart_thermostats)
+- [ENERGY STAR smart thermostat key product criteria](https://www.energystar.gov/products/smart_thermostats/key_product_criteria)
+- [U.S. Department of Energy Energy Saver guide](https://www.energy.gov/sites/default/files/2022-08/energy-saver-guide-2022.pdf)
+
+These sources describe certified-product criteria and general thermostat practices, not a guaranteed result for a particular home. Check the exact thermostat maker's compatibility tool, current utility terms, and qualified HVAC guidance before purchasing or changing controls.

@@ -2,6 +2,7 @@
 title: "Smart Sensors Explained: Motion, Contact, Leak, and Temperature"
 slug: smart-sensors-explained-motion-contact-leak-temperature
 pubDatetime: 2026-07-12T19:40:00+09:00
+modDatetime: 2026-10-10T12:00:00+09:00
 draft: false
 tags:
   - smart home
@@ -28,6 +29,15 @@ Before looking at the four common categories, it helps to separate three ideas:
 3. **Limitation:** What can the signal not tell you on its own?
 
 This is the same basic relationship described in [a plain-English smart-home overview](/posts/what-is-a-smart-home/): one device notices something, and another part of the setup may respond. Keeping those jobs separate makes product descriptions easier to read—and makes it easier to spot features you do not need.
+
+| Sensor      | Signal it can provide                      | Useful response to verify                            | What the signal does not establish                                          |
+| ----------- | ------------------------------------------ | ---------------------------------------------------- | --------------------------------------------------------------------------- |
+| Motion      | Activity in the monitored area             | Light routine or general activity alert              | Who moved, why, or whether the home is secure                               |
+| Contact     | Open/closed state change                   | Reminder or routine tied to that state               | Who opened it or whether an entry is authorized                             |
+| Leak        | Water or moisture reaches the sensing area | Local alarm, app alert, or other documented response | The source, severity, repair, or prevention of damage                       |
+| Temperature | A reading at the sensor's location         | Comfort alert or routine within documented limits    | Whole-home conditions or an HVAC, freeze, medical, or food-safety diagnosis |
+
+The third column is the buying test. A sensor has little value if its useful response depends on an account, hub, notification, or connection the household will not maintain.
 
 ## Motion Sensors Notice Activity in a Space
 
@@ -107,3 +117,13 @@ Motion, contact, leak, and temperature sensors answer different questions. Their
 Their common limitation is certainty. A signal still needs context, and a connected response still needs upkeep. Maintenance, required alarms, insurance, professional work, and emergency services remain separate responsibilities.
 
 A good first sensor is therefore not the one with the longest feature list. It is the one that answers one modest household question clearly enough to be useful without creating more complexity than it solves.
+
+## Sources and Verification Notes
+
+The general connected-device and leak-detection boundaries in this guide were checked on October 10, 2026 against:
+
+- [NIST IR 8425: Profile of the IoT Core Baseline for Consumer IoT Products](https://csrc.nist.gov/pubs/ir/8425/final)
+- [NIST IoT Cybersecurity Capabilities Catalog](https://pages.nist.gov/IoT-Device-Cybersecurity-Requirement-Catalogs/)
+- [U.S. EPA WaterSense: leak detection and flow monitoring devices](https://www.epa.gov/watersense/leak-detection-and-flow-monitoring-devices)
+
+Exact sensing range, accuracy, notification path, battery behavior, hub requirement, offline behavior, and maintenance schedule are product-specific. Verify those details in the current instructions for the exact model rather than assuming every sensor in a category behaves the same way.

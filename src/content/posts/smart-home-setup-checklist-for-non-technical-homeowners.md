@@ -2,7 +2,7 @@
 title: Smart Home Setup Checklist for Non-Technical Homeowners
 slug: smart-home-setup-checklist-for-non-technical-homeowners
 pubDatetime: 2026-06-30T07:04:36+09:00
-modDatetime: 2026-07-04T22:22:57+09:00
+modDatetime: 2026-10-10T12:00:00+09:00
 draft: false
 tags:
   - smart home
@@ -149,15 +149,15 @@ For plug-in devices, think about app setup, Wi-Fi reliability, scheduling, energ
 
 You do not need to plan the entire home at once. A room-by-room checklist can keep the project practical.
 
-| Area | Setup questions to ask before buying |
-| --- | --- |
-| Entryway | Do I want easier lighting, a doorbell alert, a lock reminder, or a camera view? Who needs access? |
-| Living room | Do I want lamps, plugs, speakers, TV controls, or simple routines? Will guests understand how to use them? |
-| Bedroom | Do I want lighting, temperature, or nighttime convenience? Could alerts or bright devices be annoying? |
-| Kitchen | Do I want timers, lighting, leak alerts, or voice control? Is the device safe and practical around heat, water, or appliances? |
-| Garage / basement | Is Wi-Fi strong enough? Do I need alerts, lighting, or simple status checks? |
-| Utility areas | Would a sensor, plug, or reminder help? Is the device rated for the location where it will sit? |
-| Outdoor areas | Is the device designed for outdoor use? How will power, Wi-Fi, weather, and privacy be handled? |
+| Area              | Setup questions to ask before buying                                                                                           |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Entryway          | Do I want easier lighting, a doorbell alert, a lock reminder, or a camera view? Who needs access?                              |
+| Living room       | Do I want lamps, plugs, speakers, TV controls, or simple routines? Will guests understand how to use them?                     |
+| Bedroom           | Do I want lighting, temperature, or nighttime convenience? Could alerts or bright devices be annoying?                         |
+| Kitchen           | Do I want timers, lighting, leak alerts, or voice control? Is the device safe and practical around heat, water, or appliances? |
+| Garage / basement | Is Wi-Fi strong enough? Do I need alerts, lighting, or simple status checks?                                                   |
+| Utility areas     | Would a sensor, plug, or reminder help? Is the device rated for the location where it will sit?                                |
+| Outdoor areas     | Is the device designed for outdoor use? How will power, Wi-Fi, weather, and privacy be handled?                                |
 
 Use this table to narrow the first setup to one area. A good first smart home project should be boring in the best way: clear, useful, and easy to undo if it is not right.
 
@@ -244,6 +244,24 @@ A simpler first plan might be:
 
 The simpler plan does not solve every problem. But it gives the homeowner a low-stress way to learn how setup, control, and household access actually feel.
 
+## Copy This One-Device Setup Record
+
+Before opening the box, copy this table into a note and fill in one row. If several cells are unknown, the purchase is not ready yet.
+
+| Decision                                                        | Your answer |
+| --------------------------------------------------------------- | ----------- |
+| Household problem this device should solve                      |             |
+| Exact model and model number                                    |             |
+| Main control app or platform                                    |             |
+| Extra hub, bridge, account, or subscription required            |             |
+| Power source and planned location                               |             |
+| People who need access                                          |             |
+| Manual fallback if the app, account, or internet is unavailable |             |
+| Person responsible for updates, batteries, and account recovery |             |
+| Return deadline and removal plan                                |             |
+
+Keep the record after setup. Add the purchase date, support link, and account owner. This creates a small household inventory instead of leaving the whole system in one person's memory.
+
 ## The Non-Technical Homeowner Checklist
 
 Before buying your next smart home device, run through this checklist.
@@ -314,3 +332,13 @@ If your next planned device is a thermostat, read:
 
 - [Do You Really Need a Smart Thermostat?](/posts/do-you-really-need-a-smart-thermostat/)
 - [Smart Thermostat Compatibility: What to Check Before You Buy](/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/)
+
+## Sources and Verification Notes
+
+This guide is an editorial planning framework, not an installation manual. Its account, update, documentation, and product-support questions were checked on October 10, 2026 against:
+
+- [NIST IR 8425: Profile of the IoT Core Baseline for Consumer IoT Products](https://csrc.nist.gov/pubs/ir/8425/final)
+- [NIST IoT Cybersecurity Capabilities Catalog](https://pages.nist.gov/IoT-Device-Cybersecurity-Requirement-Catalogs/)
+- [Connectivity Standards Alliance certified-product search](https://csa-iot.org/csa-iot_products/)
+
+Use the current instructions and support page for the exact product you are considering. For wiring, HVAC controls, electrical equipment, outdoor installation, permits, or other work beyond ordinary plug-in setup, use qualified help appropriate to the job.
