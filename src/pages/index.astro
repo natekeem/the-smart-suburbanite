@@ -6,9 +6,11 @@ import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import Card from "@/components/Card.astro";
 import { getSortedPosts } from "@/utils/getSortedPosts";
+import { getPostUrl } from "@/utils/getPostPaths";
 import {
   GUIDE_CATEGORIES,
   START_HERE_SLUGS,
+  getGuideMeta,
   getGuideSlug,
   getPostsForCategory,
 } from "@/data/guideTaxonomy";
@@ -19,7 +21,14 @@ const posts = getSortedPosts(await getCollection("posts"));
 const startHerePosts = START_HERE_SLUGS.map(slug =>
   posts.find(post => getGuideSlug(post) === slug)
 ).filter(Boolean);
-const latestPosts = posts.slice(0, 6);
+const featuredPost = posts[0];
+const featuredMeta = featuredPost ? getGuideMeta(featuredPost) : null;
+const featuredImage = featuredPost
+  ? typeof featuredPost.data.ogImage === "string"
+    ? featuredPost.data.ogImage
+    : featuredPost.data.ogImage?.src
+  : undefined;
+const latestPosts = posts.slice(1, 7);
 ---
 
 <Layout
@@ -49,14 +58,36 @@ const latestPosts = posts.slice(0, 6);
             >
           </div>
         </div>
-        <div class="home-hero__scene" aria-hidden="true">
-          <div class="home-hero__window">
-            <span></span><span></span><span></span><span></span>
-          </div>
-          <div class="home-hero__lamp"></div>
-          <div class="home-hero__table"></div>
-          <div class="home-hero__plant"><i></i><i></i><i></i></div>
-        </div>
+        {
+          featuredPost && (
+            <a
+              class="featured-story"
+              href={getPostUrl(featuredPost.id, featuredPost.filePath, locale)}
+              aria-label={`Read the latest guide: ${featuredPost.data.title}`}
+            >
+              {featuredImage && (
+                <div class="featured-story__media">
+                  <img
+                    src={featuredImage}
+                    alt=""
+                    width="720"
+                    height="405"
+                    loading="eager"
+                    fetchpriority="high"
+                  />
+                </div>
+              )}
+              <div class="featured-story__body">
+                <span class="featured-story__label">Latest guide</span>
+                <span class="featured-story__category">
+                  {featuredMeta?.categoryData?.label} · {featuredMeta?.purpose}
+                </span>
+                <strong>{featuredPost.data.title}</strong>
+                <span class="featured-story__action">Read the guide →</span>
+              </div>
+            </a>
+          )
+        }
       </div>
     </section>
 

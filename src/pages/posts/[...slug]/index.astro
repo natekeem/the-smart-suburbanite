@@ -115,7 +115,7 @@ const ogImage = ogImageUrl
   <main
     id="main-content"
     class:list={[
-      "app-layout-wide",
+      "app-layout-wide article-page",
       { "mt-8": !config.features.showBackButton },
     ]}
     data-pagefind-body
@@ -205,6 +205,8 @@ const ogImage = ogImageUrl
 
 <script is:inline data-astro-rerun>
   function createProgressBar() {
+    document.querySelector(".progress-container")?.remove();
+
     const progressContainer = document.createElement("div");
     progressContainer.className =
       "progress-container fixed top-0 z-10 h-1 w-full bg-background";
@@ -219,28 +221,37 @@ const ogImage = ogImageUrl
   createProgressBar();
 
   function updateScrollProgress() {
-    document.addEventListener("scroll", () => {
+    if (window.__articleProgressHandler) {
+      document.removeEventListener("scroll", window.__articleProgressHandler);
+    }
+
+    const update = () => {
       const winScroll =
         document.body.scrollTop || document.documentElement.scrollTop;
       const height =
         document.documentElement.scrollHeight -
         document.documentElement.clientHeight;
-      const scrolled = (winScroll / height) * 100;
-      if (document) {
-        const myBar = document.getElementById("myBar");
-        if (myBar) {
-          myBar.style.width = scrolled + "%";
-        }
+      const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+      const myBar = document.getElementById("myBar");
+      if (myBar) {
+        myBar.style.width = scrolled + "%";
       }
-    });
+    };
+
+    window.__articleProgressHandler = update;
+    document.addEventListener("scroll", update, { passive: true });
+    update();
   }
   updateScrollProgress();
 
   function addHeadingLinks() {
     const headings = Array.from(
-      document.querySelectorAll("h2, h3, h4, h5, h6")
+      document.querySelectorAll(
+        "#article h2[id], #article h3[id], #article h4[id], #article h5[id], #article h6[id]"
+      )
     );
     for (const heading of headings) {
+      if (heading.querySelector(":scope > .heading-link")) continue;
       heading.classList.add("group");
       const link = document.createElement("a");
       link.className =
@@ -261,8 +272,11 @@ const ogImage = ogImageUrl
     const codeBlocks = Array.from(document.querySelectorAll("pre"));
 
     for (const codeBlock of codeBlocks) {
+      if (codeBlock.querySelector(":scope > .copy-code")) continue;
+
       const wrapper = document.createElement("div");
       wrapper.style.position = "relative";
+      wrapper.dataset.codeWrapper = "true";
 
       const computedStyle = getComputedStyle(codeBlock);
       const hasFileNameOffset =

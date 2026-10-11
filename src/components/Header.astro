@@ -34,14 +34,39 @@ const navItems = [
 </a>
 
 <header class="site-header">
-  <div class="site-header__top app-layout-wide">
+  <div class="site-header__inner app-layout-wide">
     <a href={getRelativeLocaleUrl(locale, "")} class="brand-lockup">
       <span class="brand-lockup__mark" aria-hidden="true">SS</span>
-      <span>
+      <span class="brand-lockup__text">
         <strong>The Smart Suburbanite</strong>
         <small>Practical smart-home guidance without the hype.</small>
       </span>
     </a>
+
+    <nav
+      id="primary-navigation"
+      class="site-nav"
+      aria-label="Primary navigation"
+    >
+      <ul>
+        {
+          navItems.map(item => (
+            <li>
+              <a
+                href={getRelativeLocaleUrl(
+                  locale,
+                  item.href.replace(/^\//, "")
+                )}
+                class:list={{ "is-active": isActive(item.href) }}
+                aria-current={isActive(item.href) ? "page" : undefined}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
 
     <div class="site-header__actions">
       {
@@ -84,28 +109,6 @@ const navItems = [
       </button>
     </div>
   </div>
-
-  <nav
-    id="primary-navigation"
-    class="site-nav app-layout-wide"
-    aria-label="Primary navigation"
-  >
-    <ul>
-      {
-        navItems.map(item => (
-          <li>
-            <a
-              href={getRelativeLocaleUrl(locale, item.href.replace(/^\//, ""))}
-              class:list={{ "is-active": isActive(item.href) }}
-              aria-current={isActive(item.href) ? "page" : undefined}
-            >
-              {item.label}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </nav>
 </header>
 
 <script>
@@ -117,19 +120,35 @@ const navItems = [
     if (!button || !nav || !menuIcon || !closeIcon || button.dataset.bound)
       return;
 
-    button.dataset.bound = "true";
-    button.addEventListener("click", () => {
-      const open = button.getAttribute("aria-expanded") === "true";
-      button.setAttribute("aria-expanded", String(!open));
+    const setMenuOpen = (open: boolean, returnFocus = false) => {
+      button.setAttribute("aria-expanded", String(open));
       button.setAttribute(
         "aria-label",
         open
-          ? (button.dataset.labelOpen ?? "Open menu")
-          : (button.dataset.labelClose ?? "Close menu")
+          ? (button.dataset.labelClose ?? "Close menu")
+          : (button.dataset.labelOpen ?? "Open menu")
       );
-      nav.classList.toggle("is-open", !open);
-      menuIcon.classList.toggle("hidden", !open);
-      closeIcon.classList.toggle("hidden", open);
+      nav.classList.toggle("is-open", open);
+      menuIcon.classList.toggle("hidden", open);
+      closeIcon.classList.toggle("hidden", !open);
+
+      if (open) {
+        nav.querySelector<HTMLAnchorElement>("a")?.focus();
+      } else if (returnFocus) {
+        button.focus();
+      }
+    };
+
+    button.dataset.bound = "true";
+    button.addEventListener("click", () => {
+      const open = button.getAttribute("aria-expanded") === "true";
+      setMenuOpen(!open);
+    });
+
+    nav.addEventListener("keydown", event => {
+      if (event.key !== "Escape") return;
+      event.preventDefault();
+      setMenuOpen(false, true);
     });
   }
 
