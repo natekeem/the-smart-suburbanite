@@ -8,11 +8,11 @@ tags:
   - smart home
   - homeowner guide
   - first smart devices
-ogImage: https://smartsuburbanite.com/assets/images/posts/smart-home-devices-homeowners-often-regret-buying-first/cover.svg?v=cover-ready
+ogImage: https://smartsuburbanite.com/assets/images/posts/smart-home-devices-homeowners-often-regret-buying-first/cover.jpg?v=photo-cover
 description: A plain-English homeowner guide to smart home device categories that can create setup, cost, privacy, compatibility, or maintenance friction when bought too early.
 ---
 
-![A homeowner first smart device decision board showing camera, thermostat, lock, bulb, plug, and hub cards with fit, setup, privacy, app, cost, and maintenance checklist notes](https://smartsuburbanite.com/assets/images/posts/smart-home-devices-homeowners-often-regret-buying-first/cover.svg?v=cover-ready)
+![A small indoor camera, a smart bulb, a tangle of cables, and an opened device box set aside on a hall closet shelf.](https://smartsuburbanite.com/assets/images/posts/smart-home-devices-homeowners-often-regret-buying-first/cover.jpg?v=photo-cover)
 
 A smart-home purchase becomes disappointing when the promise is easy to picture but the dependency stays hidden. The device may work exactly as designed and still be a poor first fit for the household that bought it.
 

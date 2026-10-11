@@ -7,11 +7,11 @@ tags:
   - smart home
   - homeowner guide
   - smart lighting
-ogImage: https://smartsuburbanite.com/assets/images/posts/smart-lighting-hallways-stairs-nighttime-routines/cover.svg?v=cover-ready
+ogImage: https://smartsuburbanite.com/assets/images/posts/smart-lighting-hallways-stairs-nighttime-routines/cover.jpg?v=photo-cover
 description: A practical homeowner guide to using smart lighting for hallways, stairs, and nighttime routines without overcomplicating the home.
 ---
 
-![A warmly lit nighttime hallway and stair landing showing a simple path through the home.](https://smartsuburbanite.com/assets/images/posts/smart-lighting-hallways-stairs-nighttime-routines/cover.svg?v=cover-ready)
+![A softly lit upstairs hallway at night with a dimmed ceiling light and low step lighting along the stairs.](https://smartsuburbanite.com/assets/images/posts/smart-lighting-hallways-stairs-nighttime-routines/cover.jpg?v=photo-cover)
 
 The best place to think about smart lighting is not the bulb aisle. It is the path you actually walk at night.
 

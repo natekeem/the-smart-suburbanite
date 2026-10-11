@@ -8,11 +8,11 @@ tags:
   - smart home
   - beginner guide
   - homeowner guide
-ogImage: https://smartsuburbanite.com/assets/images/posts/smart-home-terms-explained/cover.svg?v=cover-ready
+ogImage: https://smartsuburbanite.com/assets/images/posts/smart-home-terms-explained/cover.jpg?v=photo-cover
 description: Matter, Thread, Zigbee, and Z-Wave explained with a platform-first decision table for homeowners checking compatibility before they buy.
 ---
 
-![A plain-English smart home terms map showing Matter, Thread, Zigbee, and Z-Wave as generic compatibility concepts for homeowners](https://smartsuburbanite.com/assets/images/posts/smart-home-terms-explained/cover.svg?v=cover-ready)
+![A small hub, a Wi-Fi router, a door contact sensor, a smart bulb, and a button remote lined up on a wooden shelf for comparison.](https://smartsuburbanite.com/assets/images/posts/smart-home-terms-explained/cover.jpg?v=photo-cover)
 
 If you are shopping for smart home devices, the hardest part is often not the device itself. It is the language around it.
 

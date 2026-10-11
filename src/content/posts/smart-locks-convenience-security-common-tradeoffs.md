@@ -8,11 +8,11 @@ tags:
   - smart home
   - homeowner guide
   - smart locks
-ogImage: https://smartsuburbanite.com/assets/images/posts/smart-locks-convenience-security-common-tradeoffs/cover.svg?v=cover-ready
+ogImage: https://smartsuburbanite.com/assets/images/posts/smart-locks-convenience-security-common-tradeoffs/cover.jpg?v=photo-cover
 description: A practical homeowner guide to smart lock convenience, backup access, battery care, guest codes, privacy, compatibility, and realistic security expectations.
 ---
 
-![A calm front entryway with a house key, keypad access cue, guest code note, backup key tag, and battery reminder showing smart lock tradeoffs](https://smartsuburbanite.com/assets/images/posts/smart-locks-convenience-security-common-tradeoffs/cover.svg?v=cover-ready)
+![A smart deadbolt on the inside of a front door with a traditional backup key hanging nearby and spare AA batteries resting on an entry table.](https://smartsuburbanite.com/assets/images/posts/smart-locks-convenience-security-common-tradeoffs/cover.jpg?v=photo-cover)
 
 The front door may need to work for four very different people on the same day. One resident wants to use a phone, another wants a key, a cleaner needs access for two hours, and a relative should be able to get in even if the internet is down.
 

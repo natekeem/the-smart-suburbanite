@@ -8,11 +8,11 @@ tags:
   - smart home
   - beginner guide
   - homeowner guide
-ogImage: https://smartsuburbanite.com/assets/images/posts/smart-home-setup-checklist-for-non-technical-homeowners/cover.svg?v=cover-ready
+ogImage: https://smartsuburbanite.com/assets/images/posts/smart-home-setup-checklist-for-non-technical-homeowners/cover.jpg?v=photo-cover
 description: A practical smart home setup checklist for non-technical homeowners who want to plan their first devices safely and avoid common setup mistakes.
 ---
 
-![A practical smart home setup checklist board for non-technical homeowners with simple planning icons](https://smartsuburbanite.com/assets/images/posts/smart-home-setup-checklist-for-non-technical-homeowners/cover.svg?v=cover-ready)
+![A clipboard checklist, pencil, tape measure, smart plug, boxed smart bulb, and phone laid out on a dining table for first-time setup planning.](https://smartsuburbanite.com/assets/images/posts/smart-home-setup-checklist-for-non-technical-homeowners/cover.jpg?v=photo-cover)
 
 Smart home setup can sound simple until you start looking at real products.
 

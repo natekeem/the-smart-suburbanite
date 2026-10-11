@@ -8,11 +8,11 @@ tags:
   - smart home
   - homeowner guide
   - smart sensors
-ogImage: https://smartsuburbanite.com/assets/images/posts/smart-sensors-explained-motion-contact-leak-temperature/cover.svg?v=cover-ready
+ogImage: https://smartsuburbanite.com/assets/images/posts/smart-sensors-explained-motion-contact-leak-temperature/cover.jpg?v=photo-cover
 description: A plain-English homeowner guide to motion, contact, leak, and temperature sensors, including the routines they can support and their practical limits.
 ---
 
-![A calm laundry and utility area with a subtle generic sensor-like object, showing smart sensors as quiet household awareness tools.](https://smartsuburbanite.com/assets/images/posts/smart-sensors-explained-motion-contact-leak-temperature/cover.svg?v=cover-ready)
+![A small white leak sensor on the floor, a contact sensor on a window frame, and a motion sensor high in the corner of a clean suburban laundry room.](https://smartsuburbanite.com/assets/images/posts/smart-sensors-explained-motion-contact-leak-temperature/cover.jpg?v=photo-cover)
 
 The word _sensor_ covers several small devices that do very different jobs. One notices movement. Another reports that a door has opened. A third reacts when water reaches it. A fourth keeps track of temperature in one spot.
 

@@ -8,11 +8,11 @@ tags:
   - smart home
   - home security cameras
   - homeowner guide
-ogImage: https://smartsuburbanite.com/assets/images/posts/home-security-cameras-indoor-vs-outdoor-vs-doorbell/cover.svg?v=cover-ready
+ogImage: https://smartsuburbanite.com/assets/images/posts/home-security-cameras-indoor-vs-outdoor-vs-doorbell/cover.jpg?v=photo-cover
 description: A plain-English homeowner guide comparing indoor cameras, outdoor cameras, and video doorbells, including privacy, storage, Wi-Fi, power, and app trade-offs.
 ---
 
-![A homeowner comparison board showing indoor, outdoor, and doorbell camera options with privacy, Wi-Fi, storage, power, and app checklist cards](https://smartsuburbanite.com/assets/images/posts/home-security-cameras-indoor-vs-outdoor-vs-doorbell/cover.svg?v=cover-ready)
+![An indoor camera, an outdoor bullet camera, and a video doorbell side by side on a wooden entryway bench.](https://smartsuburbanite.com/assets/images/posts/home-security-cameras-indoor-vs-outdoor-vs-doorbell/cover.jpg?v=photo-cover)
 
 “I want a camera” does not identify a camera category. It could mean checking whether a pet entered one room, seeing who pressed the doorbell, reviewing a missed delivery, or looking across a detached garage after dark. Those problems ask for different views, power sources, recording behavior, and privacy boundaries.
 

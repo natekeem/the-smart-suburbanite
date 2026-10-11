@@ -8,11 +8,11 @@ tags:
   - smart home
   - smart thermostat
   - homeowner guide
-ogImage: https://smartsuburbanite.com/assets/images/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/cover.svg?v=cover-ready
+ogImage: https://smartsuburbanite.com/assets/images/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/cover.jpg?v=photo-cover
 description: A plain-English smart thermostat compatibility checklist for homeowners who want to know what to check before buying, without guessing about wiring or HVAC systems.
 ---
 
-![A smart thermostat compatibility pre-check board for homeowners with HVAC, power, app, and ask-a-pro checklist items](https://smartsuburbanite.com/assets/images/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/cover.svg?v=cover-ready)
+![A homeowner holding a phone beside an exposed thermostat wall plate with labeled low-voltage wires, with a notebook and pencil ready on a step stool.](https://smartsuburbanite.com/assets/images/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/cover.jpg?v=photo-cover)
 
 The product page says the thermostat works with “most systems.” Your house, however, has one specific system—and the listing cannot see its voltage, control board, heat-pump stages, zone panel, or earlier modifications.
 

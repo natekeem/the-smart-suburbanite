@@ -8,11 +8,11 @@ tags:
   - smart home
   - video doorbells
   - homeowner guide
-ogImage: https://smartsuburbanite.com/assets/images/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/cover.svg?v=cover-ready
+ogImage: https://smartsuburbanite.com/assets/images/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/cover.jpg?v=photo-cover
 description: A plain-English buyer checklist for homeowners comparing video doorbells with no monthly fee, including storage, app, privacy, and feature trade-offs.
 ---
 
-![A video doorbell buyer checklist for homeowners showing fees, storage, Wi-Fi, privacy, and app feature checks](https://smartsuburbanite.com/assets/images/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/cover.svg?v=cover-ready)
+![A video doorbell beside the front door of a suburban home at dusk, with the porch light on and a package waiting on the step.](https://smartsuburbanite.com/assets/images/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/cover.jpg?v=photo-cover)
 
 The doorbell alert appeared while you were in a meeting. Twenty minutes later, you open the app to see who was there—and discover that the notification did not necessarily include a recording you can replay.
 

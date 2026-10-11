@@ -8,11 +8,11 @@ tags:
   - smart home
   - smart plugs
   - homeowner guide
-ogImage: https://smartsuburbanite.com/assets/images/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/cover.svg?v=cover-ready
+ogImage: https://smartsuburbanite.com/assets/images/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/cover.jpg?v=photo-cover
 description: A plain-English homeowner guide comparing smart plugs and smart power strips, including app, Wi-Fi, scheduling, energy monitoring, load rating, and safety-documentation questions.
 ---
 
-![A homeowner comparison board showing a smart plug and a smart power strip with load rating, app, Wi-Fi, schedule, energy, and safety checklist cards](https://smartsuburbanite.com/assets/images/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/cover.svg?v=cover-ready)
+![A single smart plug in a wall outlet next to a neatly arranged smart power strip on a media console in a living room.](https://smartsuburbanite.com/assets/images/posts/smart-plugs-vs-smart-power-strips-what-homeowners-should-know/cover.jpg?v=photo-cover)
 
 A smart plug can switch one outlet. A smart power strip can expose several controllable outlets. Neither statement tells you whether the connected load should be switched remotely, restarted on a schedule, or placed behind that product at all.
 
