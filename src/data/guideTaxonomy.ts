@@ -89,6 +89,10 @@ export const GUIDE_META: Record<string, GuideMeta> = {
     category: "security-privacy",
     purpose: "Security Guide",
   },
+  "smart-home-subscription-trap-what-happens-when-you-cancel": {
+    category: "security-privacy",
+    purpose: "Decision Guide",
+  },
   "smart-home-setup-checklist-for-non-technical-homeowners": {
     category: "maintenance-setup",
     purpose: "Setup Guide",
