@@ -121,6 +121,14 @@ export const GUIDE_META: Record<string, GuideMeta> = {
     category: "comfort-convenience",
     purpose: "Routine Guide",
   },
+  "smart-leak-detectors-vs-automatic-shutoff-valves": {
+    category: "maintenance-setup",
+    purpose: "Comparison Guide",
+  },
+  "home-wifi-for-smart-devices-2-4ghz-vs-5ghz-mesh": {
+    category: "maintenance-setup",
+    purpose: "Setup Guide",
+  },
 };
 
 export const START_HERE_SLUGS = [
