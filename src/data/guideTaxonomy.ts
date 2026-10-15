@@ -129,6 +129,10 @@ export const GUIDE_META: Record<string, GuideMeta> = {
     category: "maintenance-setup",
     purpose: "Setup Guide",
   },
+  "smart-garage-door-openers-without-subscriptions": {
+    category: "comfort-convenience",
+    purpose: "Decision Guide",
+  },
 };
 
 export const START_HERE_SLUGS = [
