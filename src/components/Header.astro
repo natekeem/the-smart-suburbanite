@@ -5,6 +5,7 @@ import IconSearch from "@/assets/icons/IconSearch.svg";
 import IconSunHigh from "@/assets/icons/IconSunHigh.svg";
 import IconMoon from "@/assets/icons/IconMoon.svg";
 import IconX from "@/assets/icons/IconX.svg";
+import HouseMark from "@/components/HouseMark.astro";
 import { stripBase, stripLocale } from "@/utils/withBase";
 import { useTranslations } from "@/i18n";
 import config from "@/config";
@@ -35,8 +36,10 @@ const navItems = [
 
 <header class="site-header">
   <div class="site-header__inner app-layout-wide">
-    <a href={getRelativeLocaleUrl(locale, "")} class="brand-lockup">
-      <span class="brand-lockup__mark" aria-hidden="true">SS</span>
+    <a href={getRelativeLocaleUrl(locale, "")} class="brand-lockup group">
+      <HouseMark
+        class="text-accent h-9 w-auto transition-transform duration-200 group-hover:scale-105"
+      />
       <span class="brand-lockup__text">
         <strong>The Smart Suburbanite</strong>
         <small>Practical smart-home guidance without the hype.</small>

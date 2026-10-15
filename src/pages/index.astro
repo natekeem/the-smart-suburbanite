@@ -40,11 +40,15 @@ const latestPosts = posts.slice(1, 7);
     <section class="home-hero">
       <div class="app-layout-wide home-hero__inner">
         <div class="home-hero__copy">
-          <p class="eyebrow">A calmer way to make smart-home decisions</p>
-          <h1>Practical smart-home guidance without the hype.</h1>
+          <div
+            class="border-warm/30 bg-warm-soft text-warm mb-3 inline-flex w-fit items-center gap-2 rounded-full border px-3 py-1 text-xs font-bold"
+          >
+            <span>🏡 No Subscriptions. No Hype. No Junk.</span>
+          </div>
+          <h1>Smart home gear that actually works for normal households.</h1>
           <p class="home-hero__lede">
-            Understand what matters before you buy, what keeps a setup reliable,
-            and which conveniences are actually worth the upkeep.
+            Field-tested advice from a suburban house that refuses to pay
+            monthly fees for its own doorbell, garage, or lightbulbs.
           </p>
           <div class="button-row">
             <a
@@ -54,7 +58,8 @@ const latestPosts = posts.slice(1, 7);
             >
             <a
               class="button button--secondary"
-              href={getRelativeLocaleUrl(locale, "posts")}>Browse all guides</a
+              href={getRelativeLocaleUrl(locale, "posts")}
+              >Browse all 19 guides</a
             >
           </div>
         </div>
@@ -177,6 +182,70 @@ const latestPosts = posts.slice(1, 7);
       <ul class="guide-grid">
         {latestPosts.map(post => <Card variant="h3" {...post} />)}
       </ul>
+    </section>
+
+    <!-- The Suburbanite Rulebook: Authentic Witty American Suburban Voice -->
+    <section
+      class="section-block section-block--tinted"
+      aria-labelledby="rulebook-heading"
+    >
+      <div class="app-layout-wide">
+        <div
+          class="border-accent/20 bg-surface rounded-2xl border-2 p-8 shadow-sm sm:p-12"
+        >
+          <div class="max-w-3xl">
+            <span
+              class="bg-accent text-accent-foreground mb-3 inline-block rounded-md px-3 py-1 text-xs font-bold tracking-wider uppercase"
+            >
+              The Suburbanite Rulebook
+            </span>
+            <h2
+              id="rulebook-heading"
+              class="font-display text-heading text-2xl font-bold tracking-tight sm:text-3xl"
+            >
+              Three rules every smart homeowner learns the hard way
+            </h2>
+            <div class="mt-6 grid gap-6 sm:grid-cols-3">
+              <div class="border-border bg-background/50 rounded-xl border p-5">
+                <span class="font-display text-warm text-2xl font-bold"
+                  >Rule #1</span
+                >
+                <p class="text-foreground mt-1 font-bold">
+                  If the cloud dies, the door still opens.
+                </p>
+                <p class="text-muted-foreground mt-2 text-sm leading-relaxed">
+                  Never buy a lock, garage opener, or thermostat that becomes a
+                  paperweight when AWS goes down in Virginia.
+                </p>
+              </div>
+              <div class="border-border bg-background/50 rounded-xl border p-5">
+                <span class="font-display text-warm text-2xl font-bold"
+                  >Rule #2</span
+                >
+                <p class="text-foreground mt-1 font-bold">
+                  The 2 AM Spouse Test.
+                </p>
+                <p class="text-muted-foreground mt-2 text-sm leading-relaxed">
+                  If someone needs a smartphone app or a Wi-Fi bridge just to
+                  turn on the bathroom hallway light at 2 AM, your setup failed.
+                </p>
+              </div>
+              <div class="border-border bg-background/50 rounded-xl border p-5">
+                <span class="font-display text-warm text-2xl font-bold"
+                  >Rule #3</span
+                >
+                <p class="text-foreground mt-1 font-bold">
+                  Zero Monthly Rent on Hardware.
+                </p>
+                <p class="text-muted-foreground mt-2 text-sm leading-relaxed">
+                  You already paid $200 for the camera. Refuse to pay $12/month
+                  just to see who left the Amazon package on your porch.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <aside
