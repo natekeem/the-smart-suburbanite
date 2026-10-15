@@ -8,55 +8,60 @@ const { class: className = "h-8 w-auto" } = Astro.props;
 
 <svg
   class={className}
-  viewBox="0 0 48 40"
+  viewBox="0 0 64 52"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
   aria-hidden="true"
   focusable="false"
 >
-  <!-- Stylized Craftsman House Body -->
+  <!-- Background subtle warm glow -->
+  <rect x="2" y="2" width="60" height="48" rx="8" fill="var(--warm-soft)" stroke="var(--border)" stroke-width="1.5" />
+  
+  <!-- Craftsman Roof with Overhang -->
   <path
-    d="M6 21L24 6l18 15h-5v15a2 2 0 0 1-2 2H13a2 2 0 0 1-2-2V21H6z"
+    d="M8 29L32 10l24 19h-6v17a2 2 0 0 1-2 2H16a2 2 0 0 1-2-2V29H8z"
     fill="var(--surface)"
     stroke="var(--accent)"
     stroke-width="2.5"
-    stroke-linejoin="round"></path>
-  <!-- Terracotta Chimney with subtle puff -->
+    stroke-linejoin="round"
+  />
+  
+  <!-- Terracotta Brick Chimney -->
   <path
-    d="M31 10.5V6a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v10.5l-6-5z"
-    fill="var(--warm, #c85a32)"></path>
-  <!-- Craftsman Windows (2 pane) -->
-  <rect
-    x="14"
-    y="22"
-    width="6"
-    height="7"
-    rx="1"
-    fill="var(--accent-soft)"
-    stroke="var(--accent)"
-    stroke-width="1.5"></rect>
-  <rect
-    x="28"
-    y="22"
-    width="6"
-    height="7"
-    rx="1"
-    fill="var(--accent-soft)"
-    stroke="var(--accent)"
-    stroke-width="1.5"></rect>
-  <!-- Front Door -->
-  <path d="M21 27h6v11h-6z" fill="var(--accent)"></path>
-  <!-- Witty Smart Home Antenna / Wi-Fi Beams above roof -->
-  <circle cx="24" cy="2.5" r="1.5" fill="var(--warm, #c85a32)"></circle>
+    d="M41 16V8a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14.5L41 16z"
+    fill="var(--warm)"
+  />
+  
+  <!-- Craftsman Gabled Attic Accent Window -->
+  <polygon points="32,15 37,21 27,21" fill="var(--amber)" opacity="0.3" stroke="var(--accent)" stroke-width="1.2" />
+
+  <!-- Craftsman 4-pane Window Left -->
+  <rect x="18" y="29" width="8" height="9" rx="1" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5" />
+  <line x1="22" y1="29" x2="22" y2="38" stroke="var(--accent)" stroke-width="1" />
+  <line x1="18" y1="33.5" x2="26" y2="33.5" stroke="var(--accent)" stroke-width="1" />
+
+  <!-- Craftsman Front Door with Windows -->
+  <rect x="30" y="32" width="9" height="16" rx="1" fill="var(--accent)" />
+  <circle cx="37" cy="40" r="0.8" fill="var(--amber)" />
+
+  <!-- Craftsman 4-pane Window Right -->
+  <rect x="43" y="29" width="8" height="9" rx="1" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5" />
+  <line x1="47" y1="29" x2="47" y2="38" stroke="var(--accent)" stroke-width="1" />
+  <line x1="43" y1="33.5" x2="51" y2="33.5" stroke="var(--accent)" stroke-width="1" />
+
+  <!-- Witty Smart Wi-Fi Signal pulsing above the chimney / roof -->
+  <circle cx="44.5" cy="4.5" r="1.5" fill="var(--warm)" />
   <path
-    d="M20.5 2a5 5 0 0 1 7 0"
-    stroke="var(--accent)"
-    stroke-width="1.5"
-    stroke-linecap="round"></path>
-  <path
-    d="M17.5 -0.5a9 9 0 0 1 13 0"
+    d="M40 3a6 6 0 0 1 9 0"
     stroke="var(--accent)"
     stroke-width="1.5"
     stroke-linecap="round"
-    stroke-dasharray="2 2"></path>
+  />
+  <path
+    d="M37 0.5a10.5 10.5 0 0 1 15 0"
+    stroke="var(--accent)"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-dasharray="2.5 2"
+  />
 </svg>

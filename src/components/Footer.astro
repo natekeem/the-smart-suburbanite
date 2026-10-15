@@ -32,19 +32,45 @@ const trustLinks = [
 ---
 
 <footer
-  class:list={["site-footer", { "mt-auto": !noMarginTop }, className]}
+  class:list={["site-footer border-t border-border bg-surface-tint/50", { "mt-auto": !noMarginTop }, className]}
   {...attrs}
 >
+  <!-- Homeowner Trust Strip -->
+  <div class="border-b border-border bg-warm-soft/40 py-8">
+    <div class="app-layout-wide flex flex-col items-center justify-between gap-6 md:flex-row">
+      <div class="flex items-center gap-4">
+        <div class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-accent/30 bg-accent text-accent-foreground shadow-sm">
+          <span class="text-xl">🏡</span>
+        </div>
+        <div>
+          <h3 class="font-display text-base font-bold text-heading">The Smart Suburbanite</h3>
+          <p class="text-xs text-muted-foreground">Practical smart-home guidance for real households without the cloud fees.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 rounded-full border border-accent/20 bg-surface px-3 py-1 text-xs font-bold text-accent shadow-xs">
+          <span>✓</span> Field-Tested Logic
+        </span>
+        <span class="inline-flex items-center gap-1.5 rounded-full border border-warm/20 bg-surface px-3 py-1 text-xs font-bold text-warm shadow-xs">
+          <span>✓</span> No Subscription Traps
+        </span>
+        <span class="inline-flex items-center gap-1.5 rounded-full border border-amber/20 bg-surface px-3 py-1 text-xs font-bold text-amber shadow-xs">
+          <span>✓</span> 100% Independent
+        </span>
+      </div>
+    </div>
+  </div>
+
   <div class="app-layout-wide site-footer__grid">
     <div class="site-footer__brand">
-      <a href={getRelativeLocaleUrl(locale, "")} class="footer-wordmark">
+      <a href={getRelativeLocaleUrl(locale, "")} class="footer-wordmark font-display text-xl font-bold text-heading">
         The Smart Suburbanite
       </a>
-      <p>
-        Calm, practical guidance for choosing, setting up, and living with
-        smart-home technology.
+      <p class="mt-2 text-sm text-muted-foreground leading-relaxed">
+        Field-tested advice from a suburban house that refuses to pay monthly subscriptions for its own doorbell, garage, or lightbulbs.
       </p>
-      <a class="footer-rss" href={getAssetPath("rss.xml")}>RSS feed</a>
+      <a class="footer-rss mt-4 inline-block text-xs font-bold text-accent" href={getAssetPath("rss.xml")}>RSS feed →</a>
     </div>
     <nav aria-label="Guide categories">
       <h2>Explore guides</h2>
