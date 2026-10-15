@@ -3,65 +3,56 @@ type Props = {
   class?: string;
 };
 
-const { class: className = "h-8 w-auto" } = Astro.props;
+const { class: className = "h-10 w-auto" } = Astro.props;
 ---
 
 <svg
   class={className}
-  viewBox="0 0 64 52"
-  fill="none"
+  viewBox="0 0 64 56"
   xmlns="http://www.w3.org/2000/svg"
   aria-hidden="true"
   focusable="false"
 >
-  <!-- Background subtle warm glow -->
-  <rect x="2" y="2" width="60" height="48" rx="8" fill="var(--warm-soft)" stroke="var(--border)" stroke-width="1.5" />
-  
-  <!-- Craftsman Roof with Overhang -->
-  <path
-    d="M8 29L32 10l24 19h-6v17a2 2 0 0 1-2 2H16a2 2 0 0 1-2-2V29H8z"
-    fill="var(--surface)"
-    stroke="var(--accent)"
-    stroke-width="2.5"
-    stroke-linejoin="round"
-  />
-  
-  <!-- Terracotta Brick Chimney -->
-  <path
-    d="M41 16V8a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14.5L41 16z"
-    fill="var(--warm)"
-  />
-  
-  <!-- Craftsman Gabled Attic Accent Window -->
-  <polygon points="32,15 37,21 27,21" fill="var(--amber)" opacity="0.3" stroke="var(--accent)" stroke-width="1.2" />
-
-  <!-- Craftsman 4-pane Window Left -->
-  <rect x="18" y="29" width="8" height="9" rx="1" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5" />
-  <line x1="22" y1="29" x2="22" y2="38" stroke="var(--accent)" stroke-width="1" />
-  <line x1="18" y1="33.5" x2="26" y2="33.5" stroke="var(--accent)" stroke-width="1" />
-
-  <!-- Craftsman Front Door with Windows -->
-  <rect x="30" y="32" width="9" height="16" rx="1" fill="var(--accent)" />
-  <circle cx="37" cy="40" r="0.8" fill="var(--amber)" />
-
-  <!-- Craftsman 4-pane Window Right -->
-  <rect x="43" y="29" width="8" height="9" rx="1" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5" />
-  <line x1="47" y1="29" x2="47" y2="38" stroke="var(--accent)" stroke-width="1" />
-  <line x1="43" y1="33.5" x2="51" y2="33.5" stroke="var(--accent)" stroke-width="1" />
-
-  <!-- Witty Smart Wi-Fi Signal pulsing above the chimney / roof -->
-  <circle cx="44.5" cy="4.5" r="1.5" fill="var(--warm)" />
-  <path
-    d="M40 3a6 6 0 0 1 9 0"
-    stroke="var(--accent)"
-    stroke-width="1.5"
-    stroke-linecap="round"
-  />
-  <path
-    d="M37 0.5a10.5 10.5 0 0 1 15 0"
-    stroke="var(--accent)"
-    stroke-width="1.5"
-    stroke-linecap="round"
-    stroke-dasharray="2.5 2"
-  />
+  <!-- "Smart" sparkle above the chimney -->
+  <g stroke="#D99136" stroke-width="2.2" stroke-linecap="round">
+    <line x1="46.5" y1="5" x2="46.5" y2="1.5"></line>
+    <line x1="42" y1="6.2" x2="40" y2="3.4"></line>
+    <line x1="51" y1="6.2" x2="53" y2="3.4"></line>
+  </g>
+  <!-- Brick chimney -->
+  <rect x="43" y="10" width="7" height="14" fill="#9C4426"></rect>
+  <rect x="41.5" y="8.5" width="10" height="3" rx="1" fill="#7A3219"></rect>
+  <!-- Craftsman roof with deep eaves -->
+  <path d="M2 31 L32 7 L62 31 L56 31 L32 12.5 L8 31 Z" fill="#24523B"></path>
+  <path d="M8 31 L32 12.5 L56 31 Z" fill="#E9D9B8"></path>
+  <!-- Terracotta house body -->
+  <rect x="12" y="29" width="40" height="22" fill="#C85A32"></rect>
+  <!-- Gable attic window -->
+  <rect
+    x="27"
+    y="19"
+    width="10"
+    height="7"
+    rx="1"
+    fill="#FBF1D9"
+    stroke="#24523B"
+    stroke-width="1.6"></rect>
+  <line x1="32" y1="19" x2="32" y2="26" stroke="#24523B" stroke-width="1.2"
+  ></line>
+  <!-- Windows with mullions -->
+  <g stroke="#24523B" stroke-width="1.6" fill="#FBF1D9">
+    <rect x="15.5" y="34" width="9.5" height="8.5" rx="1"></rect>
+    <rect x="39" y="34" width="9.5" height="8.5" rx="1"></rect>
+  </g>
+  <g stroke="#24523B" stroke-width="1.1">
+    <line x1="20.25" y1="34" x2="20.25" y2="42.5"></line>
+    <line x1="15.5" y1="38.25" x2="25" y2="38.25"></line>
+    <line x1="43.75" y1="34" x2="43.75" y2="42.5"></line>
+    <line x1="39" y1="38.25" x2="48.5" y2="38.25"></line>
+  </g>
+  <!-- Front door -->
+  <rect x="28" y="35" width="8" height="16" rx="1" fill="#24523B"></rect>
+  <circle cx="34" cy="43.5" r="0.9" fill="#D99136"></circle>
+  <!-- Porch base -->
+  <rect x="7" y="50" width="50" height="3.5" rx="1.75" fill="#24523B"></rect>
 </svg>

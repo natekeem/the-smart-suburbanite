@@ -22,11 +22,9 @@ const isActive = (path: string) =>
 
 const navItems = [
   { href: "/start-here", label: "Start Here" },
-  { href: "/categories/beginner-guides", label: "Beginner Guides" },
-  { href: "/categories/security-privacy", label: "Security & Privacy" },
-  { href: "/categories/maintenance-setup", label: "Maintenance & Setup" },
-  { href: "/categories/comfort-convenience", label: "Comfort & Convenience" },
-  { href: "/posts", label: "All Guides" },
+  { href: "/posts", label: "Guides" },
+  { href: "/categories", label: "Topics" },
+  { href: "/about", label: "About" },
 ];
 ---
 
@@ -36,13 +34,15 @@ const navItems = [
 
 <header class="site-header">
   <div class="site-header__inner app-layout-wide">
-    <a href={getRelativeLocaleUrl(locale, "")} class="brand-lockup group">
-      <HouseMark
-        class="h-11 w-auto transition-transform duration-200 group-hover:scale-105"
-      />
+    <a
+      href={getRelativeLocaleUrl(locale, "")}
+      class="brand-lockup"
+      aria-label="The Smart Suburbanite home"
+    >
+      <HouseMark class="brand-lockup__house" />
       <span class="brand-lockup__text">
-        <strong class="font-display text-lg tracking-tight text-heading">The Smart Suburbanite</strong>
-        <small class="text-xs text-muted-foreground font-medium">Independent & Homeowner-Vetted Smart Home Guides</small>
+        <span>The Smart</span>
+        <span>Suburbanite</span>
       </span>
     </a>
 

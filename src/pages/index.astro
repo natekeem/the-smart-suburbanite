@@ -1,10 +1,9 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, type CollectionEntry } from "astro:content";
 import { getRelativeLocaleUrl } from "astro:i18n";
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
-import Card from "@/components/Card.astro";
 import { getSortedPosts } from "@/utils/getSortedPosts";
 import { getPostUrl } from "@/utils/getPostPaths";
 import {
@@ -18,17 +17,58 @@ import config from "@/config";
 
 const locale = Astro.currentLocale ?? config.site.lang;
 const posts = getSortedPosts(await getCollection("posts"));
+
+const imageOf = (post: CollectionEntry<"posts">) =>
+  typeof post.data.ogImage === "string"
+    ? post.data.ogImage
+    : post.data.ogImage?.src;
+const urlOf = (post: CollectionEntry<"posts">) =>
+  getPostUrl(post.id, post.filePath, locale);
+const dateOf = (post: CollectionEntry<"posts">) =>
+  (post.data.modDatetime ?? post.data.pubDatetime).toLocaleDateString(
+    "en-US",
+    { month: "short", day: "numeric", year: "numeric" }
+  );
+
+// Generic tags add no information on a smart-home site, so skip them in chips.
+const GENERIC_TAGS = new Set([
+  "smart-home",
+  "homeowner-guide",
+  "beginner-guide",
+  "others",
+]);
+const formatTag = (raw: string) =>
+  raw
+    .trim()
+    .split(/[\s-]+/)
+    .map(word =>
+      word.toLowerCase() === "wifi"
+        ? "Wi-Fi"
+        : word.length <= 2
+          ? word.toUpperCase()
+          : word.charAt(0).toUpperCase() + word.slice(1)
+    )
+    .join(" ");
+
+const chipsOf = (post: CollectionEntry<"posts">) => {
+  const meta = getGuideMeta(post);
+  const specificTags = post.data.tags
+    .filter(
+      tag => !GENERIC_TAGS.has(tag.trim().toLowerCase().replace(/\s+/g, "-"))
+    )
+    .slice(0, 1)
+    .map(formatTag);
+  return [...specificTags, meta.purpose];
+};
+
+const [featuredPost, ...rest] = posts;
+const featuredMeta = featuredPost ? getGuideMeta(featuredPost) : null;
+const featuredImage = featuredPost ? imageOf(featuredPost) : undefined;
+const recentPosts = rest.slice(0, 4);
+const moreGuides = rest.slice(4, 10);
 const startHerePosts = START_HERE_SLUGS.map(slug =>
   posts.find(post => getGuideSlug(post) === slug)
-).filter(Boolean);
-const featuredPost = posts[0];
-const featuredMeta = featuredPost ? getGuideMeta(featuredPost) : null;
-const featuredImage = featuredPost
-  ? typeof featuredPost.data.ogImage === "string"
-    ? featuredPost.data.ogImage
-    : featuredPost.data.ogImage?.src
-  : undefined;
-const latestPosts = posts.slice(1, 7);
+).filter((post): post is CollectionEntry<"posts"> => Boolean(post));
 ---
 
 <Layout
@@ -36,284 +76,190 @@ const latestPosts = posts.slice(1, 7);
   description="Calm, practical smart-home guidance for homeowners and renters who want useful routines, reliable setup, and clear trade-offs without product hype."
 >
   <Header />
-  <main id="main-content">
-    <!-- Editorial Intro Banner: Clean, Warm, and Literary -->
-    <section class="border-border border-b bg-surface-tint/40 py-12 sm:py-16">
-      <div class="app-layout-wide">
-        <div class="max-w-4xl">
-          <div
-            class="border-warm/30 bg-warm-soft text-warm mb-4 inline-flex w-fit items-center gap-2 rounded-full border px-3 py-1 text-xs font-bold"
-          >
-            <span>🏡 Independent & Homeowner-Vetted</span>
-          </div>
-          <h1 class="font-display text-heading text-3xl font-bold tracking-tight sm:text-5xl lg:text-6xl lg:leading-[1.12]">
-            Smart home gear that actually works, from a suburban house that refuses to pay monthly subscriptions.
-          </h1>
-          <p class="text-muted-foreground mt-5 max-w-2xl text-lg leading-relaxed sm:text-xl">
-            Practical, field-tested guidance without product hype, cloud dependency, or monthly rent on your own doorbell, garage, and lightbulbs.
-          </p>
-          <div class="button-row mt-6">
-            <a
-              class="button button--primary"
-              href={getRelativeLocaleUrl(locale, "start-here")}
-              >Start with the essentials</a
-            >
-            <a
-              class="button button--secondary"
-              href={getRelativeLocaleUrl(locale, "posts")}
-              >Browse all 19 guides</a
-            >
-          </div>
-        </div>
-      </div>
+  <main id="main-content" class="sub-home">
+    <!-- Intro -->
+    <section class="sub-intro app-layout-wide">
+      <h1>
+        Smart home advice for suburban houses that refuse to pay
+        <span class="sub-intro__mark">monthly subscriptions.</span>
+      </h1>
+      <p class="sub-intro__lede">
+        Plain-English guides to locks, doorbells, garage openers, Wi-Fi, and
+        sensors &mdash; and what keeps working when the cloud, the app, or the
+        free trial doesn&rsquo;t.
+      </p>
+      <p class="sub-intro__pill">Independent &middot; No sponsored rankings</p>
     </section>
 
-    <!-- Featured Story Hero: Magazine Style with 30-Second Verdict -->
+    <!-- Featured story -->
     {
       featuredPost && (
-        <section class="app-layout-wide py-10 sm:py-12">
-          <div class="border-border bg-surface relative overflow-hidden rounded-2xl border shadow-md">
-            <div class="grid lg:grid-cols-[1.15fr_0.85fr]">
-              {/* Left Column: Dark Forest Editorial Content */}
-              <div class="bg-accent text-accent-foreground flex flex-col justify-between p-8 sm:p-12">
-                <div>
-                  <div class="mb-4 inline-flex items-center gap-2 rounded-md bg-white/10 px-3 py-1 text-xs font-bold tracking-wider text-white uppercase backdrop-blur-sm">
-                    <span>Featured Story</span>
-                  </div>
-                  <a
-                    href={getPostUrl(featuredPost.id, featuredPost.filePath, locale)}
-                    class="group block"
-                  >
-                    <h2 class="font-display text-2xl font-bold leading-tight text-white transition-opacity group-hover:opacity-90 sm:text-3xl lg:text-4xl">
-                      {featuredPost.data.title}
-                    </h2>
-                  </a>
-                  <p class="mt-4 text-sm leading-relaxed text-white/80 sm:text-base">
-                    {featuredPost.data.description}
-                  </p>
-                </div>
-
-                <div class="mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-white/15 pt-6">
-                  <div class="flex items-center gap-3 text-xs text-white/70">
-                    <span class="font-semibold text-white">
-                      {featuredMeta?.categoryData?.label}
-                    </span>
-                    <span>·</span>
-                    <span>{featuredMeta?.purpose}</span>
-                  </div>
-                  <a
-                    href={getPostUrl(featuredPost.id, featuredPost.filePath, locale)}
-                    class="inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2 text-xs font-bold text-accent shadow-sm transition-transform hover:scale-105"
-                  >
-                    Read the guide →
-                  </a>
-                </div>
-              </div>
-
-              {/* Right Column: Hero Image with Floating 30-Second Verdict Card */}
-              <div class="relative min-h-[300px] overflow-hidden bg-muted lg:min-h-[420px]">
-                {featuredImage && (
-                  <img
-                    src={featuredImage}
-                    alt={featuredPost.data.title}
-                    class="h-full w-full object-cover"
-                    loading="eager"
-                    fetchpriority="high"
-                  />
-                )}
-                <!-- Floating 30-Second Verdict Card -->
-                <div class="absolute right-4 bottom-4 left-4 rounded-xl border border-border/80 bg-surface/95 p-4 shadow-lg backdrop-blur-md sm:right-6 sm:bottom-6 sm:left-auto sm:max-w-sm">
-                  <div class="flex items-center gap-2 text-xs font-bold text-warm uppercase tracking-wider">
-                    <span>⚡ The 30-Second Verdict</span>
-                  </div>
-                  <p class="mt-1 text-xs leading-relaxed text-foreground font-medium sm:text-sm">
-                    {featuredPost.data.description}
-                  </p>
-                </div>
-              </div>
+        <section class="app-layout-wide" aria-label="Featured story">
+          <article class="sub-feature">
+            {featuredImage && (
+              <img
+                class="sub-feature__img"
+                src={featuredImage}
+                alt=""
+                width="1200"
+                height="630"
+                loading="eager"
+                fetchpriority="high"
+              />
+            )}
+            <div class="sub-feature__panel">
+              <span class="sub-chip sub-chip--terracotta">Featured story</span>
+              <h2>
+                <a href={urlOf(featuredPost)}>{featuredPost.data.title}</a>
+              </h2>
+              <p class="sub-feature__meta">
+                {featuredMeta?.categoryData?.label} &middot; {dateOf(featuredPost)}
+              </p>
             </div>
-          </div>
+            <aside class="sub-feature__verdict">
+              <h3>The 30-second version</h3>
+              <p>{featuredPost.data.description}</p>
+              <a href={urlOf(featuredPost)}>Read the full guide &rarr;</a>
+            </aside>
+          </article>
         </section>
       )
     }
 
-    <!-- Main Editorial Section: Recent Deep-Dive Guides + Sticky Suburbanite Rulebook Sidebar -->
-    <section class="app-layout-wide py-12 sm:py-16">
-      <div class="grid gap-12 lg:grid-cols-[1fr_22rem] lg:gap-14">
-        {/* Left Column: Recent Deep-Dive Guides Grid (2 columns) */}
-        <div>
-          <div class="mb-8 flex items-baseline justify-between border-b border-border pb-4">
-            <div>
-              <p class="eyebrow">Field-Tested Reviews & How-Tos</p>
-              <h2 class="font-display text-2xl font-bold tracking-tight text-heading sm:text-3xl">
-                Recent deep-dive guides
-              </h2>
-            </div>
-            <a
-              href={getRelativeLocaleUrl(locale, "posts")}
-              class="text-sm font-bold text-accent transition-colors hover:text-accent-hover"
+    <!-- Guides + sidebar -->
+    <div class="sub-columns app-layout-wide">
+      <div class="sub-columns__main">
+        <section aria-labelledby="recent-heading">
+          <div class="sub-heading">
+            <h2 id="recent-heading">Recent deep-dive guides</h2>
+            <a href={getRelativeLocaleUrl(locale, "posts")}
+              >All {posts.length} guides &rarr;</a
             >
-              Browse all 19 guides →
-            </a>
           </div>
+          <ul class="sub-cards">
+            {
+              recentPosts.map(post => {
+                const image = imageOf(post);
+                return (
+                  <li class="sub-card">
+                    <a href={urlOf(post)} class="sub-card__link">
+                      <div class="sub-card__media">
+                        {image && (
+                          <img
+                            src={image}
+                            alt=""
+                            width="640"
+                            height="400"
+                            decoding="async"
+                          />
+                        )}
+                      </div>
+                      <div class="sub-card__body">
+                        <h3>{post.data.title}</h3>
+                        <p>{post.data.description}</p>
+                        <div class="sub-card__chips">
+                          {chipsOf(post).map(chip => (
+                            <span class="sub-chip">{chip}</span>
+                          ))}
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                );
+              })
+            }
+          </ul>
+        </section>
 
-          <div class="grid gap-6 sm:grid-cols-2">
-            {latestPosts.slice(0, 4).map(post => (
-              <Card variant="h3" {...post} />
-            ))}
+        <section class="sub-more" aria-labelledby="more-heading">
+          <div class="sub-heading">
+            <h2 id="more-heading">More from the workbench</h2>
           </div>
+          <ul class="sub-list">
+            {
+              moreGuides.map(post => (
+                <li>
+                  <a href={urlOf(post)}>
+                    <span class="sub-list__cat">
+                      {getGuideMeta(post).categoryData?.label}
+                    </span>
+                    <span class="sub-list__title">{post.data.title}</span>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+      </div>
 
-          <!-- Explore by Goal / Category Section -->
-          <div class="mt-16">
-            <div class="mb-6 border-b border-border pb-3">
-              <p class="eyebrow">Explore by decision</p>
-              <h3 class="font-display text-xl font-bold text-heading sm:text-2xl">
-                Find the guidance that fits the job
-              </h3>
-            </div>
-            <div class="grid gap-4 sm:grid-cols-2">
-              {
-                GUIDE_CATEGORIES.map((category, index) => {
-                  const categoryPosts = getPostsForCategory(posts, category.slug);
-                  return (
-                    <article class:list={["goal-card", `goal-card--${index + 1}`]}>
-                      <p class="goal-card__eyebrow">{category.eyebrow}</p>
-                      <h4 class="font-display text-lg font-bold text-heading">{category.label}</h4>
-                      <p class="text-xs text-muted-foreground mt-1">{category.description}</p>
-                      <ul class="my-3 space-y-1">
-                        {categoryPosts.slice(0, 2).map(post => (
-                          <li>
-                            <a href={`/posts/${getGuideSlug(post)}/`} class="text-xs font-semibold hover:text-accent">
-                              {post.data.title}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                      <a class="text-xs font-bold text-accent inline-flex items-center gap-1" href={`/categories/${category.slug}/`}>
-                        View {category.label.toLowerCase()} <span>→</span>
-                      </a>
-                    </article>
-                  );
-                })
-              }
-            </div>
-          </div>
-        </div>
+      <aside class="sub-columns__side" aria-label="Site guide">
+        <section class="sub-rulebook" aria-labelledby="rulebook-heading">
+          <h2 id="rulebook-heading">The Suburbanite Rulebook</h2>
+          <ol>
+            <li>
+              <strong>If it needs the cloud to open your front door,</strong>
+              it doesn&rsquo;t get a key.
+            </li>
+            <li>
+              <strong>Think hard before paying monthly rent</strong> on a doorbell
+              you already own.
+            </li>
+            <li>
+              <strong>The 2 a.m. guest test:</strong> if a visitor can&rsquo;t turn
+              on the hallway light, the setup failed.
+            </li>
+          </ol>
+        </section>
 
-        {/* Right Column: The Suburbanite Rulebook & Popular Categories */}
-        <aside class="space-y-8">
-          <!-- The Suburbanite Rulebook Card (Witty American Suburban Voice) -->
-          <div class="rounded-2xl border-2 border-accent/30 bg-surface p-6 shadow-sm">
-            <span class="mb-3 inline-block rounded-md bg-accent px-2.5 py-1 text-[11px] font-bold tracking-wider text-accent-foreground uppercase">
-              The Suburbanite Rulebook
-            </span>
-            <h3 class="font-display text-xl font-bold tracking-tight text-heading">
-              Three rules every smart homeowner learns the hard way
-            </h3>
-            
-            <ol class="mt-5 space-y-4">
-              <li class="rounded-xl border border-border/80 bg-background/60 p-4">
-                <span class="font-display text-sm font-bold text-warm">1. If the cloud dies, the door still opens.</span>
-                <p class="mt-1 text-xs leading-relaxed text-muted-foreground">
-                  Never buy a lock, garage opener, or thermostat that becomes a paperweight when AWS goes down in Virginia.
-                </p>
-              </li>
-              <li class="rounded-xl border border-border/80 bg-background/60 p-4">
-                <span class="font-display text-sm font-bold text-warm">2. Zero monthly rent on hardware.</span>
-                <p class="mt-1 text-xs leading-relaxed text-muted-foreground">
-                  You already paid $200 for the doorbell. Refuse to pay $12/month just to see who dropped off your Amazon box.
-                </p>
-              </li>
-              <li class="rounded-xl border border-border/80 bg-background/60 p-4">
-                <span class="font-display text-sm font-bold text-warm">3. The 2 AM spouse test.</span>
-                <p class="mt-1 text-xs leading-relaxed text-muted-foreground">
-                  If someone needs a smartphone app or Wi-Fi bridge just to turn on the bathroom light in the dark, you failed.
-                </p>
-              </li>
-            </ol>
-          </div>
-
-          <!-- Popular Category Guides -->
-          <div class="rounded-2xl border border-border bg-surface p-6 shadow-sm">
-            <h3 class="font-display text-base font-bold text-heading uppercase tracking-wider">
-              Popular Category Guides
-            </h3>
-            <div class="mt-4 divide-y divide-border/60">
-              {
-                GUIDE_CATEGORIES.map(category => (
+        <section class="sub-side-block" aria-labelledby="topics-heading">
+          <h2 id="topics-heading">Popular category guides</h2>
+          <ul class="sub-topics">
+            {
+              GUIDE_CATEGORIES.map(category => (
+                <li>
                   <a
-                    href={`/categories/${category.slug}/`}
-                    class="flex items-center justify-between py-2.5 text-sm font-semibold text-foreground hover:text-accent"
+                    href={getRelativeLocaleUrl(
+                      locale,
+                      `categories/${category.slug}`
+                    )}
                   >
                     <span>{category.label}</span>
-                    <span class="text-xs text-muted-foreground font-mono">→</span>
+                    <span class="sub-topics__count">
+                      {getPostsForCategory(posts, category.slug).length}
+                    </span>
                   </a>
-                ))
-              }
-            </div>
-          </div>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
 
-          <!-- Editorial Promise Badge -->
-          <div class="rounded-2xl border border-warm/30 bg-warm-soft p-5 text-center">
-            <span class="text-2xl">🏡</span>
-            <p class="mt-2 text-xs font-bold text-heading">100% Independent Guidance</p>
-            <p class="mt-1 text-[11px] leading-relaxed text-muted-foreground">
-              No sponsored junk, no cloud traps. Tested in real suburban houses for normal families.
-            </p>
-          </div>
-        </aside>
-      </div>
-    </section>
+        <section class="sub-side-block" aria-labelledby="start-heading">
+          <h2 id="start-heading">New here? Start with these</h2>
+          <ol class="sub-start">
+            {
+              startHerePosts.map(post => (
+                <li>
+                  <a href={urlOf(post)}>{post.data.title}</a>
+                </li>
+              ))
+            }
+          </ol>
+        </section>
 
-    <!-- Editor's Starting Points Section -->
-    <section
-      class="section-block section-block--tinted"
-      aria-labelledby="start-heading"
-    >
-      <div class="app-layout-wide">
-        <div class="section-heading section-heading--split">
-          <div>
-            <p class="eyebrow">Editor’s starting points</p>
-            <h2 id="start-heading">Start with four useful questions</h2>
-            <p>Build context first, then check fit, language, and setup.</p>
-          </div>
-          <a class="text-link" href={getRelativeLocaleUrl(locale, "start-here")}
-            >Follow the Start Here path <span>→</span></a
+        <section class="sub-note" aria-labelledby="note-heading">
+          <h2 id="note-heading">How we write these guides</h2>
+          <p>
+            We focus on compatibility, privacy, upkeep, and realistic setup
+            effort. Guides don&rsquo;t claim hands-on product testing or rank
+            products for everyone.
+          </p>
+          <a href={getRelativeLocaleUrl(locale, "editorial-process")}
+            >Our editorial process &rarr;</a
           >
-        </div>
-        <ol class="start-path">
-          {
-            startHerePosts.map(
-              (post, index) =>
-                post && (
-                  <li>
-                    <span class="start-path__number">0{index + 1}</span>
-                    <Card as="div" variant="h3" display="compact" {...post} />
-                  </li>
-                )
-            )
-          }
-        </ol>
-      </div>
-    </section>
-
-    <aside
-      class="editorial-note app-layout-wide"
-      aria-labelledby="editorial-note-heading"
-    >
-      <p class="eyebrow">How we approach smart-home guidance</p>
-      <h2 id="editorial-note-heading">
-        Useful fit matters more than a longer feature list.
-      </h2>
-      <p>
-        The Smart Suburbanite focuses on compatibility, privacy, maintenance,
-        household access, and realistic setup effort. Guides do not claim
-        personal product testing or rank products for everyone.
-      </p>
-      <a class="text-link" href={getRelativeLocaleUrl(locale, "about")}
-        >Read about the editorial approach <span>→</span></a
-      >
-    </aside>
+        </section>
+      </aside>
+    </div>
   </main>
   <Footer />
 </Layout>

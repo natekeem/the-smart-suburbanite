@@ -54,28 +54,28 @@
 
 :root,
 [data-theme="light"] {
-  --background: #faf8f3;
-  --surface: #ffffff;
+  --background: #f8f4ea;
+  --surface: #fdfbf6;
   --surface-strong: #ffffff;
-  --foreground: #1c2720;
-  --heading: #14221a;
-  --accent: #24523b;
-  --accent-hover: #1b3e2c;
-  --accent-soft: #e5eee8;
+  --foreground: #1e2821;
+  --heading: #152219;
+  --accent: #214d37;
+  --accent-hover: #183b29;
+  --accent-soft: #e3ece6;
   --accent-foreground: #ffffff;
-  --warm: #c85a32;
-  --warm-soft: #faeee7;
+  --warm: #c45730;
+  --warm-soft: #f6e7dc;
   --amber: #d99136;
-  --muted: #ebe7de;
-  --muted-foreground: #5a6b61;
-  --border: #e3ded4;
-  --shadow: 0 12px 36px rgb(31 41 34 / 0.07);
+  --muted: #ebe3d2;
+  --muted-foreground: #546158;
+  --border: #dfd6c3;
+  --shadow: 0 14px 36px rgb(24 38 29 / 0.08);
   --font-body:
     Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
   --font-display:
     "Source Serif 4", "Iowan Old Style", Baskerville, Georgia, serif;
-  --reading-width: 45rem;
+  --reading-width: 44rem;
 }
 
 [data-theme="dark"] {

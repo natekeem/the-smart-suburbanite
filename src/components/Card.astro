@@ -2,6 +2,7 @@
 import type { CollectionEntry } from "astro:content";
 import { getPostUrl } from "@/utils/getPostPaths";
 import { toTransitionName } from "@/utils/toTransitionName";
+import Datetime from "./Datetime.astro";
 import { getGuideMeta } from "@/data/guideTaxonomy";
 
 type Props = {
@@ -19,7 +20,7 @@ const {
   filePath,
 } = Astro.props as Props;
 
-const { title, description, ogImage } = data;
+const { title, description, ogImage, ...props } = data;
 const meta = getGuideMeta(Astro.props as CollectionEntry<"posts">);
 const image = typeof ogImage === "string" ? ogImage : ogImage?.src;
 ---
@@ -27,46 +28,28 @@ const image = typeof ogImage === "string" ? ogImage : ogImage?.src;
 <Wrapper class:list={["guide-card", `guide-card--${display}`]}>
   <a
     href={getPostUrl(id, filePath, Astro.currentLocale)}
-    class="guide-card__link group flex flex-col h-full rounded-2xl border border-border bg-surface p-3 overflow-hidden shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md hover:border-accent/40"
+    class="guide-card__link"
     aria-label={`Read ${title}`}
   >
     {
       image && display !== "compact" && (
-        <div class="guide-card__media aspect-[16/10] overflow-hidden rounded-xl bg-muted">
-          <img
-            src={image}
-            alt=""
-            width="720"
-            height="450"
-            loading="lazy"
-            class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-102"
-          />
+        <div class="guide-card__media">
+          <img src={image} alt="" width="720" height="405" loading="lazy" />
         </div>
       )
     }
-    <div class="guide-card__body flex flex-1 flex-col p-3 pt-4">
-      <div class="guide-card__meta flex flex-wrap items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent">
+    <div class="guide-card__body">
+      <div class="guide-card__meta">
         <span>{meta.categoryData?.label}</span>
-        <span aria-hidden="true" class="text-muted-foreground/60">·</span>
-        <span class="text-muted-foreground">{meta.purpose}</span>
+        <span aria-hidden="true">·</span>
+        <span>{meta.purpose}</span>
       </div>
-      <Heading
-        class="font-display mt-2 text-lg font-bold leading-snug text-heading transition-colors group-hover:text-accent sm:text-xl"
-        transition:name={toTransitionName(title)}
+      <Heading transition:name={toTransitionName(title)}>{title}</Heading>
+      <p>{description}</p>
+      <Datetime {...props} />
+      <span class="guide-card__action" aria-hidden="true"
+        >Read guide <span>→</span></span
       >
-        {title}
-      </Heading>
-      <p class="mt-2 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
-        {description}
-      </p>
-      <div class="mt-auto pt-4 flex items-center justify-between border-t border-border/60">
-        <span class="inline-flex items-center gap-1.5 rounded-full bg-accent-soft px-2.5 py-0.5 text-[11px] font-bold text-accent">
-          No Monthly Fees
-        </span>
-        <span class="text-xs font-bold text-accent group-hover:translate-x-0.5 transition-transform" aria-hidden="true">
-          Read guide →
-        </span>
-      </div>
     </div>
   </a>
 </Wrapper>
