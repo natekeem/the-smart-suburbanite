@@ -133,6 +133,10 @@ export const GUIDE_META: Record<string, GuideMeta> = {
     category: "comfort-convenience",
     purpose: "Decision Guide",
   },
+  "smart-energy-monitors-ct-clamps-electric-bill": {
+    category: "maintenance-setup",
+    purpose: "Decision Guide",
+  },
 };
 
 export const START_HERE_SLUGS = [
