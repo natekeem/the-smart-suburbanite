@@ -144,13 +144,24 @@
     }
   }
 
-  /* ===== Code Blocks & Syntax Highlighting ===== */
+  /* ===== Code Blocks & Editorial Spec Sheets ===== */
   .astro-code {
-    @apply outline-border flex border bg-(--shiki-light-bg) text-(--shiki-light) [&_span]:text-(--shiki-light);
+    @apply flex border;
+    border-color: var(--border) !important;
+    border-radius: 0.85rem;
+    background-color: var(--surface) !important;
+    color: var(--foreground) !important;
+    box-shadow: 0 2px 10px rgb(24 38 29 / 0.04);
+  }
+
+  .astro-code span {
+    color: var(--foreground) !important;
   }
 
   html[data-theme="dark"] .astro-code {
-    @apply bg-(--shiki-dark-bg) text-(--shiki-dark) [&_span]:text-(--shiki-dark);
+    border-color: var(--border) !important;
+    background-color: var(--surface) !important;
+    color: var(--foreground) !important;
   }
 
   /* Styles for Shiki transformers */

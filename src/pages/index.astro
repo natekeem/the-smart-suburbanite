@@ -140,6 +140,7 @@ const startHerePosts = START_HERE_SLUGS.map(slug =>
             {
               recentPosts.map(post => {
                 const image = imageOf(post);
+                const meta = getGuideMeta(post);
                 return (
                   <li class="sub-card">
                     <a href={urlOf(post)} class="sub-card__link">
@@ -155,8 +156,13 @@ const startHerePosts = START_HERE_SLUGS.map(slug =>
                         )}
                       </div>
                       <div class="sub-card__body">
+                        <p class="sub-card__meta">
+                          <span>{meta.categoryData?.label}</span>
+                          <span aria-hidden="true">&middot;</span>
+                          <span>{dateOf(post)}</span>
+                        </p>
                         <h3>{post.data.title}</h3>
-                        <p>{post.data.description}</p>
+                        <p class="sub-card__desc">{post.data.description}</p>
                         <div class="sub-card__chips">
                           {chipsOf(post).map(chip => (
                             <span class="sub-chip">{chip}</span>
@@ -174,6 +180,9 @@ const startHerePosts = START_HERE_SLUGS.map(slug =>
         <section class="sub-more" aria-labelledby="more-heading">
           <div class="sub-heading">
             <h2 id="more-heading">More from the workbench</h2>
+            <a href={getRelativeLocaleUrl(locale, "posts")}
+              >Browse archive &rarr;</a
+            >
           </div>
           <ul class="sub-list">
             {
@@ -184,6 +193,7 @@ const startHerePosts = START_HERE_SLUGS.map(slug =>
                       {getGuideMeta(post).categoryData?.label}
                     </span>
                     <span class="sub-list__title">{post.data.title}</span>
+                    <span class="sub-list__date">{dateOf(post)}</span>
                   </a>
                 </li>
               ))
@@ -193,25 +203,33 @@ const startHerePosts = START_HERE_SLUGS.map(slug =>
       </div>
 
       <aside class="sub-columns__side" aria-label="Site guide">
-        <section class="sub-rulebook" aria-labelledby="rulebook-heading">
-          <h2 id="rulebook-heading">The Suburbanite Rulebook</h2>
-          <ol>
-            <li>
-              <strong>If it needs the cloud to open your front door,</strong>
-              it doesn&rsquo;t get a key.
-            </li>
-            <li>
-              <strong>Think hard before paying monthly rent</strong> on a doorbell
-              you already own.
-            </li>
-            <li>
-              <strong>The 2 a.m. guest test:</strong> if a visitor can&rsquo;t turn
-              on the hallway light, the setup failed.
-            </li>
+        <section
+          class="sub-side-card sub-side-card--warm"
+          aria-labelledby="start-heading"
+        >
+          <p class="sub-side-card__eyebrow">Start Here &middot; 4-Step Path</p>
+          <h2 id="start-heading">New here? Start with these</h2>
+          <ol class="sub-start">
+            {
+              startHerePosts.map((post, idx) => (
+                <li>
+                  <a href={urlOf(post)}>
+                    <span class="sub-start__num">0{idx + 1}</span>
+                    <span class="sub-start__title">{post.data.title}</span>
+                  </a>
+                </li>
+              ))
+            }
           </ol>
+          <a
+            class="sub-side-card__more"
+            href={getRelativeLocaleUrl(locale, "start-here")}
+            >Follow the full starter roadmap &rarr;</a
+          >
         </section>
 
-        <section class="sub-side-block" aria-labelledby="topics-heading">
+        <section class="sub-side-card" aria-labelledby="topics-heading">
+          <p class="sub-side-card__eyebrow">Browse by Goal</p>
           <h2 id="topics-heading">Popular category guides</h2>
           <ul class="sub-topics">
             {
@@ -225,7 +243,7 @@ const startHerePosts = START_HERE_SLUGS.map(slug =>
                   >
                     <span>{category.label}</span>
                     <span class="sub-topics__count">
-                      {getPostsForCategory(posts, category.slug).length}
+                      {getPostsForCategory(posts, category.slug).length} guides
                     </span>
                   </a>
                 </li>
@@ -234,29 +252,39 @@ const startHerePosts = START_HERE_SLUGS.map(slug =>
           </ul>
         </section>
 
-        <section class="sub-side-block" aria-labelledby="start-heading">
-          <h2 id="start-heading">New here? Start with these</h2>
-          <ol class="sub-start">
-            {
-              startHerePosts.map(post => (
-                <li>
-                  <a href={urlOf(post)}>{post.data.title}</a>
-                </li>
-              ))
-            }
-          </ol>
-        </section>
-
-        <section class="sub-note" aria-labelledby="note-heading">
-          <h2 id="note-heading">How we write these guides</h2>
-          <p>
-            We focus on compatibility, privacy, upkeep, and realistic setup
-            effort. Guides don&rsquo;t claim hands-on product testing or rank
-            products for everyone.
-          </p>
-          <a href={getRelativeLocaleUrl(locale, "editorial-process")}
-            >Our editorial process &rarr;</a
-          >
+        <section class="sub-side-card" aria-labelledby="rulebook-heading">
+          <p class="sub-side-card__eyebrow">Editorial Standards</p>
+          <h2 id="rulebook-heading">The Suburbanite Rulebook</h2>
+          <ul class="sub-rules">
+            <li>
+              <a href="/posts/smart-locks-convenience-security-common-tradeoffs/">
+                <strong>1. Cloud-free front doors:</strong> if a lock needs an account
+                outage check to open, it doesn&rsquo;t get a key.
+              </a>
+            </li>
+            <li>
+              <a href="/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/">
+                <strong>2. Zero monthly rent:</strong> don&rsquo;t pay a subscription
+                for a doorbell or garage opener you already bought.
+              </a>
+            </li>
+            <li>
+              <a href="/posts/smart-lighting-hallways-stairs-nighttime-routines/">
+                <strong>3. The 2 a.m. guest test:</strong> a visitor should always
+                be able to flip a wall switch and get light.
+              </a>
+            </li>
+          </ul>
+          <div class="sub-note-inline">
+            <p>
+              We focus on compatibility, privacy, upkeep, and realistic setup
+              effort &mdash; without claiming fake hands-on testing or paid
+              rankings.
+            </p>
+            <a href={getRelativeLocaleUrl(locale, "editorial-process")}
+              >How we research &amp; review guides &rarr;</a
+            >
+          </div>
         </section>
       </aside>
     </div>
