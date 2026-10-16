@@ -145,6 +145,20 @@ const ogImage = ogImageUrl
         <Datetime {pubDatetime} {modDatetime} {timezone} size="lg" />
         <EditPost {hideEditPost} {post} class="max-sm:hidden" />
       </div>
+
+      {
+        ogImageUrl && (
+          <div class="article-cover">
+            <img
+              src={ogImageUrl}
+              alt={title}
+              width="1200"
+              height="675"
+              loading="eager"
+            />
+          </div>
+        )
+      }
     </header>
 
     <article

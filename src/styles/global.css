@@ -928,6 +928,24 @@
   justify-content: space-between;
 }
 
+.article-cover {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-top: 1.75rem;
+  overflow: hidden;
+  border-radius: 0.85rem;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.06);
+  background: var(--muted);
+}
+
+.article-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .article-responsibility {
   display: flex;
   flex-wrap: wrap;

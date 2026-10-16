@@ -92,6 +92,9 @@ The most common mistake homeowners make is comparing the bare equipment cost of 
 
 > ⚠️ **The Section 25D Reality Check**: Under the federal Inflation Reduction Act, standalone residential battery storage systems with a capacity of 3 kWh or greater qualify for an uncapped **30% Residential Clean Energy Credit through 2032**. Crucially, you do **not** need to install solar panels to claim this credit. Because fossil-fuel generators receive zero federal incentives, the net out-of-pocket cost of a single Powerwall 3 is frequently *lower* than a complete standby generator installation.
 
+![10-Year True Cost of Ownership Breakdown: Tesla Powerwall 3 vs Generac 26kW Standby Generator](/assets/images/posts/tesla-powerwall-3-vs-generators-whole-home-battery-backup/tco-10yr-comparison.png)
+*Figure 1: 10-Year True Cost of Ownership (TCO) Comparison including equipment, electrical installation, gas trenching, the 30% federal clean energy tax credit, and routine maintenance.*
+
 ---
 
 ## 4. The Air Conditioner Inrush Trap: Why 13.5 kWh Can Trip in 150 Milliseconds
@@ -103,6 +106,9 @@ Electric motors—especially older single-stage scroll compressors found in 3-to
 A typical 4-ton residential AC unit might only draw 14 to 18 Amps while running steadily (Rated Load Amps, or RLA)—roughly 3,500 to 4,300 Watts. A Powerwall 3 (11.5 kW continuous) can run that load effortlessly. 
 
 However, at the precise split-second the thermostat clicks on, that same 4-ton compressor demands an LRA surge of **85 to 110 Amps at 240V** for approximately 100 to 150 milliseconds. That represents an instantaneous demand of over **20,000 to 26,000 Volt-Amps**.
+
+![Central AC Compressor Inrush Current Waveform: Locked Rotor Amps vs Soft Start](/assets/images/posts/tesla-powerwall-3-vs-generators-whole-home-battery-backup/hvac-inrush-softstarter.png)
+*Figure 2: Oscilloscope waveform comparison of central air conditioner startup current. An electronic soft starter reduces peak inrush from 96A down to 28A, preventing inverter overload trips on a single battery.*
 
 ```
 AC Startup Demand Curve:
