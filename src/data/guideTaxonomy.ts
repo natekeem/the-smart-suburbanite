@@ -141,6 +141,10 @@ export const GUIDE_META: Record<string, GuideMeta> = {
     category: "maintenance-setup",
     purpose: "Decision Guide",
   },
+  "ev-charger-100-amp-panel-smart-load-shedding": {
+    category: "maintenance-setup",
+    purpose: "Decision Guide",
+  },
 };
 
 export const START_HERE_SLUGS = [
