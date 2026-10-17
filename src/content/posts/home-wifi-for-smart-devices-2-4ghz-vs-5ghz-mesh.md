@@ -13,8 +13,6 @@ ogImage: https://smartsuburbanite.com/assets/images/posts/home-wifi-for-smart-de
 description: "Adding smart plugs, lights, and cameras often pushes home routers past their limit. Here is why smart devices require 2.4GHz, how band steering causes setup failures, and how to stop random disconnects."
 ---
 
-![An editorial photograph of a modern, minimalist white home mesh Wi-Fi node sitting discreetly on a warm oak wooden shelf in an orderly suburban hallway.](https://smartsuburbanite.com/assets/images/posts/home-wifi-for-smart-devices-2-4ghz-vs-5ghz-mesh/cover.jpg?v=cover-ready)
-
 It usually begins innocently enough on a Saturday afternoon. You buy a three-pack of smart outdoor plugs for holiday lights, or maybe a video doorbell and a couple of smart bulbs for the basement stairway. 
 
 You screw in the bulb, download the manufacturer’s smartphone app, plug in your credentials, and tap *“Add New Device.”*

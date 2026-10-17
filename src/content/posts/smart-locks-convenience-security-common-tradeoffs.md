@@ -12,8 +12,6 @@ ogImage: https://smartsuburbanite.com/assets/images/posts/smart-locks-convenienc
 description: A practical homeowner guide to smart lock convenience, backup access, battery care, guest codes, privacy, compatibility, and realistic security expectations.
 ---
 
-![A smart deadbolt on the inside of a front door with a traditional backup key hanging nearby and spare AA batteries resting on an entry table.](https://smartsuburbanite.com/assets/images/posts/smart-locks-convenience-security-common-tradeoffs/cover.jpg?v=photo-cover)
-
 The front door may need to work for four very different people on the same day. One resident wants to use a phone, another wants a key, a cleaner needs access for two hours, and a relative should be able to get in even if the internet is down.
 
 That is the real smart-lock decision. A smart lock can simplify entry and temporary access, but it also creates a small access system that someone must govern. The household has to choose everyday entry methods, recovery methods, account roles, battery routines, and a response when a phone or network is unavailable.

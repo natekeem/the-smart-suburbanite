@@ -13,8 +13,6 @@ ogImage: https://smartsuburbanite.com/assets/images/posts/smart-home-subscriptio
 description: Before you buy another camera or cancel your cloud plan, see what actually breaks when you refuse to pay monthly fees—and the 3 ways to build a subscription-free home.
 ---
 
-![A quiet suburban front porch with an unbranded video doorbell and a delivery package on the welcome mat in afternoon light.](https://smartsuburbanite.com/assets/images/posts/smart-home-subscription-trap-what-happens-when-you-cancel/cover.jpg?v=cover-ready)
-
 You buy a video doorbell for \$150 on sale, spend an hour mounting it to your porch siding, connect it to your Wi-Fi, and everything works as advertised. For the first thirty days, you get crisp thumbnail alerts whenever a package arrives, clean video clips stored neatly in the cloud, and instant playback whenever a neighbor walks by with their dog.
 
 Then, day thirty-one arrives.

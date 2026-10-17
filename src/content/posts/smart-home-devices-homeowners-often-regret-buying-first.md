@@ -12,8 +12,6 @@ ogImage: https://smartsuburbanite.com/assets/images/posts/smart-home-devices-hom
 description: A plain-English homeowner guide to smart home device categories that can create setup, cost, privacy, compatibility, or maintenance friction when bought too early.
 ---
 
-![A small indoor camera, a smart bulb, a tangle of cables, and an opened device box set aside on a hall closet shelf.](https://smartsuburbanite.com/assets/images/posts/smart-home-devices-homeowners-often-regret-buying-first/cover.jpg?v=photo-cover)
-
 A smart-home purchase becomes disappointing when the promise is easy to picture but the dependency stays hidden. The device may work exactly as designed and still be a poor first fit for the household that bought it.
 
 That distinction matters. This is not a list of bad product categories, and it is not a set of personal regret stories. It is a pattern guide: promise, hidden dependency, early warning sign, and a lower-commitment first step.

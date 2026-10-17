@@ -12,8 +12,6 @@ ogImage: https://smartsuburbanite.com/assets/images/posts/questions-before-buyin
 description: A practical checklist of questions to ask before buying your first smart home device, including compatibility, subscriptions, privacy, Wi-Fi, installation, and household usability.
 ---
 
-![A small unopened box, an open notebook of handwritten questions, a phone, and a cup of coffee on a kitchen island before buying a first smart-home device.](https://smartsuburbanite.com/assets/images/posts/questions-before-buying-first-smart-home-device/cover.jpg?v=photo-cover)
-
 Suppose one device is already on your shortlist. The useful next step is not reading more “best smart home” lists. It is writing down what that exact purchase would require from the house and the people who live there.
 
 This is a first-purchase worksheet. It starts after the orientation covered in [What Is a Smart Home?](/posts/what-is-a-smart-home/) and ends with one of three outcomes: proceed, investigate, or stop. It does not predict whether you will regret a category later; the separate [mismatch-pattern guide](/posts/smart-home-devices-homeowners-often-regret-buying-first/) handles that question.

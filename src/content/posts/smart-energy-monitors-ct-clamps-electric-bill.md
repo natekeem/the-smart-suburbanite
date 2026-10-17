@@ -16,8 +16,6 @@ ogImage: https://smartsuburbanite.com/assets/images/posts/smart-energy-monitors-
 draft: false
 ---
 
-![A neat residential 200-amp electrical panel interior with current transformer clamps installed around branch circuit conductors, showing clean wiring and digital energy monitoring module.](https://smartsuburbanite.com/assets/images/posts/smart-energy-monitors-ct-clamps-electric-bill/cover.jpg?v=cover-ready)
-
 Every summer and winter, suburban homeowners open their electric utility bills and experience the same sudden shock: $380, $520, or even $750 for a single billing cycle. 
 
 The utility company provides a simple bar graph comparing this month’s kilowatt-hours (kWh) to the previous year, but offers virtually zero actionable insight into what actually drove that spike. Was it the five-ton central air conditioner cycling through a heatwave? An uninsulated basement dehumidifier running 24 hours a day? A failing water heater element? Or the new electric vehicle charging on an unoptimized schedule?

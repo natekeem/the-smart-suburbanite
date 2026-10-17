@@ -13,8 +13,6 @@ ogImage: https://smartsuburbanite.com/assets/images/posts/smart-leak-detectors-v
 description: Before you buy a $30 leak sensor or spend $800 on a smart valve, see how point-of-use pucks compare to inline shutoff valves—and what home insurance actually requires for discounts.
 ---
 
-![An orderly suburban home utility room featuring clean copper plumbing lines and a brass shutoff valve in soft basement daylight.](https://smartsuburbanite.com/assets/images/posts/smart-leak-detectors-vs-automatic-shutoff-valves/cover.jpg?v=cover-ready)
-
 Imagine sitting at your departure gate at 2:15 on a Friday afternoon. Your boarding pass is in your hand, the kids are sharing a bag of airport pretzels, and your flight to Denver boards in twenty minutes.
 
 Then your phone vibrates.

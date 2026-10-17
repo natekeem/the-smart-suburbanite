@@ -11,8 +11,6 @@ ogImage: https://smartsuburbanite.com/assets/images/posts/smart-lighting-hallway
 description: A practical homeowner guide to using smart lighting for hallways, stairs, and nighttime routines without overcomplicating the home.
 ---
 
-![A softly lit upstairs hallway at night with a dimmed ceiling light and low step lighting along the stairs.](https://smartsuburbanite.com/assets/images/posts/smart-lighting-hallways-stairs-nighttime-routines/cover.jpg?v=photo-cover)
-
 The best place to think about smart lighting is not the bulb aisle. It is the path you actually walk at night.
 
 Maybe it is the short hallway between the bedroom and bathroom. Maybe it is the landing near the stairs. Maybe it is the route from the garage door to the kitchen when someone gets home late. In those moments, the problem is usually not that the house needs an elaborate lighting system. The problem is simpler: the light is not quite where you need it, when you need it, in a way the whole household will tolerate.

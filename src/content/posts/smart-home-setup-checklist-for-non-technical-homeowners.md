@@ -12,8 +12,6 @@ ogImage: https://smartsuburbanite.com/assets/images/posts/smart-home-setup-check
 description: A practical smart home setup checklist for non-technical homeowners who want to plan their first devices safely and avoid common setup mistakes.
 ---
 
-![A clipboard checklist, pencil, tape measure, smart plug, boxed smart bulb, and phone laid out on a dining table for first-time setup planning.](https://smartsuburbanite.com/assets/images/posts/smart-home-setup-checklist-for-non-technical-homeowners/cover.jpg?v=photo-cover)
-
 Smart home setup can sound simple until you start looking at real products.
 
 One device needs an app. Another works with a voice assistant. A third mentions a hub, bridge, Matter, Thread, Wi-Fi, Bluetooth, or a monthly plan. Suddenly a simple idea like "I want the lights to be easier to control" turns into a pile of decisions.

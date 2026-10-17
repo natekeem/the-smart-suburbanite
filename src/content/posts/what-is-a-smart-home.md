@@ -12,8 +12,6 @@ ogImage: https://smartsuburbanite.com/assets/images/posts/what-is-a-smart-home/c
 description: A plain-English introduction to smart home devices, benefits, tradeoffs, and first steps for everyday homeowners.
 ---
 
-![A cozy suburban living room at dusk with a warm table lamp, a small speaker on a side table, a smart plug in the wall outlet, and a phone on the coffee table.](https://smartsuburbanite.com/assets/images/posts/what-is-a-smart-home/cover.jpg?v=photo-cover)
-
 A smart home begins when something in the house can sense, communicate, or respond through a connected control. That could be one thermostat following a schedule, a leak sensor sending an alert, or several lights responding to one routine. It does not require a wall of screens, a voice assistant in every room, or a house that acts without people.
 
 The useful question is not how many smart devices you own. It is how a household task moves from a device, through a connection and a control, to a response—and what happens when one part of that path is unavailable.

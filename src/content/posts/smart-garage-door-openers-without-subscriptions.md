@@ -16,8 +16,6 @@ ogImage: https://smartsuburbanite.com/assets/images/posts/smart-garage-door-open
 draft: false
 ---
 
-![A clean suburban two-car garage interior showing an overhead opener on a ceiling rail with neat wiring and natural daylight on the concrete floor.](https://smartsuburbanite.com/assets/images/posts/smart-garage-door-openers-without-subscriptions/cover.jpg?v=cover-ready)
-
 For nearly a decade, the standard recipe for smart garage access was simple: buy a $30 Chamberlain myQ Wi-Fi sensor, stick it to your garage door, and connect it to your favorite smart home dashboard. It was inexpensive, worked with almost any opener made after 1993, and let homeowners check whether the door was left open while sitting at their office desk.
 
 Then, the ecosystem changed.

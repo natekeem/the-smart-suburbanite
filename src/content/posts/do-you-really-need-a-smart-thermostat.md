@@ -12,8 +12,6 @@ ogImage: https://smartsuburbanite.com/assets/images/posts/do-you-really-need-a-s
 description: A practical decision guide for homeowners deciding whether a smart thermostat is worth considering, when to wait, and what to check before buying.
 ---
 
-![An older programmable thermostat on a hallway wall above a console table with an unopened box and a cup of tea.](https://smartsuburbanite.com/assets/images/posts/do-you-really-need-a-smart-thermostat/cover.jpg?v=photo-cover)
-
 A smart thermostat sounds like one of the easiest smart home upgrades: replace the old thermostat, connect an app, and let the house manage temperature more intelligently.
 
 Sometimes that is true. A smart thermostat can make heating and cooling easier to schedule, easier to adjust remotely, and easier to understand.

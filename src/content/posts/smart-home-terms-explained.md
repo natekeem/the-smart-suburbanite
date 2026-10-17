@@ -12,8 +12,6 @@ ogImage: https://smartsuburbanite.com/assets/images/posts/smart-home-terms-expla
 description: Matter, Thread, Zigbee, and Z-Wave explained with a platform-first decision table for homeowners checking compatibility before they buy.
 ---
 
-![A small hub, a Wi-Fi router, a door contact sensor, a smart bulb, and a button remote lined up on a wooden shelf for comparison.](https://smartsuburbanite.com/assets/images/posts/smart-home-terms-explained/cover.jpg?v=photo-cover)
-
 If you are shopping for smart home devices, the hardest part is often not the device itself. It is the language around it.
 
 A light bulb may mention Matter. A sensor may mention Thread. A switch may say Zigbee. A lock may say Z-Wave. Then the box may also mention a hub, bridge, app, controller, platform, or ecosystem.

@@ -12,8 +12,6 @@ ogImage: https://smartsuburbanite.com/assets/images/posts/choose-smart-home-plat
 description: Use this household-fit comparison of Apple Home, Google Home, Amazon Alexa, and SmartThings before you add another smart device.
 ---
 
-![An unopened box, notebook, phone, and unbranded smart-home devices arranged on a suburban dining table before setup.](https://smartsuburbanite.com/assets/images/posts/choose-smart-home-platform-before-buying-devices/cover.jpg?v=cover-ready)
-
 Stop buying smart-home devices one at a time until you know which app your household wants to use every day.
 
 That does not mean you need to pledge loyalty to one brand. It means the next bulb, plug, lock, sensor, or thermostat should fit a control plan instead of creating another app, account, bridge, and troubleshooting path.

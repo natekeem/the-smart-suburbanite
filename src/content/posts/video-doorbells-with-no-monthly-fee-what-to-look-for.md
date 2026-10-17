@@ -12,8 +12,6 @@ ogImage: https://smartsuburbanite.com/assets/images/posts/video-doorbells-with-n
 description: A plain-English buyer checklist for homeowners comparing video doorbells with no monthly fee, including storage, app, privacy, and feature trade-offs.
 ---
 
-![A video doorbell beside the front door of a suburban home at dusk, with the porch light on and a package waiting on the step.](https://smartsuburbanite.com/assets/images/posts/video-doorbells-with-no-monthly-fee-what-to-look-for/cover.jpg?v=photo-cover)
-
 The doorbell alert appeared while you were in a meeting. Twenty minutes later, you open the app to see who was there—and discover that the notification did not necessarily include a recording you can replay.
 
 That is the question hidden behind many “no monthly fee” claims. A doorbell can notify you, show live video, or let you speak to a visitor without automatically saving the event for later. Another model may save clips locally, but only after you buy a hub or memory card and keep that storage working.

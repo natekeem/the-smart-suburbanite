@@ -11,8 +11,6 @@ ogImage: https://smartsuburbanite.com/assets/images/posts/simple-smart-home-upgr
 description: A practical guide to simple, reversible smart-home upgrades that fit older layouts, outlets, fixtures, walls, and household routines.
 ---
 
-![A vintage two-prong-style outlet replaced with a standard outlet holding a smart plug, powering a classic table lamp in a room with original wood trim.](https://smartsuburbanite.com/assets/images/posts/simple-smart-home-upgrades-for-older-homes/cover.jpg?v=photo-cover)
-
 An older house can make a simple smart-home idea feel surprisingly complicated. The lamp is in the right place, but the nearest outlet is already busy. The room where you want a sensor is separated from the router by thick plaster walls. One light uses a familiar switch, another has an older fixture, and a third is controlled from two different spots.
 
 Those details are not flaws. They are simply the conditions that should shape the plan.
