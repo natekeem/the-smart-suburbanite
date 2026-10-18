@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Video doorbell storage architectures without a monthly fee</title>
+  <desc id="desc">Comparison of four video doorbell storage paths at $0 per month: on-device microSD card, indoor hub or Sync Module USB drive, rolling 3-hour free cloud history, and live-view-only cloud baseline.</desc>
+  <rect width="1200" height="675" fill="#ffffff"/>
+  <rect x="36" y="28" width="1128" height="619" rx="20" fill="#ffffff" stroke="#e4e7ec" stroke-width="2"/>
+  <text x="68" y="78" fill="#101828" font-family="Arial, sans-serif" font-size="30" font-weight="700">Where No-Fee Video Doorbell Clips Actually Live ($0/Month Baseline)</text>
+  <text x="68" y="110" fill="#475467" font-family="Arial, sans-serif" font-size="18">Compare physical theft exposure, clip retention, and hardware requirements across the 4 documented architectures</text>
+
+  <!-- Card 1: On-Device microSD -->
+  <rect x="68" y="142" width="248" height="390" rx="16" fill="#eff8ff" stroke="#84adff" stroke-width="2"/>
+  <text x="88" y="178" fill="#175cd3" font-family="Arial, sans-serif" font-size="16" font-weight="700">1 · ON-DEVICE MICROSD</text>
+  <text x="88" y="208" fill="#101828" font-family="Arial, sans-serif" font-size="20" font-weight="700">Card Inside Doorbell</text>
+  <text x="88" y="242" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Example: eufy C31</text>
+  <text x="88" y="266" fill="#344054" font-family="Arial, sans-serif" font-size="15">  (microSD up to 128 GB)</text>
+  <text x="88" y="296" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Full event clips +</text>
+  <text x="88" y="320" fill="#344054" font-family="Arial, sans-serif" font-size="15">  24/7 when hardwired</text>
+  <text x="88" y="350" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Trade-off: card is</text>
+  <text x="88" y="374" fill="#344054" font-family="Arial, sans-serif" font-size="15">  outdoors unless paired</text>
+  <text x="88" y="398" fill="#344054" font-family="Arial, sans-serif" font-size="15">  with HomeBase S380</text>
+  <rect x="88" y="432" width="208" height="76" rx="10" fill="#ffffff"/>
+  <text x="102" y="460" fill="#067647" font-family="Arial, sans-serif" font-size="15" font-weight="700">$0/mo Local Clips</text>
+  <text x="102" y="484" fill="#475467" font-family="Arial, sans-serif" font-size="14">Buy high-endurance card</text>
+
+  <!-- Card 2: Indoor Sync Module USB -->
+  <rect x="340" y="142" width="248" height="390" rx="16" fill="#ecfdf3" stroke="#6ce9a6" stroke-width="2"/>
+  <text x="360" y="178" fill="#067647" font-family="Arial, sans-serif" font-size="16" font-weight="700">2 · INDOOR HUB + USB</text>
+  <text x="360" y="208" fill="#101828" font-family="Arial, sans-serif" font-size="20" font-weight="700">Sync Module Storage</text>
+  <text x="360" y="242" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Example: Blink Doorbell</text>
+  <text x="360" y="266" fill="#344054" font-family="Arial, sans-serif" font-size="15">  + Sync Module 2 + USB</text>
+  <text x="360" y="296" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Clips stored indoors</text>
+  <text x="360" y="320" fill="#344054" font-family="Arial, sans-serif" font-size="15">  (USB up to 256 GB)</text>
+  <text x="360" y="350" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Trade-off: slower clip</text>
+  <text x="360" y="374" fill="#344054" font-family="Arial, sans-serif" font-size="15">  loading; no cloud</text>
+  <text x="360" y="398" fill="#344054" font-family="Arial, sans-serif" font-size="15">  thumbnail previews</text>
+  <rect x="360" y="432" width="208" height="76" rx="10" fill="#ffffff"/>
+  <text x="374" y="460" fill="#067647" font-family="Arial, sans-serif" font-size="15" font-weight="700">$0/mo Indoor Clips</text>
+  <text x="374" y="484" fill="#475467" font-family="Arial, sans-serif" font-size="14">Protected if unit stolen</text>
+
+  <!-- Card 3: Rolling Cloud Buffer -->
+  <rect x="612" y="142" width="248" height="390" rx="16" fill="#fffaeb" stroke="#fec84b" stroke-width="2"/>
+  <text x="632" y="178" fill="#b54708" font-family="Arial, sans-serif" font-size="16" font-weight="700">3 · SHORT CLOUD WINDOW</text>
+  <text x="632" y="208" fill="#101828" font-family="Arial, sans-serif" font-size="20" font-weight="700">3-Hour Event Buffer</text>
+  <text x="632" y="242" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Example: Google Nest</text>
+  <text x="632" y="266" fill="#344054" font-family="Arial, sans-serif" font-size="15">  Doorbell (battery)</text>
+  <text x="632" y="296" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Includes 3-hr rolling</text>
+  <text x="632" y="320" fill="#344054" font-family="Arial, sans-serif" font-size="15">  event video history</text>
+  <text x="632" y="350" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Trade-off: overnight</text>
+  <text x="632" y="374" fill="#344054" font-family="Arial, sans-serif" font-size="15">  events expire before</text>
+  <text x="632" y="398" fill="#344054" font-family="Arial, sans-serif" font-size="15">  morning without plan</text>
+  <rect x="632" y="432" width="208" height="76" rx="10" fill="#ffffff"/>
+  <text x="646" y="460" fill="#b54708" font-family="Arial, sans-serif" font-size="15" font-weight="700">3-Hr Window Only</text>
+  <text x="646" y="484" fill="#475467" font-family="Arial, sans-serif" font-size="14">No local SD card slot</text>
+
+  <!-- Card 4: Live View Only -->
+  <rect x="884" y="142" width="248" height="390" rx="16" fill="#fef3f2" stroke="#fecdca" stroke-width="2"/>
+  <text x="904" y="178" fill="#b42318" font-family="Arial, sans-serif" font-size="16" font-weight="700">4 · LIVE-ONLY BASELINE</text>
+  <text x="904" y="208" fill="#101828" font-family="Arial, sans-serif" font-size="20" font-weight="700">No Saved Video Clips</text>
+  <text x="904" y="242" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Example: Ring Doorbell</text>
+  <text x="904" y="266" fill="#344054" font-family="Arial, sans-serif" font-size="15">  without Ring Home plan</text>
+  <text x="904" y="296" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Live view, alerts &amp;</text>
+  <text x="904" y="320" fill="#344054" font-family="Arial, sans-serif" font-size="15">  two-way talk work</text>
+  <text x="904" y="350" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Trade-off: missed ring</text>
+  <text x="904" y="374" fill="#344054" font-family="Arial, sans-serif" font-size="15">  leaves zero recorded</text>
+  <text x="904" y="398" fill="#344054" font-family="Arial, sans-serif" font-size="15">  video to review later</text>
+  <rect x="904" y="432" width="208" height="76" rx="10" fill="#ffffff"/>
+  <text x="918" y="460" fill="#b42318" font-family="Arial, sans-serif" font-size="15" font-weight="700">0 Saved Clips ($0/mo)</text>
+  <text x="918" y="484" fill="#475467" font-family="Arial, sans-serif" font-size="14">Plan required for history</text>
+
+  <rect x="68" y="556" width="1064" height="60" rx="10" fill="#f2f4f7"/>
+  <text x="600" y="592" text-anchor="middle" fill="#344054" font-family="Arial, sans-serif" font-size="17" font-weight="700">Decision Rule: For overnight package or security review at $0/month, choose Path 1 (microSD) or Path 2 (Indoor Hub/USB).</text>
+</svg>

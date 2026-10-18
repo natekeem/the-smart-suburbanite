@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Smart-home radio paths across 2.4 GHz, 5 GHz, 6 GHz, and Thread border routers</title>
+  <desc id="desc">Diagram showing a single-SSID multi-band router serving 2.4 GHz smart plugs and sensors on channels 1, 6, and 11, 5 GHz and 6 GHz high-bandwidth devices, and Thread 802.15.4 low-power devices via a Thread Border Router.</desc>
+  <rect width="1200" height="675" fill="#ffffff"/>
+  <rect x="36" y="28" width="1128" height="619" rx="20" fill="#ffffff" stroke="#e4e7ec" stroke-width="2"/>
+  <text x="68" y="78" fill="#101828" font-family="Arial, sans-serif" font-size="30" font-weight="700">One Network Name (SSID), Multiple Smart-Home Radio Paths</text>
+  <text x="68" y="110" fill="#475467" font-family="Arial, sans-serif" font-size="18">How Apple, Google Nest Wifi, and Matter/Thread separate high-speed clients from low-power devices</text>
+
+  <!-- Left: Router / Mesh Gateway -->
+  <rect x="68" y="195" width="270" height="290" rx="18" fill="#f9fafb" stroke="#d0d5dd" stroke-width="2"/>
+  <text x="203" y="242" text-anchor="middle" fill="#101828" font-family="Arial, sans-serif" font-size="22" font-weight="700">PRIMARY ROUTER</text>
+  <text x="203" y="270" text-anchor="middle" fill="#175cd3" font-family="Arial, sans-serif" font-size="17" font-weight="700">Single Primary SSID</text>
+  <text x="92" y="312" fill="#344054" font-family="Arial, sans-serif" font-size="15">• 2.4 GHz + 5 GHz (+ 6 GHz)</text>
+  <text x="92" y="338" fill="#344054" font-family="Arial, sans-serif" font-size="15">• WPA2 / WPA3 Transition</text>
+  <text x="92" y="364" fill="#344054" font-family="Arial, sans-serif" font-size="15">• mDNS / Local LAN discovery</text>
+  <text x="92" y="390" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Client isolation OFF on</text>
+  <text x="92" y="412" fill="#344054" font-family="Arial, sans-serif" font-size="15">  Matter commissioning LAN</text>
+  <text x="92" y="446" fill="#067647" font-family="Arial, sans-serif" font-size="14" font-weight="700">Apple #102766 Recommended</text>
+
+  <!-- Paths -->
+  <path d="M338 255H460M338 340H460M338 425H460" stroke="#98a2b3" stroke-width="4"/>
+
+  <!-- Band 1: 2.4 GHz Wi-Fi -->
+  <rect x="460" y="142" width="672" height="122" rx="16" fill="#eff8ff" stroke="#84adff" stroke-width="2"/>
+  <text x="486" y="176" fill="#175cd3" font-family="Arial, sans-serif" font-size="18" font-weight="700">PATH 1 · 2.4 GHz WI-FI (CHANNELS 1, 6, 11 · 20 MHz WIDTH)</text>
+  <text x="486" y="206" fill="#101828" font-family="Arial, sans-serif" font-size="18" font-weight="700">Longest Wall Range · Lowest Bandwidth · Most Embedded IoT Chips</text>
+  <text x="486" y="236" fill="#344054" font-family="Arial, sans-serif" font-size="16">Smart plugs, garage controllers, leak valves, thermostats, 2.4 GHz cameras</text>
+
+  <!-- Band 2: 5 GHz & 6 GHz Wi-Fi -->
+  <rect x="460" y="280" width="672" height="122" rx="16" fill="#f4f3ff" stroke="#bdb4fe" stroke-width="2"/>
+  <text x="486" y="314" fill="#5925dc" font-family="Arial, sans-serif" font-size="18" font-weight="700">PATH 2 · 5 GHz &amp; 6 GHz WI-FI (40 / 80 / 160 MHz CHANNELS)</text>
+  <text x="486" y="344" fill="#101828" font-family="Arial, sans-serif" font-size="18" font-weight="700">High Throughput · Lower Congestion · Shorter Wall Penetration</text>
+  <text x="486" y="374" fill="#344054" font-family="Arial, sans-serif" font-size="16">Phones, laptops, Apple TV / streaming boxes, dual-band doorbells, mesh backhaul</text>
+
+  <!-- Band 3: Thread 802.15.4 via Border Router -->
+  <rect x="460" y="418" width="672" height="122" rx="16" fill="#ecfdf3" stroke="#6ce9a6" stroke-width="2"/>
+  <text x="486" y="452" fill="#067647" font-family="Arial, sans-serif" font-size="18" font-weight="700">PATH 3 · THREAD MESH (IEEE 802.15.4) VIA THREAD BORDER ROUTER</text>
+  <text x="486" y="482" fill="#101828" font-family="Arial, sans-serif" font-size="18" font-weight="700">Low-Power IPv6 Mesh · Does Not Use Wi-Fi Credentials Directly</text>
+  <text x="486" y="512" fill="#344054" font-family="Arial, sans-serif" font-size="16">Battery locks, contact sensors, Matter-over-Thread switches bridged to home LAN</text>
+
+  <rect x="68" y="562" width="1064" height="56" rx="10" fill="#f2f4f7"/>
+  <text x="600" y="596" text-anchor="middle" fill="#344054" font-family="Arial, sans-serif" font-size="17" font-weight="700">Setup Tip: Keep phone and device on the same LAN/VLAN during onboarding; test signal at the final mounting spot before drilling.</text>
+</svg>

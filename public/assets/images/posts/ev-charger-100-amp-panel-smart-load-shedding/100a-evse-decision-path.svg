@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">NEC-grounded decision path for Level 2 EV charging on a 100-amp service</title>
+  <desc id="desc">Decision flowchart showing step 1 overnight recovery sizing under NEC 625.41, step 2 dwelling load calculation under NEC 220.82 or 220.87, and step 3 selecting fixed lower current, listed NEC 625.42 EVEMS load management, or a 200A service upgrade.</desc>
+  <rect width="1200" height="675" fill="#ffffff"/>
+  <rect x="36" y="28" width="1128" height="619" rx="20" fill="#ffffff" stroke="#e4e7ec" stroke-width="2"/>
+  <text x="68" y="78" fill="#101828" font-family="Arial, sans-serif" font-size="30" font-weight="700">100A Service EV Charging Decision Path (NEC Article 220 &amp; 625)</text>
+  <text x="68" y="110" fill="#475467" font-family="Arial, sans-serif" font-size="18">Evaluate daily recovery demand and dwelling load headroom before pricing a panel or utility upgrade</text>
+
+  <!-- Step 1 -->
+  <rect x="68" y="140" width="320" height="142" rx="16" fill="#eff8ff" stroke="#84adff" stroke-width="2"/>
+  <text x="92" y="176" fill="#175cd3" font-family="Arial, sans-serif" font-size="18" font-weight="700">STEP 1 · OVERNIGHT RECOVERY</text>
+  <text x="92" y="206" fill="#101828" font-family="Arial, sans-serif" font-size="21" font-weight="700">Apply NEC 625.41 (125% Rule)</text>
+  <text x="92" y="234" fill="#344054" font-family="Arial, sans-serif" font-size="16">• 16A output (3.8 kW) → 20A circuit</text>
+  <text x="92" y="258" fill="#344054" font-family="Arial, sans-serif" font-size="16">• 24A (5.8 kW) → 30A | 32A → 40A</text>
+
+  <!-- Arrow 1->2 -->
+  <path d="M388 211h44" stroke="#667085" stroke-width="3"/>
+  <path d="M422 203l12 8-12 8" fill="none" stroke="#667085" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Step 2 -->
+  <rect x="440" y="140" width="320" height="142" rx="16" fill="#fffaeb" stroke="#fec84b" stroke-width="2"/>
+  <text x="464" y="176" fill="#b54708" font-family="Arial, sans-serif" font-size="18" font-weight="700">STEP 2 · DWELLING LOAD CHECK</text>
+  <text x="464" y="206" fill="#101828" font-family="Arial, sans-serif" font-size="21" font-weight="700">NEC 220.82 or 220.87 Data</text>
+  <text x="464" y="234" fill="#344054" font-family="Arial, sans-serif" font-size="16">• Sum HVAC, range, dryer, water heater</text>
+  <text x="464" y="258" fill="#344054" font-family="Arial, sans-serif" font-size="16">• Check bus rating, spaces &amp; service lugs</text>
+
+  <!-- Arrow 2->3 -->
+  <path d="M760 211h44" stroke="#667085" stroke-width="3"/>
+  <path d="M794 203l12 8-12 8" fill="none" stroke="#667085" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Step 3 -->
+  <rect x="812" y="140" width="320" height="142" rx="16" fill="#ecfdf3" stroke="#6ce9a6" stroke-width="2"/>
+  <text x="836" y="176" fill="#067647" font-family="Arial, sans-serif" font-size="18" font-weight="700">STEP 3 · AHJ &amp; CODE EDITION</text>
+  <text x="836" y="206" fill="#101828" font-family="Arial, sans-serif" font-size="21" font-weight="700">Verify Local Permit Scope</text>
+  <text x="836" y="234" fill="#344054" font-family="Arial, sans-serif" font-size="16">• Confirm adopted NEC edition with AHJ</text>
+  <text x="836" y="258" fill="#344054" font-family="Arial, sans-serif" font-size="16">• Never remove deadfront cover DIY</text>
+
+  <!-- Branch connectors -->
+  <path d="M600 282v42M228 324h744M228 324v34M600 324v34M972 324v34" fill="none" stroke="#98a2b3" stroke-width="3"/>
+
+  <!-- Option A -->
+  <rect x="68" y="358" width="320" height="196" rx="16" fill="#f9fafb" stroke="#d0d5dd" stroke-width="2"/>
+  <text x="92" y="394" fill="#175cd3" font-family="Arial, sans-serif" font-size="18" font-weight="700">PATH A · FIXED LOWER CURRENT</text>
+  <text x="92" y="424" fill="#101828" font-family="Arial, sans-serif" font-size="21" font-weight="700">16A–24A Hardwired EVSE</text>
+  <text x="92" y="454" fill="#344054" font-family="Arial, sans-serif" font-size="16">• Fits when 100A load calc has 20A–30A</text>
+  <text x="92" y="478" fill="#344054" font-family="Arial, sans-serif" font-size="16">  spare capacity and panel is healthy</text>
+  <text x="92" y="506" fill="#344054" font-family="Arial, sans-serif" font-size="16">• Adds ~38–58 kWh in 10 hrs overnight</text>
+  <text x="92" y="532" fill="#067647" font-family="Arial, sans-serif" font-size="15" font-weight="700">No load controller or service trench needed</text>
+
+  <!-- Option B -->
+  <rect x="440" y="358" width="320" height="196" rx="16" fill="#f9fafb" stroke="#d0d5dd" stroke-width="2"/>
+  <text x="464" y="394" fill="#b54708" font-family="Arial, sans-serif" font-size="18" font-weight="700">PATH B · LISTED EVEMS (NEC 625.42)</text>
+  <text x="464" y="424" fill="#101828" font-family="Arial, sans-serif" font-size="21" font-weight="700">Dynamic Meter or Feeder Cut</text>
+  <text x="464" y="454" fill="#344054" font-family="Arial, sans-serif" font-size="16">• Used when peak calc exceeds 100A</text>
+  <text x="464" y="478" fill="#344054" font-family="Arial, sans-serif" font-size="16">  but panel hardware is serviceable</text>
+  <text x="464" y="506" fill="#344054" font-family="Arial, sans-serif" font-size="16">• CT clamp throttles/pauses EV at 80%</text>
+  <text x="464" y="532" fill="#b54708" font-family="Arial, sans-serif" font-size="15" font-weight="700">Requires listed EVEMS + AHJ approval</text>
+
+  <!-- Option C -->
+  <rect x="812" y="358" width="320" height="196" rx="16" fill="#f9fafb" stroke="#d0d5dd" stroke-width="2"/>
+  <text x="836" y="394" fill="#b42318" font-family="Arial, sans-serif" font-size="18" font-weight="700">PATH C · SERVICE UPGRADE</text>
+  <text x="836" y="424" fill="#101828" font-family="Arial, sans-serif" font-size="21" font-weight="700">200A Panel + Utility Drop</text>
+  <text x="836" y="454" fill="#344054" font-family="Arial, sans-serif" font-size="16">• Required when panel is obsolete,</text>
+  <text x="836" y="478" fill="#344054" font-family="Arial, sans-serif" font-size="16">  damaged, or full electrification follows</text>
+  <text x="836" y="506" fill="#344054" font-family="Arial, sans-serif" font-size="16">• Includes meter base, mast/trench &amp; main</text>
+  <text x="836" y="532" fill="#b42318" font-family="Arial, sans-serif" font-size="15" font-weight="700">Verify IRS 30C June 30, 2026 sunset</text>
+
+  <rect x="68" y="576" width="1064" height="48" rx="10" fill="#f2f4f7"/>
+  <text x="600" y="606" text-anchor="middle" fill="#344054" font-family="Arial, sans-serif" font-size="17" font-weight="700">Safety Rule: Only a licensed electrician may remove the panel deadfront or install CT clamps near energized service lugs.</text>
+</svg>

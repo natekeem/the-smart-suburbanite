@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Whole-home backup sizing and specification comparison worksheet</title>
+  <desc id="desc">Engineering worksheet comparing continuous power kW, motor locked-rotor amps LRA, and usable energy kWh between a Tesla Powerwall 3 and a 26 kW standby generator.</desc>
+  <rect width="1200" height="675" fill="#ffffff"/>
+  <rect x="36" y="28" width="1128" height="619" rx="20" fill="#ffffff" stroke="#e4e7ec" stroke-width="2"/>
+  <text x="68" y="78" fill="#101828" font-family="Arial, sans-serif" font-size="30" font-weight="700">Whole-Home Backup Sizing Worksheet: Powerwall 3 vs. Standby Generator</text>
+  <text x="68" y="110" fill="#475467" font-family="Arial, sans-serif" font-size="18">Separate continuous watts (kW), motor starting surge (LRA), and outage duration (kWh vs. fuel supply)</text>
+
+  <!-- Column 1: Continuous Power -->
+  <rect x="68" y="140" width="336" height="395" rx="16" fill="#eff8ff" stroke="#84adff" stroke-width="2"/>
+  <text x="92" y="178" fill="#175cd3" font-family="Arial, sans-serif" font-size="18" font-weight="700">1 · CONTINUOUS POWER (kW)</text>
+  <text x="92" y="210" fill="#101828" font-family="Arial, sans-serif" font-size="22" font-weight="700">Simultaneous Running Load</text>
+  <line x1="92" y1="228" x2="380" y2="228" stroke="#b2ddff" stroke-width="2"/>
+  <text x="92" y="260" fill="#101828" font-family="Arial, sans-serif" font-size="17" font-weight="700">Tesla Powerwall 3 (1 Unit):</text>
+  <text x="92" y="286" fill="#344054" font-family="Arial, sans-serif" font-size="16">• 11.5 kW (48A) continuous backup</text>
+  <text x="92" y="310" fill="#344054" font-family="Arial, sans-serif" font-size="16">• Covers essentials + 1 staged heavy load</text>
+  <text x="92" y="352" fill="#101828" font-family="Arial, sans-serif" font-size="17" font-weight="700">Generac 26 kW Standby:</text>
+  <text x="92" y="378" fill="#344054" font-family="Arial, sans-serif" font-size="16">• 22.5 kW on NG / 26 kW on LP</text>
+  <text x="92" y="402" fill="#344054" font-family="Arial, sans-serif" font-size="16">• Runs multiple 240V appliances</text>
+  <rect x="92" y="435" width="288" height="76" rx="10" fill="#ffffff"/>
+  <text x="108" y="465" fill="#175cd3" font-family="Arial, sans-serif" font-size="15" font-weight="700">AUDIT CHECK:</text>
+  <text x="108" y="490" fill="#344054" font-family="Arial, sans-serif" font-size="15">Sum simultaneous 120V + 240V circuits</text>
+
+  <!-- Column 2: Motor Starting Surge -->
+  <rect x="432" y="140" width="336" height="395" rx="16" fill="#fffaeb" stroke="#fec84b" stroke-width="2"/>
+  <text x="456" y="178" fill="#b54708" font-family="Arial, sans-serif" font-size="18" font-weight="700">2 · MOTOR SURGE (LRA)</text>
+  <text x="456" y="210" fill="#101828" font-family="Arial, sans-serif" font-size="22" font-weight="700">Compressor &amp; Pump Inrush</text>
+  <line x1="456" y1="228" x2="744" y2="228" stroke="#fedf89" stroke-width="2"/>
+  <text x="456" y="260" fill="#101828" font-family="Arial, sans-serif" font-size="17" font-weight="700">Tesla Powerwall 3 Rating:</text>
+  <text x="456" y="286" fill="#344054" font-family="Arial, sans-serif" font-size="16">• 185A LRA documented motor start</text>
+  <text x="456" y="310" fill="#344054" font-family="Arial, sans-serif" font-size="16">• Check AC &amp; well pump nameplate LRA</text>
+  <text x="456" y="352" fill="#101828" font-family="Arial, sans-serif" font-size="17" font-weight="700">Standby Generator + ATS:</text>
+  <text x="456" y="378" fill="#344054" font-family="Arial, sans-serif" font-size="16">• High mechanical surge capacity</text>
+  <text x="456" y="402" fill="#344054" font-family="Arial, sans-serif" font-size="16">• ATS can shed/stage multiple HVACs</text>
+  <rect x="456" y="435" width="288" height="76" rx="10" fill="#ffffff"/>
+  <text x="472" y="465" fill="#b54708" font-family="Arial, sans-serif" font-size="15" font-weight="700">AUDIT CHECK:</text>
+  <text x="472" y="490" fill="#344054" font-family="Arial, sans-serif" font-size="15">Read condenser nameplate LRA &amp; RLA</text>
+
+  <!-- Column 3: Outage Energy & Rules -->
+  <rect x="796" y="140" width="336" height="395" rx="16" fill="#ecfdf3" stroke="#6ce9a6" stroke-width="2"/>
+  <text x="820" y="178" fill="#067647" font-family="Arial, sans-serif" font-size="18" font-weight="700">3 · DURATION &amp; 2026 RULES</text>
+  <text x="820" y="210" fill="#101828" font-family="Arial, sans-serif" font-size="22" font-weight="700">Stored kWh vs. Fuel Supply</text>
+  <line x1="820" y1="228" x2="1108" y2="228" stroke="#a6f4c5" stroke-width="2"/>
+  <text x="820" y="260" fill="#101828" font-family="Arial, sans-serif" font-size="17" font-weight="700">Powerwall 3 (13.5 kWh Usable):</text>
+  <text x="820" y="286" fill="#344054" font-family="Arial, sans-serif" font-size="16">• 1.5 kW essentials ≈ 8–9 hrs per unit</text>
+  <text x="820" y="310" fill="#344054" font-family="Arial, sans-serif" font-size="16">• Recharges via solar (up to 20 kW DC)</text>
+  <text x="820" y="352" fill="#101828" font-family="Arial, sans-serif" font-size="17" font-weight="700">Compatibility &amp; Tax Guardrail:</text>
+  <text x="820" y="378" fill="#344054" font-family="Arial, sans-serif" font-size="16">• PW3 does NOT charge from generators</text>
+  <text x="820" y="402" fill="#344054" font-family="Arial, sans-serif" font-size="16">• IRS Sec. 25D ended Dec 31, 2025 ($0)</text>
+  <rect x="820" y="435" width="288" height="76" rx="10" fill="#ffffff"/>
+  <text x="836" y="465" fill="#067647" font-family="Arial, sans-serif" font-size="15" font-weight="700">AUDIT CHECK:</text>
+  <text x="836" y="490" fill="#344054" font-family="Arial, sans-serif" font-size="15">Price quotes with $0 federal 25D credit</text>
+
+  <rect x="68" y="558" width="1064" height="58" rx="10" fill="#f2f4f7"/>
+  <text x="600" y="594" text-anchor="middle" fill="#101828" font-family="Arial, sans-serif" font-size="17" font-weight="700">Commissioning Rule: Require an off-grid transfer and motor-start test before signing final installation acceptance.</text>
+</svg>

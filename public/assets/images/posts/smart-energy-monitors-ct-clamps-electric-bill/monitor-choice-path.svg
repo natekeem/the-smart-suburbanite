@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Four tiers of home electricity monitoring by data granularity and installation scope</title>
+  <desc id="desc">Comparison of utility Green Button interval data, 120V smart plug energy monitors, in-panel multi-circuit CT clamp monitors such as Emporia Vue 3, and smart load centers.</desc>
+  <rect width="1200" height="675" fill="#ffffff"/>
+  <rect x="36" y="28" width="1128" height="619" rx="20" fill="#ffffff" stroke="#e4e7ec" stroke-width="2"/>
+  <text x="68" y="78" fill="#101828" font-family="Arial, sans-serif" font-size="30" font-weight="700">Home Energy Monitoring Tiers: Granularity vs. Panel Boundary</text>
+  <text x="68" y="110" fill="#475467" font-family="Arial, sans-serif" font-size="18">Start with utility interval data and plug-in meters before hiring an electrician for in-panel CT clamps</text>
+
+  <!-- Tier 1 -->
+  <rect x="68" y="142" width="248" height="388" rx="16" fill="#eff8ff" stroke="#84adff" stroke-width="2"/>
+  <text x="90" y="178" fill="#175cd3" font-family="Arial, sans-serif" font-size="17" font-weight="700">TIER 1 · UTILITY PORTAL</text>
+  <text x="90" y="208" fill="#101828" font-family="Arial, sans-serif" font-size="21" font-weight="700">Smart Meter Data</text>
+  <text x="90" y="242" fill="#344054" font-family="Arial, sans-serif" font-size="15">• 15-min to 60-min kWh</text>
+  <text x="90" y="266" fill="#344054" font-family="Arial, sans-serif" font-size="15">• DOE Green Button export</text>
+  <text x="90" y="290" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Shows overnight baseload</text>
+  <text x="90" y="314" fill="#344054" font-family="Arial, sans-serif" font-size="15">  &amp; TOU peak timing</text>
+  <rect x="90" y="425" width="204" height="82" rx="10" fill="#ffffff"/>
+  <text x="104" y="454" fill="#067647" font-family="Arial, sans-serif" font-size="15" font-weight="700">DIY Safe · $0 Hardware</text>
+  <text x="104" y="478" fill="#475467" font-family="Arial, sans-serif" font-size="14">No panel work required</text>
+
+  <!-- Tier 2 -->
+  <rect x="340" y="142" width="248" height="388" rx="16" fill="#f4f3ff" stroke="#bdb4fe" stroke-width="2"/>
+  <text x="362" y="178" fill="#5925dc" font-family="Arial, sans-serif" font-size="17" font-weight="700">TIER 2 · CORDED LOADS</text>
+  <text x="362" y="208" fill="#101828" font-family="Arial, sans-serif" font-size="21" font-weight="700">120V Plug Monitors</text>
+  <text x="362" y="242" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Single 120V/15A outlet</text>
+  <text x="362" y="266" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Dehumidifiers, Peloton/PC</text>
+  <text x="362" y="290" fill="#344054" font-family="Arial, sans-serif" font-size="15">  racks, garage fridges</text>
+  <text x="362" y="314" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Match UL rating to load</text>
+  <rect x="362" y="425" width="204" height="82" rx="10" fill="#ffffff"/>
+  <text x="376" y="454" fill="#067647" font-family="Arial, sans-serif" font-size="15" font-weight="700">DIY Safe · Plug-In</text>
+  <text x="376" y="478" fill="#475467" font-family="Arial, sans-serif" font-size="14">Cannot measure 240V</text>
+
+  <!-- Tier 3 -->
+  <rect x="612" y="142" width="248" height="388" rx="16" fill="#fffaeb" stroke="#fec84b" stroke-width="2"/>
+  <text x="634" y="178" fill="#b54708" font-family="Arial, sans-serif" font-size="17" font-weight="700">TIER 3 · BRANCH CTs</text>
+  <text x="634" y="208" fill="#101828" font-family="Arial, sans-serif" font-size="21" font-weight="700">In-Panel CT Monitor</text>
+  <text x="634" y="242" fill="#344054" font-family="Arial, sans-serif" font-size="15">• 2× 200A main CTs + up to</text>
+  <text x="634" y="266" fill="#344054" font-family="Arial, sans-serif" font-size="15">  16× 50A branch CTs</text>
+  <text x="634" y="290" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Tracks 240V HVAC, EVSE,</text>
+  <text x="634" y="314" fill="#344054" font-family="Arial, sans-serif" font-size="15">  water heater &amp; subpanels</text>
+  <rect x="634" y="425" width="204" height="82" rx="10" fill="#ffffff"/>
+  <text x="648" y="454" fill="#b42318" font-family="Arial, sans-serif" font-size="15" font-weight="700">Licensed Electrician</text>
+  <text x="648" y="478" fill="#475467" font-family="Arial, sans-serif" font-size="14">Requires deadfront removal</text>
+
+  <!-- Tier 4 -->
+  <rect x="884" y="142" width="248" height="388" rx="16" fill="#ecfdf3" stroke="#6ce9a6" stroke-width="2"/>
+  <text x="906" y="178" fill="#067647" font-family="Arial, sans-serif" font-size="17" font-weight="700">TIER 4 · SMART PANEL</text>
+  <text x="906" y="208" fill="#101828" font-family="Arial, sans-serif" font-size="21" font-weight="700">Smart Load Center</text>
+  <text x="906" y="242" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Per-breaker metering +</text>
+  <text x="906" y="266" fill="#344054" font-family="Arial, sans-serif" font-size="15">  automated load shedding</text>
+  <text x="906" y="290" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Best paired with panel</text>
+  <text x="906" y="314" fill="#344054" font-family="Arial, sans-serif" font-size="15">  replacement or battery</text>
+  <rect x="906" y="425" width="204" height="82" rx="10" fill="#ffffff"/>
+  <text x="920" y="454" fill="#b42318" font-family="Arial, sans-serif" font-size="15" font-weight="700">Permitted Electrical Job</text>
+  <text x="920" y="478" fill="#475467" font-family="Arial, sans-serif" font-size="14">Full load center swap</text>
+
+  <rect x="68" y="556" width="1064" height="62" rx="12" fill="#fef3f2" stroke="#fecdca" stroke-width="2"/>
+  <text x="600" y="594" text-anchor="middle" fill="#b42318" font-family="Arial, sans-serif" font-size="18" font-weight="700">WARNING: Utility service lugs ahead of the main breaker stay live even when the main breaker is OFF. Never open the deadfront DIY.</text>
+</svg>

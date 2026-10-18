@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Smart garage door controller compatibility and UL 325 safety verification chain</title>
+  <desc id="desc">Five-step verification chain covering motor head model and wall console signaling, dry-contact versus Security+ 2.0 adapter requirements, door position sensor, UL 325 5-second audible and visual warning, and photoelectric beam entrapment test.</desc>
+  <rect width="1200" height="675" fill="#ffffff"/>
+  <rect x="36" y="28" width="1128" height="619" rx="20" fill="#ffffff" stroke="#e4e7ec" stroke-width="2"/>
+  <text x="68" y="78" fill="#101828" font-family="Arial, sans-serif" font-size="30" font-weight="700">No-Subscription Garage Controller Compatibility &amp; UL 325 Chain</text>
+  <text x="68" y="110" fill="#475467" font-family="Arial, sans-serif" font-size="18">Every link in the physical and safety chain must pass before enabling remote or automated closing</text>
+
+  <!-- Step 1 -->
+  <rect x="60" y="148" width="200" height="360" rx="14" fill="#eff8ff" stroke="#84adff" stroke-width="2"/>
+  <text x="80" y="184" fill="#175cd3" font-family="Arial, sans-serif" font-size="16" font-weight="700">1 · OPENER MODEL</text>
+  <text x="80" y="212" fill="#101828" font-family="Arial, sans-serif" font-size="19" font-weight="700">Motor Head Label</text>
+  <text x="80" y="246" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Exact model number</text>
+  <text x="80" y="272" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Learn button color</text>
+  <text x="80" y="298" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Wall button wiring</text>
+  <text x="80" y="324" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Check CA SB 969</text>
+  <text x="80" y="348" fill="#344054" font-family="Arial, sans-serif" font-size="15">  battery rules if new</text>
+
+  <!-- Step 2 -->
+  <rect x="280" y="148" width="200" height="360" rx="14" fill="#f4f3ff" stroke="#bdb4fe" stroke-width="2"/>
+  <text x="300" y="184" fill="#5925dc" font-family="Arial, sans-serif" font-size="16" font-weight="700">2 · SIGNAL PATH</text>
+  <text x="300" y="212" fill="#101828" font-family="Arial, sans-serif" font-size="19" font-weight="700">Relay vs. Serial</text>
+  <text x="300" y="246" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Standard dry-contact</text>
+  <text x="300" y="270" fill="#344054" font-family="Arial, sans-serif" font-size="15">  pushbutton terminals</text>
+  <text x="300" y="302" fill="#344054" font-family="Arial, sans-serif" font-size="15">• OR Security+ 2.0</text>
+  <text x="300" y="326" fill="#344054" font-family="Arial, sans-serif" font-size="15">  (yellow learn button)</text>
+  <text x="300" y="350" fill="#344054" font-family="Arial, sans-serif" font-size="15">  requiring an adapter</text>
+
+  <!-- Step 3 -->
+  <rect x="500" y="148" width="200" height="360" rx="14" fill="#fffaeb" stroke="#fec84b" stroke-width="2"/>
+  <text x="520" y="184" fill="#b54708" font-family="Arial, sans-serif" font-size="16" font-weight="700">3 · STATE SENSOR</text>
+  <text x="520" y="212" fill="#101828" font-family="Arial, sans-serif" font-size="19" font-weight="700">Door Position</text>
+  <text x="520" y="246" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Wired magnetic reed</text>
+  <text x="520" y="270" fill="#344054" font-family="Arial, sans-serif" font-size="15">  switch or tilt sensor</text>
+  <text x="520" y="302" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Must report true</text>
+  <text x="520" y="326" fill="#344054" font-family="Arial, sans-serif" font-size="15">  open/closed state</text>
+  <text x="520" y="350" fill="#344054" font-family="Arial, sans-serif" font-size="15">  after power loss</text>
+
+  <!-- Step 4 -->
+  <rect x="720" y="148" width="200" height="360" rx="14" fill="#fef3f2" stroke="#fecdca" stroke-width="2"/>
+  <text x="740" y="184" fill="#b42318" font-family="Arial, sans-serif" font-size="16" font-weight="700">4 · UL 325 WARNING</text>
+  <text x="740" y="212" fill="#101828" font-family="Arial, sans-serif" font-size="19" font-weight="700">Unattended Close</text>
+  <text x="740" y="246" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Audible + visual</text>
+  <text x="740" y="270" fill="#344054" font-family="Arial, sans-serif" font-size="15">  warning ≥ 5 seconds</text>
+  <text x="740" y="294" fill="#344054" font-family="Arial, sans-serif" font-size="15">  before door moves</text>
+  <text x="740" y="326" fill="#b42318" font-family="Arial, sans-serif" font-size="15" font-weight="700">• Required by CPSC</text>
+  <text x="740" y="350" fill="#b42318" font-family="Arial, sans-serif" font-size="15" font-weight="700">  16 CFR Part 1211</text>
+
+  <!-- Step 5 -->
+  <rect x="940" y="148" width="200" height="360" rx="14" fill="#ecfdf3" stroke="#6ce9a6" stroke-width="2"/>
+  <text x="960" y="184" fill="#067647" font-family="Arial, sans-serif" font-size="16" font-weight="700">5 · ENTRAPMENT</text>
+  <text x="960" y="212" fill="#101828" font-family="Arial, sans-serif" font-size="19" font-weight="700">Safety Reversal</text>
+  <text x="960" y="246" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Photoelectric eyes</text>
+  <text x="960" y="270" fill="#344054" font-family="Arial, sans-serif" font-size="15">  ≤ 6 in. above floor</text>
+  <text x="960" y="302" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Contact reversal</text>
+  <text x="960" y="326" fill="#344054" font-family="Arial, sans-serif" font-size="15">  tested on 1.5 in.</text>
+  <text x="960" y="350" fill="#344054" font-family="Arial, sans-serif" font-size="15">  flat 2×4 board</text>
+
+  <!-- Connectors -->
+  <path d="M260 328h20M480 328h20M700 328h20M920 328h20" stroke="#667085" stroke-width="4"/>
+
+  <rect x="60" y="540" width="1080" height="72" rx="12" fill="#fef3f2" stroke="#fecdca" stroke-width="2"/>
+  <text x="600" y="572" text-anchor="middle" fill="#b42318" font-family="Arial, sans-serif" font-size="17" font-weight="700">Mechanical Warning: Never add a smart controller to a door with failing springs, binding tracks, or bypassed safety sensors.</text>
+  <text x="600" y="596" text-anchor="middle" fill="#344054" font-family="Arial, sans-serif" font-size="16">Torsion springs and lift cables stay under severe tension and require a qualified garage door technician.</text>
+</svg>

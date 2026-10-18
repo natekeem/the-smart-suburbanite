@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Residential plumbing boundary map for automatic shutoff valves and point leak sensors</title>
+  <desc id="desc">Plumbing schematic showing municipal meter or well entry, fire-sprinkler riser and outdoor irrigation tees ahead of the ANSI/CAN/IAPMO Z1349 automatic shutoff valve, and indoor fixture branches protected by point sensors.</desc>
+  <rect width="1200" height="675" fill="#ffffff"/>
+  <rect x="36" y="28" width="1128" height="619" rx="20" fill="#ffffff" stroke="#e4e7ec" stroke-width="2"/>
+  <text x="68" y="78" fill="#101828" font-family="Arial, sans-serif" font-size="30" font-weight="700">Plumbing Boundary Map: What an Automatic Shutoff Valve Covers</text>
+  <text x="68" y="110" fill="#475467" font-family="Arial, sans-serif" font-size="18">Map upstream tees, fire sprinklers, and unpressurized drains before choosing valve placement</text>
+
+  <!-- Main supply pipe -->
+  <path d="M90 340h370M590 340h510" stroke="#175cd3" stroke-width="16" stroke-linecap="round"/>
+  <text x="170" y="380" text-anchor="middle" fill="#175cd3" font-family="Arial, sans-serif" font-size="17" font-weight="700">SERVICE ENTRY</text>
+  <text x="170" y="402" text-anchor="middle" fill="#475467" font-family="Arial, sans-serif" font-size="15">(Meter / Well Main)</text>
+
+  <!-- Upstream Tee 1: Fire Sprinklers -->
+  <path d="M260 340V195h150" fill="none" stroke="#b42318" stroke-width="10"/>
+  <rect x="410" y="145" width="310" height="96" rx="14" fill="#fef3f2" stroke="#fecdca" stroke-width="2"/>
+  <text x="432" y="180" fill="#b42318" font-family="Arial, sans-serif" font-size="17" font-weight="700">LIFE-SAFETY BOUNDARY</text>
+  <text x="432" y="206" fill="#101828" font-family="Arial, sans-serif" font-size="16" font-weight="700">Residential Fire Sprinkler Line</text>
+  <text x="432" y="228" fill="#344054" font-family="Arial, sans-serif" font-size="14">Never block fire suppression without code approval</text>
+
+  <!-- Upstream Tee 2: Irrigation -->
+  <path d="M350 340v145h90" fill="none" stroke="#667085" stroke-width="10"/>
+  <rect x="440" y="440" width="290" height="96" rx="14" fill="#f9fafb" stroke="#d0d5dd" stroke-width="2"/>
+  <text x="462" y="474" fill="#344054" font-family="Arial, sans-serif" font-size="17" font-weight="700">UPSTREAM IRRIGATION TEE</text>
+  <text x="462" y="500" fill="#101828" font-family="Arial, sans-serif" font-size="16" font-weight="700">Yard / Hose Branch Ahead of Valve</text>
+  <text x="462" y="522" fill="#475467" font-family="Arial, sans-serif" font-size="14">Not stopped if teed off before indoor valve</text>
+
+  <!-- Auto Shutoff Valve Box -->
+  <rect x="455" y="276" width="140" height="128" rx="16" fill="#ecfdf3" stroke="#067647" stroke-width="4"/>
+  <text x="525" y="318" text-anchor="middle" fill="#067647" font-family="Arial, sans-serif" font-size="18" font-weight="700">AUTO VALVE</text>
+  <text x="525" y="344" text-anchor="middle" fill="#101828" font-family="Arial, sans-serif" font-size="15" font-weight="700">+ Flow Sensor</text>
+  <text x="525" y="368" text-anchor="middle" fill="#067647" font-family="Arial, sans-serif" font-size="13" font-weight="700">IAPMO Z1349</text>
+
+  <!-- Downstream Protected Domestic Trunk -->
+  <rect x="780" y="145" width="340" height="150" rx="14" fill="#eff8ff" stroke="#84adff" stroke-width="2"/>
+  <text x="802" y="180" fill="#175cd3" font-family="Arial, sans-serif" font-size="17" font-weight="700">PROTECTED INDOOR SUPPLY</text>
+  <text x="802" y="208" fill="#101828" font-family="Arial, sans-serif" font-size="18" font-weight="700">Pressurized Domestic Fixtures</text>
+  <text x="802" y="236" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Water heater, washer, ice maker</text>
+  <text x="802" y="260" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Toilets, sinks &amp; supply risers</text>
+  <text x="802" y="282" fill="#067647" font-family="Arial, sans-serif" font-size="14" font-weight="700">Stopped when valve closes main trunk</text>
+  <path d="M750 340V220h30" fill="none" stroke="#175cd3" stroke-width="8"/>
+
+  <!-- Non-Supply Leaks Box -->
+  <rect x="780" y="390" width="340" height="146" rx="14" fill="#fffaeb" stroke="#fec84b" stroke-width="2"/>
+  <text x="802" y="425" fill="#b54708" font-family="Arial, sans-serif" font-size="17" font-weight="700">POINT SENSOR ONLY ZONE</text>
+  <text x="802" y="453" fill="#101828" font-family="Arial, sans-serif" font-size="18" font-weight="700">Non-Supply Water Sources</text>
+  <text x="802" y="481" fill="#344054" font-family="Arial, sans-serif" font-size="15">• HVAC condensate pan overflow</text>
+  <text x="802" y="505" fill="#344054" font-family="Arial, sans-serif" font-size="15">• Sump pit, roof/window or drain leaks</text>
+  <text x="802" y="527" fill="#b54708" font-family="Arial, sans-serif" font-size="14" font-weight="700">Detected by pucks, not stopped by main valve</text>
+
+  <rect x="68" y="565" width="1064" height="52" rx="10" fill="#f2f4f7"/>
+  <text x="600" y="597" text-anchor="middle" fill="#344054" font-family="Arial, sans-serif" font-size="17" font-weight="700">Best Practice: Pair an inline or clamp-on shutoff valve on the domestic trunk with point sensors under high-risk pans and drains.</text>
+</svg>

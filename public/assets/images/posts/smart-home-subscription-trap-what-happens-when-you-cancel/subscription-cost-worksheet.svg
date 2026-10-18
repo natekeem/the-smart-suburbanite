@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Post-trial smart-home feature audit and 3-year ownership cost worksheet</title>
+  <desc id="desc">Comparison matrix of what remains functional at $0 per month after a free trial ends across live view, recorded history, detection, and local storage, alongside a 3-year total cost of ownership formula.</desc>
+  <rect width="1200" height="675" fill="#ffffff"/>
+  <rect x="36" y="28" width="1128" height="619" rx="20" fill="#ffffff" stroke="#e4e7ec" stroke-width="2"/>
+  <text x="68" y="78" fill="#101828" font-family="Arial, sans-serif" font-size="30" font-weight="700">Post-Trial Feature Audit &amp; 3-Year Ownership Cost Worksheet</text>
+  <text x="68" y="110" fill="#475467" font-family="Arial, sans-serif" font-size="18">Evaluate the permanent $0/month baseline before comparing hardware price tags</text>
+
+  <!-- Left Box: 6-Layer Post-Trial Baseline Check -->
+  <rect x="68" y="140" width="600" height="400" rx="16" fill="#eff8ff" stroke="#84adff" stroke-width="2"/>
+  <text x="94" y="178" fill="#175cd3" font-family="Arial, sans-serif" font-size="18" font-weight="700">PART A · 6-LAYER POST-TRIAL AUDIT (AT $0/MONTH)</text>
+  <text x="94" y="214" fill="#101828" font-family="Arial, sans-serif" font-size="17" font-weight="700">1. Live Control &amp; View:</text>
+  <text x="310" y="214" fill="#344054" font-family="Arial, sans-serif" font-size="16">Usually kept (Ring, Nest, Blink, eufy)</text>
+  <text x="94" y="254" fill="#101828" font-family="Arial, sans-serif" font-size="17" font-weight="700">2. Recorded Clips:</text>
+  <text x="310" y="254" fill="#b42318" font-family="Arial, sans-serif" font-size="16" font-weight="700">0 hrs (Ring) | 3 hrs (Nest) | Local SD/USB</text>
+  <text x="94" y="294" fill="#101828" font-family="Arial, sans-serif" font-size="17" font-weight="700">3. Rich Snapshots:</text>
+  <text x="310" y="294" fill="#344054" font-family="Arial, sans-serif" font-size="16">Often drops to plain text alert without plan</text>
+  <text x="94" y="334" fill="#101828" font-family="Arial, sans-serif" font-size="17" font-weight="700">4. Smart Detection:</text>
+  <text x="310" y="334" fill="#344054" font-family="Arial, sans-serif" font-size="16">Cloud AI (package/face) vs. on-device AI</text>
+  <text x="94" y="374" fill="#101828" font-family="Arial, sans-serif" font-size="17" font-weight="700">5. Local LAN / Outage:</text>
+  <text x="310" y="374" fill="#344054" font-family="Arial, sans-serif" font-size="16">Physical key/PIN &amp; local chime must work</text>
+  <text x="94" y="414" fill="#101828" font-family="Arial, sans-serif" font-size="17" font-weight="700">6. Multi-User Access:</text>
+  <text x="310" y="414" fill="#344054" font-family="Arial, sans-serif" font-size="16">Verify shared logins &amp; guest PIN rules</text>
+  <rect x="94" y="446" width="548" height="70" rx="10" fill="#ffffff"/>
+  <text x="112" y="476" fill="#175cd3" font-family="Arial, sans-serif" font-size="15" font-weight="700">BUYING RULE:</text>
+  <text x="112" y="500" fill="#344054" font-family="Arial, sans-serif" font-size="15">If you need video evidence at $0/mo, require local microSD, USB, or NVR.</text>
+
+  <!-- Right Box: 36-Month Total Cost Formula -->
+  <rect x="696" y="140" width="436" height="400" rx="16" fill="#fffaeb" stroke="#fec84b" stroke-width="2"/>
+  <text x="722" y="178" fill="#b54708" font-family="Arial, sans-serif" font-size="18" font-weight="700">PART B · 36-MONTH TCO FORMULA</text>
+  <text x="722" y="218" fill="#101828" font-family="Arial, sans-serif" font-size="18" font-weight="700">Upfront Hardware Price</text>
+  <text x="722" y="244" fill="#475467" font-family="Arial, sans-serif" font-size="15">(Doorbell, camera, lock, or sensor kit)</text>
+  <text x="722" y="284" fill="#101828" font-family="Arial, sans-serif" font-size="18" font-weight="700">+ Required Local Hub / Media</text>
+  <text x="722" y="310" fill="#475467" font-family="Arial, sans-serif" font-size="15">(Sync Module 2 + USB or high-endurance SD)</text>
+  <text x="722" y="350" fill="#101828" font-family="Arial, sans-serif" font-size="18" font-weight="700">+ (Monthly Plan × 36 Months)</text>
+  <text x="722" y="376" fill="#475467" font-family="Arial, sans-serif" font-size="15">(Check single-device vs. whole-home tier)</text>
+  <line x1="722" y1="405" x2="1104" y2="405" stroke="#b54708" stroke-width="2"/>
+  <text x="722" y="440" fill="#101828" font-family="Arial, sans-serif" font-size="21" font-weight="700">= True 3-Year System Cost</text>
+  <rect x="722" y="460" width="382" height="56" rx="10" fill="#ffffff"/>
+  <text x="738" y="494" fill="#b54708" font-family="Arial, sans-serif" font-size="15" font-weight="700">Note: Plan tiers &amp; retention rules change; date quotes.</text>
+
+  <rect x="68" y="562" width="1064" height="56" rx="10" fill="#f2f4f7"/>
+  <text x="600" y="596" text-anchor="middle" fill="#344054" font-family="Arial, sans-serif" font-size="17" font-weight="700">Test Before Drilling: Let the trial expire or disable cloud recording in settings during your return window to verify $0/month behavior.</text>
+</svg>
