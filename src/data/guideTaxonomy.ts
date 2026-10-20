@@ -145,6 +145,10 @@ export const GUIDE_META: Record<string, GuideMeta> = {
     category: "maintenance-setup",
     purpose: "Decision Guide",
   },
+  "smart-sump-pump-battery-backup-monitoring": {
+    category: "maintenance-setup",
+    purpose: "Decision Guide",
+  },
 };
 
 export const START_HERE_SLUGS = [
