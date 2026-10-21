@@ -153,6 +153,10 @@ export const GUIDE_META: Record<string, GuideMeta> = {
     category: "maintenance-setup",
     purpose: "Setup Guide",
   },
+  "smart-sprinkler-controllers-24vac-wiring-watersense-rebates": {
+    category: "maintenance-setup",
+    purpose: "Setup Guide",
+  },
 };
 
 export const START_HERE_SLUGS = [
