@@ -46,7 +46,7 @@ const trustLinks = [
           Plain-English smart-home guides for suburban houses that would rather
           not pay monthly rent on their own doorbell.
         </p>
-        <a class="porch-footer__rss" href={getAssetPath("rss.xml")}>RSS feed</a>
+        <a class="porch-footer__rss" href={getAssetPath("rss.xml")} rel="nofollow">RSS feed</a>
       </div>
       <nav aria-label="Guide categories">
         <h2>Explore guides</h2>
@@ -66,7 +66,12 @@ const trustLinks = [
           {
             trustLinks.map(([label, href]) => (
               <li>
-                <a href={getRelativeLocaleUrl(locale, href)}>{label}</a>
+                <a
+                  href={getRelativeLocaleUrl(locale, href)}
+                  rel={href === "tags" ? "nofollow" : undefined}
+                >
+                  {label}
+                </a>
               </li>
             ))
           }

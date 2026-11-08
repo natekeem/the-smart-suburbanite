@@ -15,8 +15,8 @@ export default defineAstroPaperConfig({
     googleAdsenseAccount: "ca-pub-8734087248170812",
   },
   posts: {
-    perPage: 4,
-    perIndex: 4,
+    perPage: 30,
+    perIndex: 6,
     scheduledPostMargin: 15 * 60 * 1000,
   },
   features: {

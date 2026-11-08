@@ -13,6 +13,10 @@ type Props = {
 const { page } = Astro.props;
 
 const t = useTranslations(Astro.currentLocale);
+const ensureTrailingSlash = (url?: string) =>
+  url && !url.endsWith("/") ? `${url}/` : url;
+const prevHref = ensureTrailingSlash(page.url.prev);
+const nextHref = ensureTrailingSlash(page.url.next);
 ---
 
 {
@@ -23,9 +27,10 @@ const t = useTranslations(Astro.currentLocale);
       aria-label="Pagination Navigation"
     >
       <LinkButton
-        disabled={!page.url.prev}
-        href={page.url.prev as string}
-        class:list={["select-none", { "opacity-50": !page.url.prev }]}
+        disabled={!prevHref}
+        href={prevHref as string}
+        rel="nofollow"
+        class:list={["select-none", { "opacity-50": !prevHref }]}
         aria-label={t.a11y.goToPreviousPage}
       >
         <IconArrowLeft class="inline-block rtl:rotate-180" />
@@ -35,9 +40,10 @@ const t = useTranslations(Astro.currentLocale);
         Page {page.currentPage} of {page.lastPage}
       </span>
       <LinkButton
-        disabled={!page.url.next}
-        href={page.url.next as string}
-        class:list={["select-none", { "opacity-50": !page.url.next }]}
+        disabled={!nextHref}
+        href={nextHref as string}
+        rel="nofollow"
+        class:list={["select-none", { "opacity-50": !nextHref }]}
         aria-label={t.a11y.goToNextPage}
       >
         {t.pagination.next}

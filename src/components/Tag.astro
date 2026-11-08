@@ -17,6 +17,7 @@ const locale = Astro.currentLocale ?? config.site.lang;
 <li>
   <a
     href={getRelativeLocaleUrl(locale, `tags/${tag}/`)}
+    rel="nofollow"
     transition:name={tag}
     class:list={[
       "article-tag",
