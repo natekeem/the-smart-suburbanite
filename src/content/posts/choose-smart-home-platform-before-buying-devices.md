@@ -1,7 +1,8 @@
 ---
-title: "Stop Buying Smart Home Devices Until You Choose a Platform"
+title: "Smart Home Platform Compatibility: Apple Home, Google, Alexa & Matter"
 slug: choose-smart-home-platform-before-buying-devices
 pubDatetime: 2026-10-10T19:40:00+09:00
+modDatetime: 2026-11-08T20:00:00+09:00
 draft: false
 tags:
   - smart home
@@ -9,7 +10,7 @@ tags:
   - smart home platform
   - Matter
 ogImage: https://smartsuburbanite.com/assets/images/posts/choose-smart-home-platform-before-buying-devices/cover.jpg?v=cover-ready
-description: Use this household-fit comparison of Apple Home, Google Home, Amazon Alexa, and SmartThings before you add another smart device.
+description: Compare smart home system platforms by ecosystem compatibility—how Apple Home, Google Home, Amazon Alexa, SmartThings, and Matter fit your household phones, hubs, and daily routines.
 ---
 
 Stop buying smart-home devices one at a time until you know which app your household wants to use every day.

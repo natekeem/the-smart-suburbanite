@@ -1,15 +1,15 @@
 ---
-title: "Smart Thermostat Compatibility: What to Check Before You Buy"
+title: "Smart Thermostat Compatibility Checker Guide: C-Wire & 24V Checklist"
 slug: smart-thermostat-compatibility-what-to-check-before-you-buy
 pubDatetime: 2026-07-01T07:50:40+09:00
-modDatetime: 2026-07-18T09:40:38+09:00
+modDatetime: 2026-11-08T20:00:00+09:00
 draft: false
 tags:
   - smart home
   - smart thermostat
   - homeowner guide
 ogImage: https://smartsuburbanite.com/assets/images/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/cover.jpg?v=photo-cover
-description: A plain-English smart thermostat compatibility checklist for homeowners who want to know what to check before buying, without guessing about wiring or HVAC systems.
+description: A step-by-step smart thermostat compatibility checker guide for homeowners—how to verify 24V control voltage, C-wire power paths, and multi-stage HVAC terminals before buying Nest or ecobee.
 ---
 
 The product page says the thermostat works with “most systems.” Your house, however, has one specific system—and the listing cannot see its voltage, control board, heat-pump stages, zone panel, or earlier modifications.
