@@ -157,6 +157,10 @@ export const GUIDE_META: Record<string, GuideMeta> = {
     category: "maintenance-setup",
     purpose: "Setup Guide",
   },
+  "smart-smoke-and-carbon-monoxide-detectors-ul-217-guide": {
+    category: "maintenance-setup",
+    purpose: "Decision Guide",
+  },
 };
 
 export const START_HERE_SLUGS = [

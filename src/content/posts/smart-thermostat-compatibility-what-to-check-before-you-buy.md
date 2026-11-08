@@ -4,10 +4,12 @@ slug: smart-thermostat-compatibility-what-to-check-before-you-buy
 pubDatetime: 2026-07-01T07:50:40+09:00
 modDatetime: 2026-11-08T20:00:00+09:00
 draft: false
+category: "Maintenance & Setup"
 tags:
-  - smart home
-  - smart thermostat
-  - homeowner guide
+  - smart-home
+  - energy-saving
+  - setup-guide
+  - decision-guide
 ogImage: https://smartsuburbanite.com/assets/images/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/cover.jpg?v=photo-cover
 description: A step-by-step smart thermostat compatibility checker guide for homeowners—how to verify 24V control voltage, C-wire power paths, and multi-stage HVAC terminals before buying Nest or ecobee.
 ---
@@ -53,6 +55,9 @@ The category is only a starting point. A thermostat advertised as working with h
 
 ## Record terminal labels, not wire colors
 
+![Legacy Honeywell wall thermostat with manual 3-speed fan switch and ON/OFF toggle](/assets/images/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/01-honeywell-wired-thermostat-terminals.jpg)
+*A legacy Honeywell thermostat with manual multi-speed fan controls (1–2–3)—an example of fan-coil or multi-speed equipment where terminal labels behind the faceplate must be verified against exact smart thermostat specifications. (Photo: Nameless245 via Wikimedia Commons, CC BY 4.0).*
+
 If the connected terminal labels are already visible, or the thermostat manufacturer’s current instructions identify a safe, non-wiring way to view them, save a clear photo. Otherwise, use existing records or ask manufacturer support or a qualified HVAC professional. Labels such as `R`, `Rc`, `Rh`, `C`, `W1`, `W2`, `Y1`, `Y2`, `G`, `O/B`, `AUX`, and `E` describe control connections more reliably than insulation color.
 
 Google explicitly tells compatibility-checker users to ignore wire colors and enter the connector labels. A red wire is not proof that it belongs in `R`; systems are not universally color-coded.
@@ -62,6 +67,9 @@ Nonstandard labels deserve more caution. Google lists examples such as `1/2/3` a
 Do not move a wire merely to photograph or identify it. If the labels are hidden, duplicated, joined elsewhere, or inconsistent with the records, leave that uncertainty for current manufacturer support or a qualified HVAC professional.
 
 ## The C-wire answer is not simply yes or no
+
+![Wall-mounted Nest Learning Thermostat displaying target cooling temperature](/assets/images/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/02-nest-learning-thermostat-wall.jpg)
+*Smart thermostats with color displays and active Wi-Fi radios require continuous 24VAC power via a dedicated C-wire or an approved power adapter. (Photo: Raysonho via Wikimedia Commons, CC0 Public Domain).*
 
 A common wire generally provides continuous power to the thermostat; it does not call for heating or cooling. Google says some Nest systems need a C-wire or Nest Power Connector, including certain heat-only, cool-only, zoned, and heat-pump arrangements. ecobee's current Premium and Enhanced specifications describe 24VAC power through `C` and `Rc`, with an included Power Extender Kit as an approved path for supported systems without a fifth conductor.
 
