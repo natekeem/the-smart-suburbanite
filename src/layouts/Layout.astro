@@ -108,6 +108,23 @@ const websiteStructuredData = {
       )
     }
 
+    {
+      site.googleAdsenseAccount && (
+        <>
+          <meta
+            name="google-adsense-account"
+            content={site.googleAdsenseAccount}
+          />
+          <script
+            is:inline
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${site.googleAdsenseAccount}`}
+            crossorigin="anonymous"
+          />
+        </>
+      )
+    }
+
     <!--
       Inline FOUC-prevention script: sets data-theme on <html> before
       the browser paints. Runs synchronously, no defer/async.
