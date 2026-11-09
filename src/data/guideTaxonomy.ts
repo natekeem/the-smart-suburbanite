@@ -161,6 +161,10 @@ export const GUIDE_META: Record<string, GuideMeta> = {
     category: "maintenance-setup",
     purpose: "Decision Guide",
   },
+  "smart-thermostats-heat-pumps-aux-heat-lockout-wiring": {
+    category: "maintenance-setup",
+    purpose: "Setup Guide",
+  },
 };
 
 export const START_HERE_SLUGS = [
