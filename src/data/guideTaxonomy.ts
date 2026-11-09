@@ -165,6 +165,10 @@ export const GUIDE_META: Record<string, GuideMeta> = {
     category: "maintenance-setup",
     purpose: "Setup Guide",
   },
+  "poe-security-cameras-vs-battery-solar-wifi-local-nvr": {
+    category: "security-privacy",
+    purpose: "Comparison Guide",
+  },
 };
 
 export const START_HERE_SLUGS = [
