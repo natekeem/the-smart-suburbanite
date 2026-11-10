@@ -169,6 +169,10 @@ export const GUIDE_META: Record<string, GuideMeta> = {
     category: "security-privacy",
     purpose: "Comparison Guide",
   },
+  "smart-switches-without-neutral-wire-nec-404-led-flicker": {
+    category: "maintenance-setup",
+    purpose: "Compatibility Guide",
+  },
 };
 
 export const START_HERE_SLUGS = [
