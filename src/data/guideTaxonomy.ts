@@ -173,6 +173,10 @@ export const GUIDE_META: Record<string, GuideMeta> = {
     category: "maintenance-setup",
     purpose: "Compatibility Guide",
   },
+  "why-wired-video-doorbells-reboot-transformer-voltage-guide": {
+    category: "maintenance-setup",
+    purpose: "Setup Guide",
+  },
 };
 
 export const START_HERE_SLUGS = [
