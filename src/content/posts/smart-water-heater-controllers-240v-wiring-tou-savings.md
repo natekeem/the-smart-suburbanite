@@ -75,6 +75,9 @@ The primary reason water heaters are not simply unplugged on basic household tim
 * Water at 140°F causes **third-degree scalding burns in 5 seconds** of skin contact.
 * **Mandatory Hardware Gate:** If you set tank thermostats above 125°F to maximize off-peak energy storage, you **must install an ASSE 1017-certified thermostatic mixing valve** at the water heater's hot discharge port. The valve mechanically blends cold supply water with hot tank water, delivering safe 120°F water to home faucets regardless of internal tank temperature.
 
+![Residential storage water heater tank showing top hot and cold plumbing connections and electrical junction box.](/assets/images/posts/smart-water-heater-controllers-240v-wiring-tou-savings/02-residential-water-heater-tank.jpg)
+*Residential storage water heater tank showing cold supply, hot discharge plumbing, and top 240V electrical conduit connection.*
+
 ---
 
 ## 4. Retrofit 30A Contactor vs. Native Hybrid Heat Pump (HPWH)
