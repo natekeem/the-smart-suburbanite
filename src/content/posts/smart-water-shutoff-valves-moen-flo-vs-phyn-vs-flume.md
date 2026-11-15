@@ -74,6 +74,8 @@ Moen Flo combines an internal spinning turbine flow meter, an electronic pressur
 
 Flume 2 takes a completely non-invasive approach that requires zero pipe cutting or plumbing modification.
 
+![Authentic residential water meter manifold and domestic piping installation (Source: Vyacheslav Argenberg, CC BY 4.0)](/assets/images/posts/smart-water-shutoff-valves-moen-flo-vs-phyn-vs-flume/03-residential-water-meter-manifold.jpg)
+
 - **Strap-On Sensor**: It straps directly around the housing of an existing positive displacement municipal water meter (typically in an underground outdoor meter pit or utility closet).
 - **Magnetic Flux Detection**: As the municipal meter's internal nutating disc or oscillating piston wobbles with water flow, Flume detects the rotating magnetic field and translates it into real-time gallonage.
 - **Zero Shutoff Capability**: Flume 2 is strictly a monitor and alerting device. It cannot physically shut off water. Homeowners receive push notifications, text messages, or phone calls when water runs continuously, but must manually close their main valve or pair Flume with third-party home automation hubs (such as Home Assistant triggering an external valve actuator).
