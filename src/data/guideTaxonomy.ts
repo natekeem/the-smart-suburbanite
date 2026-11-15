@@ -177,6 +177,18 @@ export const GUIDE_META: Record<string, GuideMeta> = {
     category: "maintenance-setup",
     purpose: "Setup Guide",
   },
+  "smart-water-heater-controllers-240v-wiring-tou-savings": {
+    category: "maintenance-setup",
+    purpose: "Setup Guide",
+  },
+  "whole-house-surge-protectors-type-1-vs-type-2-nec-230-67": {
+    category: "maintenance-setup",
+    purpose: "Setup Guide",
+  },
+  "smart-water-shutoff-valves-moen-flo-vs-phyn-vs-flume": {
+    category: "maintenance-setup",
+    purpose: "Comparison Guide",
+  },
 };
 
 export const START_HERE_SLUGS = [
