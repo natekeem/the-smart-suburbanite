@@ -13,7 +13,7 @@ tags:
   - water-shutoff
   - insurance-discount
 category: "Maintenance & Setup"
-ogImage: "/assets/images/posts/smart-water-shutoff-valves-moen-flo-vs-phyn-vs-flume/cover.jpg"
+ogImage: https://smartsuburbanite.com/assets/images/posts/smart-water-shutoff-valves-moen-flo-vs-phyn-vs-flume/cover.jpg
 ---
 
 Non-weather water damage is the single most common and destructive property insurance loss in suburban residences, accounting for nearly 24% of all homeowner claims with an average payout exceeding $12,500. While small battery-powered leak pucks placed under sinks can warn of a puddle, they are powerless when a second-floor washing machine supply hose bursts at 3:00 AM while a family is traveling.
