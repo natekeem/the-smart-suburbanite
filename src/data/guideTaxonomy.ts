@@ -189,6 +189,14 @@ export const GUIDE_META: Record<string, GuideMeta> = {
     category: "maintenance-setup",
     purpose: "Comparison Guide",
   },
+  "water-powered-sump-pumps-vs-battery-backup-flood-defense": {
+    category: "maintenance-setup",
+    purpose: "Comparison Guide",
+  },
+  "smart-locks-without-subscriptions-ansi-grade-1-local-control": {
+    category: "security-privacy",
+    purpose: "Security Guide",
+  },
 };
 
 export const START_HERE_SLUGS = [

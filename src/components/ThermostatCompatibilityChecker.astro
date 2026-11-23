@@ -1,0 +1,442 @@
+---
+/**
+ * ThermostatCompatibilityChecker.astro
+ * Interactive homeowner diagnostic tool for checking HVAC voltage, C-wire status,
+ * and smart thermostat compatibility (Nest, ecobee, Honeywell Home).
+ */
+---
+
+<div class="thermostat-checker not-prose my-10 rounded-2xl border border-border/80 bg-surface/50 p-6 shadow-sm md:p-8" id="thermostat-checker">
+  <!-- Header -->
+  <div class="border-b border-border/60 pb-5">
+    <div class="inline-flex items-center gap-2 rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
+      <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+      </svg>
+      <span>Interactive Diagnostic Tool</span>
+    </div>
+    <h3 class="mt-3 text-xl font-bold tracking-tight text-foreground md:text-2xl">
+      Smart Thermostat &amp; C-Wire Compatibility Checker
+    </h3>
+    <p class="mt-1 text-sm text-muted-foreground">
+      Select your HVAC control voltage and existing wall wire labels to verify whether your system supports Google Nest, ecobee, or Honeywell Home—or if a C-wire adapter is required.
+    </p>
+  </div>
+
+  <!-- Form Body -->
+  <div class="mt-6 space-y-7">
+    <!-- Step 1: Voltage Type -->
+    <div>
+      <div class="flex items-center justify-between">
+        <label class="text-xs font-bold uppercase tracking-wider text-muted-foreground">
+          Step 1: HVAC Control Voltage
+        </label>
+        <span class="text-xs text-muted-foreground">Most US suburban homes use 24V</span>
+      </div>
+
+      <div class="mt-2.5 grid grid-cols-1 gap-2.5 sm:grid-cols-3" id="voltage-group">
+        <label class="voltage-option flex cursor-pointer flex-col rounded-xl border border-accent bg-accent/5 p-3.5 transition-all hover:border-accent">
+          <div class="flex items-center gap-2">
+            <input type="radio" name="voltage" value="24v" checked class="h-4 w-4 text-accent focus:ring-accent" />
+            <span class="text-sm font-semibold text-foreground">24V Low Voltage</span>
+          </div>
+          <span class="mt-1 text-xs text-muted-foreground">Central AC, furnace, heat pump, boiler (Standard)</span>
+        </label>
+
+        <label class="voltage-option flex cursor-pointer flex-col rounded-xl border border-border bg-background p-3.5 transition-all hover:border-border/80">
+          <div class="flex items-center gap-2">
+            <input type="radio" name="voltage" value="line" class="h-4 w-4 text-accent focus:ring-accent" />
+            <span class="text-sm font-semibold text-foreground">120V / 240V Line Voltage</span>
+          </div>
+          <span class="mt-1 text-xs text-muted-foreground">Electric baseboard heaters, radiant wall panels</span>
+        </label>
+
+        <label class="voltage-option flex cursor-pointer flex-col rounded-xl border border-border bg-background p-3.5 transition-all hover:border-border/80">
+          <div class="flex items-center gap-2">
+            <input type="radio" name="voltage" value="millivolt" class="h-4 w-4 text-accent focus:ring-accent" />
+            <span class="text-sm font-semibold text-foreground">Millivolt / Proprietary</span>
+          </div>
+          <span class="mt-1 text-xs text-muted-foreground">Gas fireplace, communicating 1-2-3 or A-B-C controls</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Step 2: Wire Terminals Checklist -->
+    <div id="terminals-section">
+      <div class="flex items-center justify-between">
+        <label class="text-xs font-bold uppercase tracking-wider text-muted-foreground">
+          Step 2: Connected Wall Wire Labels
+        </label>
+        <span class="text-xs text-muted-foreground">Select every wire currently connected</span>
+      </div>
+
+      <div class="mt-2.5 grid grid-cols-2 gap-2 sm:grid-cols-4 md:grid-cols-4" id="wires-grid">
+        <!-- R / Rc / Rh -->
+        <label class="wire-chip flex cursor-pointer items-center justify-between rounded-lg border border-accent bg-accent/10 px-3 py-2.5 transition-colors">
+          <div>
+            <span class="font-mono text-sm font-bold text-foreground">R / Rc</span>
+            <span class="block text-[11px] text-muted-foreground">24V Power</span>
+          </div>
+          <input type="checkbox" name="wire" value="R" checked class="h-4 w-4 rounded text-accent focus:ring-accent" />
+        </label>
+
+        <!-- C (Common Wire) -->
+        <label class="wire-chip flex cursor-pointer items-center justify-between rounded-lg border border-border bg-background px-3 py-2.5 transition-colors">
+          <div>
+            <span class="font-mono text-sm font-bold text-foreground">C</span>
+            <span class="block text-[11px] text-accent font-medium">Common Wire</span>
+          </div>
+          <input type="checkbox" name="wire" value="C" class="h-4 w-4 rounded text-accent focus:ring-accent" />
+        </label>
+
+        <!-- W / W1 (Heating) -->
+        <label class="wire-chip flex cursor-pointer items-center justify-between rounded-lg border border-accent bg-accent/10 px-3 py-2.5 transition-colors">
+          <div>
+            <span class="font-mono text-sm font-bold text-foreground">W / W1</span>
+            <span class="block text-[11px] text-muted-foreground">Primary Heating</span>
+          </div>
+          <input type="checkbox" name="wire" value="W" checked class="h-4 w-4 rounded text-accent focus:ring-accent" />
+        </label>
+
+        <!-- Y / Y1 (Cooling) -->
+        <label class="wire-chip flex cursor-pointer items-center justify-between rounded-lg border border-accent bg-accent/10 px-3 py-2.5 transition-colors">
+          <div>
+            <span class="font-mono text-sm font-bold text-foreground">Y / Y1</span>
+            <span class="block text-[11px] text-muted-foreground">Primary Cooling</span>
+          </div>
+          <input type="checkbox" name="wire" value="Y" checked class="h-4 w-4 rounded text-accent focus:ring-accent" />
+        </label>
+
+        <!-- G (Fan) -->
+        <label class="wire-chip flex cursor-pointer items-center justify-between rounded-lg border border-accent bg-accent/10 px-3 py-2.5 transition-colors">
+          <div>
+            <span class="font-mono text-sm font-bold text-foreground">G</span>
+            <span class="block text-[11px] text-muted-foreground">Fan Relay</span>
+          </div>
+          <input type="checkbox" name="wire" value="G" checked class="h-4 w-4 rounded text-accent focus:ring-accent" />
+        </label>
+
+        <!-- O/B (Heat Pump) -->
+        <label class="wire-chip flex cursor-pointer items-center justify-between rounded-lg border border-border bg-background px-3 py-2.5 transition-colors">
+          <div>
+            <span class="font-mono text-sm font-bold text-foreground">O/B</span>
+            <span class="block text-[11px] text-muted-foreground">Heat Pump Valve</span>
+          </div>
+          <input type="checkbox" name="wire" value="OB" class="h-4 w-4 rounded text-accent focus:ring-accent" />
+        </label>
+
+        <!-- W2 / AUX / E (Aux Heat) -->
+        <label class="wire-chip flex cursor-pointer items-center justify-between rounded-lg border border-border bg-background px-3 py-2.5 transition-colors">
+          <div>
+            <span class="font-mono text-sm font-bold text-foreground">W2 / AUX</span>
+            <span class="block text-[11px] text-muted-foreground">2nd Stage / Backup</span>
+          </div>
+          <input type="checkbox" name="wire" value="W2" class="h-4 w-4 rounded text-accent focus:ring-accent" />
+        </label>
+
+        <!-- Y2 (2nd Stage Cooling) -->
+        <label class="wire-chip flex cursor-pointer items-center justify-between rounded-lg border border-border bg-background px-3 py-2.5 transition-colors">
+          <div>
+            <span class="font-mono text-sm font-bold text-foreground">Y2</span>
+            <span class="block text-[11px] text-muted-foreground">2nd Stage AC</span>
+          </div>
+          <input type="checkbox" name="wire" value="Y2" class="h-4 w-4 rounded text-accent focus:ring-accent" />
+        </label>
+      </div>
+    </div>
+
+    <!-- Step 3: Diagnostic Report -->
+    <div id="diagnostic-result" class="rounded-xl border border-border bg-background p-5 shadow-sm transition-all md:p-6">
+      <!-- Dynamic verdict rendered by JS -->
+      <div id="result-content" class="space-y-4">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- Action Bar -->
+      <div class="mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-border/60 pt-4 text-xs">
+        <button
+          type="button"
+          id="btn-reset-checker"
+          class="inline-flex items-center gap-1.5 font-medium text-muted-foreground hover:text-foreground"
+        >
+          <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+            <path d="M3 3v5h5"/>
+          </svg>
+          Reset to default (4-wire conventional)
+        </button>
+
+        <button
+          type="button"
+          id="btn-copy-checker"
+          class="inline-flex items-center gap-1.5 rounded-lg border border-border bg-surface px-3 py-1.5 font-medium text-foreground hover:bg-muted/40 transition-colors"
+        >
+          <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+          </svg>
+          <span id="copy-btn-text">Copy Diagnostic Summary</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function setupThermostatChecker() {
+    const root = document.getElementById("thermostat-checker");
+    if (!root) return;
+
+    const voltageInputs = root.querySelectorAll<HTMLInputElement>('input[name="voltage"]');
+    const wireInputs = root.querySelectorAll<HTMLInputElement>('input[name="wire"]');
+    const resultContent = root.querySelector<HTMLElement>("#result-content");
+    const terminalsSection = root.querySelector<HTMLElement>("#terminals-section");
+    const btnReset = root.querySelector<HTMLButtonElement>("#btn-reset-checker");
+    const btnCopy = root.querySelector<HTMLButtonElement>("#btn-copy-checker");
+    const copyBtnText = root.querySelector<HTMLElement>("#copy-btn-text");
+
+    let lastVerdictSummary = "";
+
+    function updateChecker() {
+      const selectedVoltage = (Array.from(voltageInputs).find(i => i.checked)?.value || "24v") as "24v" | "line" | "millivolt";
+      
+      // Update voltage card visual styling
+      voltageInputs.forEach(input => {
+        const card = input.closest(".voltage-option");
+        if (card) {
+          if (input.checked) {
+            card.classList.add("border-accent", "bg-accent/5");
+            card.classList.remove("border-border", "bg-background");
+          } else {
+            card.classList.remove("border-accent", "bg-accent/5");
+            card.classList.add("border-border", "bg-background");
+          }
+        }
+      });
+
+      // Update wire chip visual styling
+      wireInputs.forEach(input => {
+        const chip = input.closest(".wire-chip");
+        if (chip) {
+          if (input.checked) {
+            chip.classList.add("border-accent", "bg-accent/10");
+            chip.classList.remove("border-border", "bg-background");
+          } else {
+            chip.classList.remove("border-accent", "bg-accent/10");
+            chip.classList.add("border-border", "bg-background");
+          }
+        }
+      });
+
+      // Collect active wires
+      const checkedWires = new Set(Array.from(wireInputs).filter(i => i.checked).map(i => i.value));
+      const hasR = checkedWires.has("R");
+      const hasC = checkedWires.has("C");
+      const hasW = checkedWires.has("W");
+      const hasY = checkedWires.has("Y");
+      const hasG = checkedWires.has("G");
+      const hasOB = checkedWires.has("OB");
+      const hasW2 = checkedWires.has("W2");
+      const hasY2 = checkedWires.has("Y2");
+
+      let html = "";
+
+      // High voltage check
+      if (selectedVoltage === "line") {
+        if (terminalsSection) terminalsSection.style.opacity = "0.4";
+        html = `
+          <div class="flex items-start gap-3">
+            <div class="rounded-full bg-rose-500/10 p-2 text-rose-600 dark:text-rose-400">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <div>
+              <span class="inline-block rounded-md bg-rose-500/10 px-2.5 py-0.5 text-xs font-bold text-rose-700 dark:text-rose-300">
+                INCOMPATIBLE WITH STANDARD SMART THERMOSTATS
+              </span>
+              <h4 class="mt-1 text-lg font-bold text-foreground">120V / 240V Line Voltage System Detected</h4>
+              <p class="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                Standard smart thermostats (Google Nest, ecobee Premium, Honeywell Home T9) operate strictly on <strong>24VAC low voltage</strong>. Connecting a standard smart thermostat directly to 120V or 240V baseboard wiring will destroy the unit instantly and creates an electrical fire hazard.
+              </p>
+              <div class="mt-3 rounded-lg border border-border bg-surface p-3 text-xs text-foreground">
+                <span class="font-semibold text-accent">Safe Solution:</span> You must purchase a dedicated line-voltage smart thermostat (such as the <strong>Mysa Smart Thermostat for Electric Baseboard Heaters</strong>) or have a licensed electrician install a 24V step-down transformer and isolation relay (Aube / Honeywell RC840T).
+              </div>
+            </div>
+          </div>
+        `;
+        lastVerdictSummary = "HVAC Voltage: 120V/240V Line Voltage. Incompatible with standard 24V smart thermostats (Nest/ecobee). Requires dedicated line-voltage smart thermostat (e.g. Mysa) or 24V relay.";
+      } else if (selectedVoltage === "millivolt") {
+        if (terminalsSection) terminalsSection.style.opacity = "0.4";
+        html = `
+          <div class="flex items-start gap-3">
+            <div class="rounded-full bg-amber-500/10 p-2 text-amber-600 dark:text-amber-400">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <div>
+              <span class="inline-block rounded-md bg-amber-500/10 px-2.5 py-0.5 text-xs font-bold text-amber-700 dark:text-amber-300">
+                PROPRIETARY / MILLIVOLT COMPATIBILITY WARNING
+              </span>
+              <h4 class="mt-1 text-lg font-bold text-foreground">Millivolt or Communicating Controls</h4>
+              <p class="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                Millivolt systems (freestanding gas fireplaces or gravity wall heaters) generate only ~750mV from a pilot thermopile and cannot power a Wi-Fi radio. Communicating systems (labeled 1-2-3 or A-B-C on Carrier Infinity, Lennox, Trane) use digital serial protocols rather than 24V on/off relay switches.
+              </p>
+              <div class="mt-3 rounded-lg border border-border bg-surface p-3 text-xs text-foreground">
+                <span class="font-semibold text-accent">Safe Solution:</span> Check with your HVAC equipment manufacturer for a brand-specific smart gateway, or verify if the air handler control board supports conventional 24V relay terminals (R, C, W, Y, G) via legacy jumper pins.
+              </div>
+            </div>
+          </div>
+        `;
+        lastVerdictSummary = "HVAC Voltage: Millivolt / Proprietary. Incompatible with standard 24V on/off thermostats without equipment-side interface module.";
+      } else {
+        // Standard 24V Low Voltage
+        if (terminalsSection) terminalsSection.style.opacity = "1";
+
+        if (!hasR) {
+          html = `
+            <div class="flex items-start gap-3">
+              <div class="rounded-full bg-rose-500/10 p-2 text-rose-600 dark:text-rose-400">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <div>
+                <span class="inline-block rounded-md bg-rose-500/10 px-2.5 py-0.5 text-xs font-bold text-rose-700 dark:text-rose-300">
+                  MISSING 24V POWER WIRE (R)
+                </span>
+                <h4 class="mt-1 text-lg font-bold text-foreground">No Power Wire (R / Rc / Rh) Selected</h4>
+                <p class="mt-1.5 text-sm text-muted-foreground">
+                  Every 24V thermostat requires at least one 24V AC power feed (labeled R, Rc, or Rh). Please check your wall plate again. If you have separate heating and cooling transformers, you may see both Rh and Rc.
+                </p>
+              </div>
+            </div>
+          `;
+          lastVerdictSummary = "Missing 24V Power Wire (R). Thermostat cannot function without power feed.";
+        } else if (hasC) {
+          // Has C-Wire - Optimal Condition
+          html = `
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <div class="rounded-full bg-emerald-500/10 p-2 text-emerald-600 dark:text-emerald-400">
+                  <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <span class="inline-block rounded-md bg-emerald-500/10 px-2.5 py-0.5 text-xs font-bold text-emerald-700 dark:text-emerald-300">
+                    100% COMPATIBLE (PLUG &amp; PLAY)
+                  </span>
+                  <h4 class="mt-1 text-lg font-bold text-foreground">Directly Compatible with Nest, ecobee &amp; Honeywell</h4>
+                  <p class="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                    Your wall has a dedicated <strong>C-wire (24V Common)</strong>. This provides steady, continuous power to the thermostat's Wi-Fi radio, display, and sensors without parasitic power stealing.
+                  </p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 text-xs">
+                <div class="rounded-lg border border-border bg-surface p-3">
+                  <span class="font-bold text-foreground">System Classification:</span>
+                  <p class="mt-1 text-muted-foreground">
+                    ${hasOB ? 'Heat Pump system (' + (hasW2 ? 'with Aux/Emergency Heat' : 'Single stage') + ')' : (hasY2 || hasW2 ? 'Multi-Stage Conventional HVAC' : (hasY && hasW ? 'Standard 1-Stage Heat & AC' : (hasW ? 'Heat-Only System' : (hasY ? 'Cool-Only System' : 'Custom HVAC Relay'))))} (${hasG ? 'Fan control verified' : 'Independent fan wire not detected'})
+                  </p>
+                </div>
+                <div class="rounded-lg border border-border bg-surface p-3">
+                  <span class="font-bold text-foreground">Installation Effort:</span>
+                  <p class="mt-1 text-muted-foreground">
+                    DIY Friendly: 15–30 minutes. Turn off HVAC breaker, label wires, mount backplate, and connect matched terminals.
+                  </p>
+                </div>
+              </div>
+
+              ${hasOB ? `
+                <div class="rounded-lg border border-blue-500/30 bg-blue-500/5 p-3 text-xs text-foreground">
+                  <span class="font-semibold text-blue-600 dark:text-blue-400">Heat Pump Reversing Valve Note:</span>
+                  Most manufacturers (Carrier, Trane, Lennox, York) energize the O/B valve on <strong>'O' (Cooling)</strong>. Rheem and Ruud systems energize on <strong>'B' (Heating)</strong>. Be sure to select the correct orientation during initial on-screen thermostat setup to prevent blowing cold air during winter.
+                </div>
+              ` : ''}
+            </div>
+          `;
+          lastVerdictSummary = `HVAC Voltage: 24V Low Voltage. Wires: ${Array.from(checkedWires).join(', ')}. Status: 100% Compatible with C-Wire. Compatible models: ecobee Smart Thermostat Premium/Enhanced, Google Nest Learning Thermostat (all gens), Honeywell Home T9.`;
+        } else {
+          // No C-Wire - Adapter required
+          html = `
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <div class="rounded-full bg-amber-500/10 p-2 text-amber-600 dark:text-amber-400">
+                  <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                </div>
+                <div>
+                  <span class="inline-block rounded-md bg-amber-500/10 px-2.5 py-0.5 text-xs font-bold text-amber-700 dark:text-amber-300">
+                    COMPATIBLE VIA C-WIRE ADAPTER / PEK
+                  </span>
+                  <h4 class="mt-1 text-lg font-bold text-foreground">No C-Wire Detected: Power Extender Required</h4>
+                  <p class="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                    Your 24V HVAC system is electrically compatible, but you have <strong>no dedicated C-wire</strong> at the wall. While standard Nest models claim to operate without a C-wire via "power stealing," this frequently causes furnace relay chatter, AC outdoor unit short-cycling, and Wi-Fi disconnects in real suburban homes.
+                  </p>
+                </div>
+              </div>
+
+              <div class="rounded-lg border border-border bg-surface p-3.5 text-xs space-y-2">
+                <span class="font-bold text-foreground">Your 3 Best Solutions Before Buying:</span>
+                <ol class="list-decimal pl-4 space-y-1.5 text-muted-foreground">
+                  <li><strong>Look for an unused wire inside the wall:</strong> Turn off power, unscrew the existing baseplate, and gently pull the thermostat wire sheath. Installers often wrap an unused blue or black wire around the cable bundle. If found, connect it to the furnace board's 'C' terminal.</li>
+                  <li><strong>Use an included Power Extender Kit (PEK):</strong> ecobee includes a free Power Extender Kit in every box that uses your existing 4 wires (R, G, Y, W) to reliably deliver continuous 24V power from the furnace control board.</li>
+                  <li><strong>Google Nest Power Connector ($25):</strong> If buying a Nest thermostat, install the official Nest Power Connector at the furnace control board instead of relying on battery-only mode.</li>
+                </ol>
+              </div>
+
+              ${hasOB ? `
+                <div class="rounded-lg border border-blue-500/30 bg-blue-500/5 p-3 text-xs text-foreground">
+                  <span class="font-semibold text-blue-600 dark:text-blue-400">Heat Pump Advisory:</span> Heat pumps operate year-round and put heavy duty-cycle demands on thermostat radios. A C-wire adapter or power connector is strongly recommended over battery-only operation.
+                </div>
+              ` : ''}
+            </div>
+          `;
+          lastVerdictSummary = `HVAC Voltage: 24V Low Voltage. Wires: ${Array.from(checkedWires).join(', ')}. Status: Compatible via C-Wire Adapter (PEK or Nest Power Connector). Missing C-wire; direct battery power stealing is not recommended.`;
+        }
+      }
+
+      if (resultContent) {
+        resultContent.innerHTML = html;
+      }
+    }
+
+    // Attach listeners
+    voltageInputs.forEach(i => i.addEventListener("change", updateChecker));
+    wireInputs.forEach(i => i.addEventListener("change", updateChecker));
+
+    if (btnReset) {
+      btnReset.addEventListener("click", () => {
+        voltageInputs.forEach(i => (i.checked = i.value === "24v"));
+        wireInputs.forEach(i => {
+          i.checked = ["R", "W", "Y", "G"].includes(i.value);
+        });
+        updateChecker();
+      });
+    }
+
+    if (btnCopy && copyBtnText) {
+      btnCopy.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(
+            `The Smart Suburbanite Thermostat Compatibility Diagnostic:\n` +
+            `--------------------------------------------------\n` +
+            `${lastVerdictSummary}\n\n` +
+            `Generated at: https://smartsuburbanite.com/posts/smart-thermostat-compatibility-what-to-check-before-you-buy/`
+          );
+          copyBtnText.textContent = "Copied to Clipboard!";
+          setTimeout(() => {
+            copyBtnText.textContent = "Copy Diagnostic Summary";
+          }, 2500);
+        } catch (err) {
+          copyBtnText.textContent = "Failed to copy";
+        }
+      });
+    }
+
+    // Initial render
+    updateChecker();
+  }
+
+  // Support both standard DOMContentLoaded and Astro View Transitions (ClientRouter)
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", setupThermostatChecker);
+  } else {
+    setupThermostatChecker();
+  }
+  document.addEventListener("astro:page-load", setupThermostatChecker);
+</script>

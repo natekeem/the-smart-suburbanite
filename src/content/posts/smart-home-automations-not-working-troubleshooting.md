@@ -1,9 +1,9 @@
 ---
-title: "Smart Home Automations Not Working? Check These Six Layers First"
+title: "Smart Home Not Working? Step-by-Step Troubleshooting Checklist"
 slug: smart-home-automations-not-working-troubleshooting
-description: "Fix smart home routines that stopped running by checking the device, action, trigger, conditions, presence data, and hub history before deleting anything."
+description: "Smart home not working? Fix devices and routines that stopped responding with our 6-layer homeowner diagnostic checklist before deleting or resetting anything."
 pubDatetime: 2026-10-20T22:00:00+09:00
-modDatetime: 2026-10-20T22:00:00+09:00
+modDatetime: 2026-11-23T22:15:00+09:00
 author: "The Smart Suburbanite Editorial Team"
 category: "Maintenance & Setup"
 tags:

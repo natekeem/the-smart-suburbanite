@@ -1,15 +1,15 @@
 ---
-title: What Is a Smart Home? A Plain-English Guide for Homeowners
+title: "What Is a Smart Home? Plain-English Definition, Costs & 5 Core Parts"
 slug: what-is-a-smart-home
 pubDatetime: 2026-06-28T21:00:00+09:00
-modDatetime: 2026-07-18T13:48:24+09:00
+modDatetime: 2026-11-23T22:15:00+09:00
 draft: false
 tags:
   - smart home
   - beginner guide
   - homeowner guide
 ogImage: https://smartsuburbanite.com/assets/images/posts/what-is-a-smart-home/cover.jpg?v=photo-cover
-description: A plain-English introduction to smart home devices, benefits, tradeoffs, and first steps for everyday homeowners.
+description: "What is a smart home, really? A plain-English definition covering the 5 core parts, realistic setup costs ($100–$2,000), Wi-Fi vs Matter, and fallbacks when internet drops."
 ---
 
 A smart home begins when something in the house can sense, communicate, or respond through a connected control. That could be one thermostat following a schedule, a leak sensor sending an alert, or several lights responding to one routine. It does not require a wall of screens, a voice assistant in every room, or a house that acts without people.
