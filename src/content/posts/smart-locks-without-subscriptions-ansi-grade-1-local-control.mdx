@@ -2,7 +2,7 @@
 title: "Smart Locks and Garage Openers Without Subscriptions: ANSI Grade 1, Local Keypads & Cloud Shutdowns"
 slug: smart-locks-without-subscriptions-ansi-grade-1-local-control
 pubDatetime: 2026-11-23T22:25:00+09:00
-modDatetime: 2026-11-23T22:25:00+09:00
+modDatetime: 2026-11-24T00:30:00+09:00
 draft: false
 category: "Security & Privacy"
 tags:
@@ -14,6 +14,8 @@ ogImage: https://smartsuburbanite.com/assets/images/posts/smart-locks-without-su
 description: "What happens when you stop paying smart lock subscriptions? How ANSI/BHMA Grade 1 deadbolts, Matter over Thread, and local dry-contact relays protect your home when cloud servers die."
 ---
 
+import SmartLockSecurityAudit from "@/components/SmartLockSecurityAudit.astro";
+
 If you stop paying a monthly access-control subscription, your cloud-dependent smart lock does not turn back into an ordinary mechanical deadbolt—it turns into an unreliable, locked-down brick that locks out guests, breaks your automation routines, and leaves your household vulnerable to remote server outages.
 
 When Chamberlain shut down its free third-party API for MyQ garage door openers, hundreds of thousands of homeowners suddenly found their Home Assistant, Homebridge, and automated arrival routines disabled overnight unless they surrendered to proprietary paywalls and cloud advertising. 
@@ -22,25 +24,16 @@ A home's physical perimeter—your front door deadbolt and garage overhead door�
 
 By prioritizing **ANSI/BHMA Grade 1 physical hardware**, **Matter over Thread local mesh**, and **offline dry-contact relays**, you can build a secure, zero-subscription access perimeter that continues locking, unlocking, and issuing guest codes even if your internet service provider cuts out for a week.
 
+<SmartLockSecurityAudit />
+
 ---
 
 ## What Actually Happens When You Cancel Access Subscriptions?
 
 Manufacturers market smart locks with promises of "convenience," but their underlying business models frequently rely on software lock-in. When a cloud-locked device loses its subscription or the company changes its terms of service, three immediate failures occur:
 
-```text
-[CLOUD ACCESS MODEL (MyQ / Proprietary Cloud)]
-Phone App ──► AWS Cloud Server ──► Home Router ──► Garage Opener
-  ❌ Internet Outage: App completely disabled
-  ❌ Server Shutdown: Hardware permanently bricked
-  ❌ API Paywall: $36–$120/year recurring tax
-
-[LOCAL ARCHITECTURE (Matter over Thread / Dry-Contact)]
-Phone / Keypad ──► Local Border Router (Apple TV/Hub) ──► Solid Deadbolt
-  ✅ Internet Outage: 100% operational locally
-  ✅ Server Shutdown: Zero impact; no external telemetry
-  ✅ Subscription: $0/month forever
-```
+![Matter over Thread local mesh architecture compared to fragile cloud-dependent smart lock topologies](/assets/images/posts/smart-locks-without-subscriptions-ansi-grade-1-local-control/03-matter-thread-local-mesh-diagram.png)
+*Figure 1: Architectural comparison between local IPv6 mesh deadbolts and cloud-gated smart locks. Matter over Thread isolates access packets from external cloud downtime while cutting battery-draining Wi-Fi polling. Diagram: The Smart Suburbanite.*
 
 1. **Guest Code Management Revocation**: Brands often relegate scheduled guest codes (such as letting a dog walker in between 1:00 PM and 3:00 PM on weekdays) to premium tiers ($3 to $10/month). Without the subscription, codes must be typed manually or given as permanent master PINs.
 2. **Video & Audit Trail Erasure**: Video doorbells and camera-equipped smart locks (like eufy Video Smart Lock or Lockly Vision) cut off historical event logs, leaving you with live-view only and zero evidence following a doorstep package theft.
@@ -52,8 +45,8 @@ Phone / Keypad ──► Local Border Router (Apple TV/Hub) ──► Solid Dead
 
 Tech companies love marketing biometric sensors, palm scanners, and smartphone geofencing. But burglars do not hack AES-256 encryption chips; they kick doors, drive sledgehammers into strike plates, or attack deadbolts with cordless reciprocal saws.
 
-![Architectural schematic contrasting ANSI Grade 1 physical security with cloud-locked subscription dependencies](/assets/images/posts/smart-locks-without-subscriptions-ansi-grade-1-local-control/01-ansi-grade-1-deadbolt-architecture.png)
-*Figure 1: Comparison between an ANSI/BHMA Grade 1 local-first access control system and a fragile cloud-dependent subscription architecture. Solid steel physical hardening protects against brute force attacks, while Matter over Thread isolates access packets from external cloud downtime. Diagram: The Smart Suburbanite.*
+![Real disassembled electronic deadbolt hardware showing external keypad, internal motor drive, throw bolt, and battery housing](/assets/images/posts/smart-locks-without-subscriptions-ansi-grade-1-local-control/01-kwikset-electronic-deadbolt-real-hardware.jpg)
+*Figure 2: Authentic electronic deadbolt lock hardware assembly showing the external keypad housing, hardened steel throw bolt, internal motorized drive mechanism, and battery tray. Photo: TaurusEmerald, CC BY-SA 4.0 via Wikimedia Commons.*
 
 The **Builders Hardware Manufacturers Association (BHMA)** and the **American National Standards Institute (ANSI)** classify locks into three rigorous grades under **ANSI/BHMA A156.36**:
 
@@ -66,6 +59,9 @@ The **Builders Hardware Manufacturers Association (BHMA)** and the **American Na
 | **Typical Smart Lock Models** | Cheap Amazon marketplace locks | Yale Assure 2, August Smart Lock | **Schlage Encode Plus, Schlage Camelot / Century Commercial** |
 
 If a smart lock is only rated Grade 2 or Grade 3, a heavy kick to the door frame will shatter the strike plate long before any digital security feature comes into play. **Never buy an exterior deadbolt that lacks an authentic ANSI/BHMA Grade 1 certification.**
+
+![Backlit electronic deadbolt keypad mounted on an exterior residential door](/assets/images/posts/smart-locks-without-subscriptions-ansi-grade-1-local-control/02-electronic-deadbolt-keypad-installed.jpg)
+*Figure 3: Real-world electronic deadbolt keypad mounted on an exterior residential door. Mechanical brass key cylinder below the illuminated touch buttons provides physical override insurance during electronics failure. Photo: TaurusEmerald, CC BY-SA 4.0 via Wikimedia Commons.*
 
 ---
 

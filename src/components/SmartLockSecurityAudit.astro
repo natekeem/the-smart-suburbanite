@@ -1,0 +1,468 @@
+---
+/**
+ * SmartLockSecurityAudit.astro
+ * Interactive homeowner audit tool for physical kick-in resistance, ANSI/BHMA deadbolt grading,
+ * Thread vs Wi-Fi battery life, and subscription traps.
+ */
+---
+
+<div class="lock-audit not-prose my-10 rounded-2xl border border-border/80 bg-surface/50 p-6 shadow-sm md:p-8" id="lock-audit">
+  <!-- Header -->
+  <div class="border-b border-border/60 pb-5">
+    <div class="inline-flex items-center gap-2 rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
+      <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+      </svg>
+      <span>Interactive Diagnostic Tool</span>
+    </div>
+    <h3 class="mt-3 text-xl font-bold tracking-tight text-foreground md:text-2xl">
+      Smart Lock Security &amp; Physical Vulnerability Audit
+    </h3>
+    <p class="mt-1 text-sm text-muted-foreground">
+      Calculate physical kick-in resistance, annual subscription traps, battery runtime, and emergency lockout vulnerability based on your deadbolt hardware and protocol.
+    </p>
+  </div>
+
+  <!-- Form Body -->
+  <div class="mt-6 space-y-7">
+    <!-- Step 1: Strike Plate & Frame Screws -->
+    <div>
+      <div class="flex items-center justify-between">
+        <label class="text-xs font-bold uppercase tracking-wider text-muted-foreground">
+          Step 1: Strike Plate Screws &amp; Door Jamb
+        </label>
+        <span class="text-xs text-muted-foreground">The most common physical failure point</span>
+      </div>
+
+      <div class="mt-2.5 grid grid-cols-1 gap-2.5 sm:grid-cols-3" id="lock-screws-group">
+        <label class="screw-option flex cursor-pointer flex-col rounded-xl border border-border bg-background p-3.5 transition-all hover:border-accent">
+          <div class="flex items-center gap-2">
+            <input type="radio" name="lock_screws" value="short" checked class="h-4 w-4 text-accent focus:ring-accent" />
+            <span class="text-sm font-semibold text-foreground">Standard 3/4" Screws</span>
+          </div>
+          <span class="mt-1 text-xs text-muted-foreground">Anchors only to 1/2" soft wood trim; splinters under a single kick</span>
+        </label>
+
+        <label class="screw-option flex cursor-pointer flex-col rounded-xl border border-accent bg-accent/5 p-3.5 transition-all hover:border-accent">
+          <div class="flex items-center gap-2">
+            <input type="radio" name="lock_screws" value="long" class="h-4 w-4 text-accent focus:ring-accent" />
+            <span class="text-sm font-semibold text-foreground">3" Hardened Steel Screws</span>
+          </div>
+          <span class="mt-1 text-xs text-muted-foreground">Anchors deep into 2x4 framing studs (Meets ANSI Grade 1 requirement)</span>
+        </label>
+
+        <label class="screw-option flex cursor-pointer flex-col rounded-xl border border-border bg-background p-3.5 transition-all hover:border-accent">
+          <div class="flex items-center gap-2">
+            <input type="radio" name="lock_screws" value="box" class="h-4 w-4 text-accent focus:ring-accent" />
+            <span class="text-sm font-semibold text-foreground">Reinforced Security Box</span>
+          </div>
+          <span class="mt-1 text-xs text-muted-foreground">Steel strike box with 4 staggered 3" screws into framing + jack stud</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Step 2: Mechanical Certification Grade -->
+    <div>
+      <div class="flex items-center justify-between">
+        <label class="text-xs font-bold uppercase tracking-wider text-muted-foreground">
+          Step 2: ANSI/BHMA Mechanical Certification
+        </label>
+        <span class="text-xs text-muted-foreground">Cycle life &amp; hammer impact rating</span>
+      </div>
+
+      <div class="mt-2.5 grid grid-cols-1 gap-2.5 sm:grid-cols-3" id="lock-grade-group">
+        <label class="grade-option flex cursor-pointer flex-col rounded-xl border border-accent bg-accent/5 p-3.5 transition-all hover:border-accent">
+          <div class="flex items-center gap-2">
+            <input type="radio" name="lock_grade" value="grade1" checked class="h-4 w-4 text-accent focus:ring-accent" />
+            <span class="text-sm font-semibold text-foreground">ANSI Grade 1 (Commercial)</span>
+          </div>
+          <span class="mt-1 text-xs text-muted-foreground">250,000 cycles &bull; 2 blows @ 1,400 ft-lbs &bull; Solid brass/steel</span>
+        </label>
+
+        <label class="grade-option flex cursor-pointer flex-col rounded-xl border border-border bg-background p-3.5 transition-all hover:border-accent">
+          <div class="flex items-center gap-2">
+            <input type="radio" name="lock_grade" value="grade2" class="h-4 w-4 text-accent focus:ring-accent" />
+            <span class="text-sm font-semibold text-foreground">ANSI Grade 2 (Residential)</span>
+          </div>
+          <span class="mt-1 text-xs text-muted-foreground">150,000 cycles &bull; 5 blows @ 600 ft-lbs &bull; Standard suburban lock</span>
+        </label>
+
+        <label class="grade-option flex cursor-pointer flex-col rounded-xl border border-border bg-background p-3.5 transition-all hover:border-accent">
+          <div class="flex items-center gap-2">
+            <input type="radio" name="lock_grade" value="grade3" class="h-4 w-4 text-accent focus:ring-accent" />
+            <span class="text-sm font-semibold text-foreground">ANSI Grade 3 (Basic / Budget)</span>
+          </div>
+          <span class="mt-1 text-xs text-muted-foreground">100,000 cycles &bull; 2 blows @ 400 ft-lbs &bull; Die-cast zinc pot metal</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Step 3: Network Protocol & Subscription Architecture -->
+    <div>
+      <div class="flex items-center justify-between">
+        <label class="text-xs font-bold uppercase tracking-wider text-muted-foreground">
+          Step 3: Protocol &amp; Cloud Subscription Model
+        </label>
+        <span class="text-xs text-muted-foreground">Determines battery drain &amp; monthly bills</span>
+      </div>
+
+      <div class="mt-2.5 grid grid-cols-1 gap-2.5 sm:grid-cols-3" id="lock-protocol-group">
+        <label class="protocol-option flex cursor-pointer flex-col rounded-xl border border-accent bg-accent/5 p-3.5 transition-all hover:border-accent">
+          <div class="flex items-center gap-2">
+            <input type="radio" name="lock_protocol" value="thread" checked class="h-4 w-4 text-accent focus:ring-accent" />
+            <span class="text-sm font-semibold text-foreground">Matter over Thread</span>
+          </div>
+          <span class="mt-1 text-xs text-muted-foreground">100% Local IPv6 &bull; Apple/Home Assistant &bull; $0/mo &bull; 10-12 mo battery</span>
+        </label>
+
+        <label class="protocol-option flex cursor-pointer flex-col rounded-xl border border-border bg-background p-3.5 transition-all hover:border-accent">
+          <div class="flex items-center gap-2">
+            <input type="radio" name="lock_protocol" value="zwave" class="h-4 w-4 text-accent focus:ring-accent" />
+            <span class="text-sm font-semibold text-foreground">Z-Wave / Zigbee (Hub)</span>
+          </div>
+          <span class="mt-1 text-xs text-muted-foreground">Local RF to Hubitat/Home Assistant &bull; $0/mo &bull; 9-12 mo battery</span>
+        </label>
+
+        <label class="protocol-option flex cursor-pointer flex-col rounded-xl border border-border bg-background p-3.5 transition-all hover:border-accent">
+          <div class="flex items-center gap-2">
+            <input type="radio" name="lock_protocol" value="wifi" class="h-4 w-4 text-accent focus:ring-accent" />
+            <span class="text-sm font-semibold text-foreground">Direct Wi-Fi (Cloud App)</span>
+          </div>
+          <span class="mt-1 text-xs text-muted-foreground">Vendor Cloud API &bull; $3–$10/mo Subscription &bull; 2-3 mo battery</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Step 4: Emergency Power / Mechanical Override -->
+    <div>
+      <div class="flex items-center justify-between">
+        <label class="text-xs font-bold uppercase tracking-wider text-muted-foreground">
+          Step 4: Emergency Lockout Failsafe
+        </label>
+        <span class="text-xs text-muted-foreground">What happens when the 4 AA batteries die?</span>
+      </div>
+
+      <div class="mt-2.5 grid grid-cols-1 gap-2.5 sm:grid-cols-3" id="lock-override-group">
+        <label class="override-option flex cursor-pointer flex-col rounded-xl border border-accent bg-accent/5 p-3.5 transition-all hover:border-accent">
+          <div class="flex items-center gap-2">
+            <input type="radio" name="lock_override" value="key_and_jump" checked class="h-4 w-4 text-accent focus:ring-accent" />
+            <span class="text-sm font-semibold text-foreground">Key + 9V Jump Contacts</span>
+          </div>
+          <span class="mt-1 text-xs text-muted-foreground">Physical brass keyway + external 9V battery emergency terminals</span>
+        </label>
+
+        <label class="override-option flex cursor-pointer flex-col rounded-xl border border-border bg-background p-3.5 transition-all hover:border-accent">
+          <div class="flex items-center gap-2">
+            <input type="radio" name="lock_override" value="jump_only" class="h-4 w-4 text-accent focus:ring-accent" />
+            <span class="text-sm font-semibold text-foreground">9V Jump-Start Only (Keyless)</span>
+          </div>
+          <span class="mt-1 text-xs text-muted-foreground">Pure keypad lock with external 9V contacts; cannot be picked</span>
+        </label>
+
+        <label class="override-option flex cursor-pointer flex-col rounded-xl border border-border bg-background p-3.5 transition-all hover:border-accent">
+          <div class="flex items-center gap-2">
+            <input type="radio" name="lock_override" value="none" class="h-4 w-4 text-accent focus:ring-accent" />
+            <span class="text-sm font-semibold text-foreground">No Override / App Only</span>
+          </div>
+          <span class="mt-1 text-xs text-muted-foreground">Dead battery = physical lockout requiring locksmith destruction</span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dynamic Results Panel -->
+  <div class="mt-8 rounded-xl border border-border/70 bg-background/80 p-5 md:p-6" id="lock-result-panel">
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between border-b border-border/50 pb-4">
+      <div>
+        <span class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Audit Verdict</span>
+        <h4 class="text-lg font-bold text-foreground" id="lock-verdict-title">Loading Audit...</h4>
+      </div>
+      <div id="lock-badge-container">
+        <span class="inline-flex items-center rounded-full px-3 py-1 text-xs font-bold" id="lock-status-badge">
+          Analyzing Setup
+        </span>
+      </div>
+    </div>
+
+    <!-- Metrics Row -->
+    <div class="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-3">
+      <div class="rounded-lg border border-border/60 bg-surface/30 p-4">
+        <div class="text-xs font-medium text-muted-foreground">Kick-In Impact Resistance</div>
+        <div class="mt-1 text-2xl font-black text-foreground" id="metric-resistance">1,400 ft-lbs</div>
+        <div class="mt-1 text-xs text-muted-foreground" id="metric-resistance-desc">Grade 1 &bull; 2x4 stud anchor</div>
+      </div>
+
+      <div class="rounded-lg border border-border/60 bg-surface/30 p-4">
+        <div class="text-xs font-medium text-muted-foreground">Annual Subscription Cost</div>
+        <div class="mt-1 text-2xl font-black text-emerald-500" id="metric-subscription">$0 / year</div>
+        <div class="mt-1 text-xs text-muted-foreground" id="metric-sub-desc">100% Local Thread mesh</div>
+      </div>
+
+      <div class="rounded-lg border border-border/60 bg-surface/30 p-4">
+        <div class="text-xs font-medium text-muted-foreground">Battery Lifespan (4 AA)</div>
+        <div class="mt-1 text-2xl font-black text-foreground" id="metric-battery">10–12 Months</div>
+        <div class="mt-1 text-xs text-muted-foreground" id="metric-battery-desc">Sleepy end-device IEEE 802.15.4</div>
+      </div>
+    </div>
+
+    <!-- Recommendations & Warnings -->
+    <div class="mt-5 rounded-lg border border-border/50 bg-surface/40 p-4 text-sm" id="lock-action-items">
+      <div class="font-semibold text-foreground">Actionable Recommendations:</div>
+      <ul class="mt-2 list-inside list-disc space-y-1.5 text-muted-foreground text-xs md:text-sm" id="lock-action-list">
+        <!-- Injected via JavaScript -->
+      </ul>
+    </div>
+
+    <!-- Bottom Actions -->
+    <div class="mt-5 flex flex-wrap items-center justify-between gap-3 pt-2">
+      <div class="flex items-center gap-2">
+        <button
+          type="button"
+          id="lock-btn-copy"
+          class="inline-flex items-center gap-1.5 rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:bg-surface/80"
+        >
+          <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+          </svg>
+          <span id="lock-btn-copy-text">Copy Audit Summary</span>
+        </button>
+
+        <button
+          type="button"
+          id="lock-btn-reset"
+          class="rounded-lg px-2.5 py-1.5 text-xs text-muted-foreground transition-colors hover:text-foreground"
+        >
+          Reset
+        </button>
+      </div>
+
+      <span class="text-xs text-muted-foreground">
+        Standards: ANSI/BHMA A156.36-2020 &bull; Matter 1.3 &bull; IEEE 802.15.4
+      </span>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  function initLockAudit() {
+    const root = document.getElementById("lock-audit");
+    if (!root) return;
+
+    const screwsInputs = root.querySelectorAll('input[name="lock_screws"]');
+    const gradeInputs = root.querySelectorAll('input[name="lock_grade"]');
+    const protocolInputs = root.querySelectorAll('input[name="lock_protocol"]');
+    const overrideInputs = root.querySelectorAll('input[name="lock_override"]');
+
+    const titleEl = root.querySelector("#lock-verdict-title");
+    const badgeEl = root.querySelector("#lock-status-badge");
+    const resistanceEl = root.querySelector("#metric-resistance");
+    const resistanceDescEl = root.querySelector("#metric-resistance-desc");
+    const subEl = root.querySelector("#metric-subscription");
+    const subDescEl = root.querySelector("#metric-sub-desc");
+    const batteryEl = root.querySelector("#metric-battery");
+    const batteryDescEl = root.querySelector("#metric-battery-desc");
+    const actionListEl = root.querySelector("#lock-action-list");
+
+    const copyBtn = root.querySelector("#lock-btn-copy");
+    const copyText = root.querySelector("#lock-btn-copy-text");
+    const resetBtn = root.querySelector("#lock-btn-reset");
+
+    function getSelected(inputs) {
+      for (const input of inputs) {
+        if (input.checked) return input.value;
+      }
+      return inputs[0].value;
+    }
+
+    function updateCards(inputs, activeValue) {
+      inputs.forEach(input => {
+        const parent = input.closest("label");
+        if (!parent) return;
+        if (input.value === activeValue) {
+          parent.classList.add("border-accent", "bg-accent/5");
+          parent.classList.remove("border-border", "bg-background");
+        } else {
+          parent.classList.remove("border-accent", "bg-accent/5");
+          parent.classList.add("border-border", "bg-background");
+        }
+      });
+    }
+
+    function recalculate() {
+      const screws = getSelected(screwsInputs);
+      const grade = getSelected(gradeInputs);
+      const protocol = getSelected(protocolInputs);
+      const override = getSelected(overrideInputs);
+
+      updateCards(screwsInputs, screws);
+      updateCards(gradeInputs, grade);
+      updateCards(protocolInputs, protocol);
+      updateCards(overrideInputs, override);
+
+      // 1. Kick-in resistance & framing
+      let resistanceLabel = "400 ft-lbs (Weak)";
+      let resistanceDesc = "Failure point: Soft door trim splinters";
+
+      if (screws === "short") {
+        resistanceLabel = "400 ft-lbs (Fragile)";
+        resistanceDesc = "Splinters 1/2\" trim on first kick regardless of deadbolt strength";
+      } else if (screws === "long") {
+        if (grade === "grade1") {
+          resistanceLabel = "1,400 ft-lbs (Max Grade 1)";
+          resistanceDesc = "Passes ANSI 2-blow hammer test into 2x4 wall studs";
+        } else if (grade === "grade2") {
+          resistanceLabel = "600 ft-lbs (Grade 2)";
+          resistanceDesc = "Solid 2x4 anchor; deadbolt bolt yields before stud";
+        } else {
+          resistanceLabel = "450 ft-lbs (Grade 3)";
+          resistanceDesc = "Stud intact; zinc bolt or latch housing warps";
+        }
+      } else if (screws === "box") {
+        if (grade === "grade1") {
+          resistanceLabel = "1,600+ ft-lbs (Fortified)";
+          resistanceDesc = "Commercial steel box + staggered 3\" screws into double studs";
+        } else {
+          resistanceLabel = "750 ft-lbs (Jamb Protected)";
+          resistanceDesc = "Jamb protected; limited by lock body certification";
+        }
+      }
+
+      // 2. Subscription cost
+      let subCost = "$0 / year";
+      let subDesc = "100% Local Control (No vendor lock-in)";
+      let subClass = "text-emerald-500";
+
+      if (protocol === "wifi") {
+        subCost = "$36 – $120 / yr";
+        subDesc = "Cloud relay fee ($3–$10/mo) or feature gating";
+        subClass = "text-amber-500";
+      } else if (protocol === "thread") {
+        subCost = "$0 / year";
+        subDesc = "Local Matter mesh via HomePod/Apple TV/Nest";
+        subClass = "text-emerald-500";
+      } else if (protocol === "zwave") {
+        subCost = "$0 / year";
+        subDesc = "Local Hubitat / Home Assistant coordinator";
+        subClass = "text-emerald-500";
+      }
+
+      // 3. Battery life
+      let batteryLife = "10–12 Months";
+      let batteryDesc = "Low-duty cycle IEEE 802.15.4 radio";
+
+      if (protocol === "wifi") {
+        batteryLife = "2–3 Months";
+        batteryDesc = "Continuous Wi-Fi beacon polling drains 4 AA batteries rapidly";
+      } else if (protocol === "thread") {
+        batteryLife = "10–12 Months";
+        batteryDesc = "Sleepy end-device wakes only during actuation";
+      } else if (protocol === "zwave") {
+        batteryLife = "9–12 Months";
+        batteryDesc = "FLiRS (Frequently Listening Receiver Slave) protocol";
+      }
+
+      // 4. Overall status & actions
+      const actions = [];
+      let overallStatus = "OPTIMAL";
+      let statusColor = "bg-emerald-500/10 text-emerald-600 border border-emerald-500/30";
+      let statusTitle = "Fortified Local Deadbolt Architecture";
+
+      if (screws === "short") {
+        overallStatus = "VULNERABLE";
+        actions.push("CRITICAL SECURITY FLAW: 3/4\" strike plate screws will split the decorative jamb trim on a single kick. Unscrew them and drive 3\" #9 case-hardened wood screws into the 2x4 framing stud.");
+      }
+
+      if (protocol === "wifi") {
+        actions.push("SUBSCRIPTION & DOWNTIME TRAP: Standalone Wi-Fi locks depend on external vendor servers. If the manufacturer charges subscription fees (like MyQ) or experiences a cloud outage, remote control ceases. Switch to Matter over Thread for local independence.");
+        actions.push("BATTERY MAINTENANCE: Expect to change 4 AA batteries 4 to 6 times per year with direct Wi-Fi. Keep rechargeables on standby.");
+      } else {
+        actions.push("EXCELLENT PROTOCOL: Matter over Thread or Z-Wave operates 100% locally with zero cloud subscription fees and 4x longer battery lifespan.");
+      }
+
+      if (grade === "grade3") {
+        actions.push("MECHANICAL LIMITATION: Grade 3 locks utilize die-cast zinc internals tested for only 100,000 cycles and 400 ft-lbs. Upgrade to ANSI Grade 1 (e.g., Yale Assure Lock 2 with Grade 1 bolt, or Schlage Encode Plus) for commercial-grade hardened steel.");
+      }
+
+      if (override === "none") {
+        overallStatus = "LOCKOUT_RISK";
+        actions.push("HIGH LOCKOUT HAZARD: With no physical keyway and no 9V jump contacts, a dead battery when you are away from home will lock you out completely, requiring costly locksmith drilling.");
+      } else if (override === "jump_only") {
+        actions.push("CLEAN PICK-PROOF SETUP: Keyless keypad prevents lock picking/bumping. Stash a fresh 9V battery in your garage or car to jump-start the external terminals if AA cells deplete.");
+      } else {
+        actions.push("REDUNDANT OVERRIDE: Physical brass key and 9V jump contacts guarantee you will never be locked out during battery exhaustion.");
+      }
+
+      if (screws === "short" || override === "none") {
+        statusColor = "bg-rose-500/10 text-rose-600 border border-rose-500/30";
+        statusTitle = "Physical Vulnerability or Lockout Risk Detected";
+      } else if (grade === "grade3" || protocol === "wifi") {
+        statusColor = "bg-amber-500/10 text-amber-600 border border-amber-500/30";
+        statusTitle = "Operational Friction (Sub Fees & Battery Drain)";
+      }
+
+      // Update UI elements
+      titleEl.textContent = statusTitle;
+      badgeEl.className = `inline-flex items-center rounded-full px-3 py-1 text-xs font-bold ${statusColor}`;
+      badgeEl.textContent = overallStatus.replace("_", " ");
+
+      resistanceEl.textContent = resistanceLabel;
+      resistanceDescEl.textContent = resistanceDesc;
+
+      subEl.textContent = subCost;
+      subEl.className = `mt-1 text-2xl font-black ${subClass}`;
+      subDescEl.textContent = subDesc;
+
+      batteryEl.textContent = batteryLife;
+      batteryDescEl.textContent = batteryDesc;
+
+      actionListEl.innerHTML = actions.map(act => `<li>${act}</li>`).join("");
+    }
+
+    // Attach listeners
+    [...screwsInputs, ...gradeInputs, ...protocolInputs, ...overrideInputs].forEach(input => {
+      input.addEventListener("change", recalculate);
+    });
+
+    if (resetBtn) {
+      resetBtn.addEventListener("click", () => {
+        root.querySelector('input[name="lock_screws"][value="short"]').checked = true;
+        root.querySelector('input[name="lock_grade"][value="grade1"]').checked = true;
+        root.querySelector('input[name="lock_protocol"][value="thread"]').checked = true;
+        root.querySelector('input[name="lock_override"][value="key_and_jump"]').checked = true;
+        recalculate();
+      });
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener("click", async () => {
+        const text = [
+          "--- Smart Lock Security Audit Summary ---",
+          `Status: ${titleEl.textContent}`,
+          `Physical Resistance: ${resistanceEl.textContent} (${resistanceDescEl.textContent})`,
+          `Annual Subscription: ${subEl.textContent} (${subDescEl.textContent})`,
+          `Battery Lifespan: ${batteryEl.textContent} (${batteryDescEl.textContent})`,
+          "",
+          "Key Takeaway: Never rely on short 3/4\" trim screws; use 3\" case-hardened screws into 2x4 framing studs and choose Matter over Thread for 100% local subscription-free control.",
+          "https://smartsuburbanite.com/posts/smart-locks-without-subscriptions-ansi-grade-1-local-control/"
+        ].join("\\n");
+
+        try {
+          await navigator.clipboard.writeText(text);
+          copyText.textContent = "Copied to Clipboard!";
+          setTimeout(() => {
+            copyText.textContent = "Copy Audit Summary";
+          }, 2500);
+        } catch (err) {
+          console.error("Clipboard copy failed:", err);
+        }
+      });
+    }
+
+    recalculate();
+  }
+
+  document.addEventListener("DOMContentLoaded", initLockAudit);
+  document.addEventListener("astro:page-load", initLockAudit);
+</script>
