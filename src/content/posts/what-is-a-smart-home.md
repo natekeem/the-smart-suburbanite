@@ -4,11 +4,12 @@ slug: what-is-a-smart-home
 pubDatetime: 2026-06-28T21:00:00+09:00
 modDatetime: 2026-11-23T22:15:00+09:00
 draft: false
+category: "Beginner Guides"
 tags:
   - smart home
   - beginner guide
   - homeowner guide
-ogImage: https://smartsuburbanite.com/assets/images/posts/what-is-a-smart-home/cover.jpg?v=photo-cover
+ogImage: https://smartsuburbanite.com/assets/images/posts/what-is-a-smart-home/cover.jpg
 description: "What is a smart home, really? A plain-English definition covering the 5 core parts, realistic setup costs ($100–$2,000), Wi-Fi vs Matter, and fallbacks when internet drops."
 ---
 
@@ -28,6 +29,8 @@ The system can be small. One useful connected device still counts. What matters 
 
 ## The five-part smart-home model
 
+![Clean architectural line schematic showing the five-part smart home system model from sensor input to mechanical response and offline fallback](/assets/images/posts/what-is-a-smart-home/01-five-part-smart-home-architecture.png)
+
 Use this model whenever a smart-home description starts to feel abstract.
 
 | Part           | Plain-English question                          | Household example                                                                    | What can break or change?                                         |
@@ -43,6 +46,8 @@ This is not a buying checklist. It is a mental model. If you can trace these fiv
 ## Connections are not the same as control
 
 People often use “Wi-Fi,” “app,” “hub,” and “smart-home platform” as if they mean the same thing. They do different jobs.
+
+![Apple HomePod smart speaker acting as a dedicated local home hub and Matter controller on a suburban side table](/assets/images/posts/what-is-a-smart-home/02-smart-home-hub-hardware.jpg)
 
 A connection carries information. A control decides what to do with it. A cloud service may provide remote access or store data. A hub may coordinate compatible devices locally or bridge one network technology to another. A physical switch or keypad may remain a separate control even when the app is unavailable.
 
